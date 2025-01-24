@@ -1,0 +1,26 @@
+'use client';
+import * as React from 'react';
+
+export interface RadioRootContext {
+  disabled: boolean;
+  readOnly: boolean;
+  checked: boolean;
+  required: boolean;
+}
+
+export const RadioRootContext = React.createContext<RadioRootContext | undefined>(undefined);
+
+if (process.env.NODE_ENV !== 'production') {
+  RadioRootContext.displayName = 'RadioRootContext';
+}
+
+export function useRadioRootContext() {
+  const value = React.useContext(RadioRootContext);
+  if (value === undefined) {
+    throw new Error(
+      'Anchor UI: RadioRootContext is missing. Radio parts must be placed within <Radio.Root>.',
+    );
+  }
+
+  return value;
+}

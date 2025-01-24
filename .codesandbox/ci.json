@@ -1,0 +1,11 @@
+{
+  "buildCommand": "build:codesandbox",
+  "installCommand": "install:codesandbox",
+  "node": "18",
+  "packages": ["packages/react"],
+  "publishDirectory": {
+    "@anchor-ui/react": "packages/react/build"
+  },
+  "sandboxes": ["/.codesandbox/template"],
+  "silent": true
+}

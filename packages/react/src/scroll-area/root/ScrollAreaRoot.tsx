@@ -1,0 +1,89 @@
+'use client';
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import type { BaseUIComponentProps } from '../../utils/types';
+import { useComponentRenderer } from '../../utils/useComponentRenderer';
+import { ScrollAreaRootContext } from './ScrollAreaRootContext';
+import { useScrollAreaRoot } from './useScrollAreaRoot';
+
+const state = {};
+
+/**
+ * Groups all parts of the scroll area.
+ * Renders a `<div>` element.
+ *
+ * Documentation: [Anchor UI Scroll Area](https://anchorui.com/react/components/scroll-area)
+ */
+const ScrollAreaRoot = React.forwardRef(function ScrollAreaRoot(
+  props: ScrollAreaRoot.Props,
+  forwardedRef: React.ForwardedRef<HTMLDivElement>,
+) {
+  const { render, className, ...otherProps } = props;
+
+  const scrollAreaRoot = useScrollAreaRoot();
+
+  const { rootId } = scrollAreaRoot;
+
+  const { renderElement } = useComponentRenderer({
+    propGetter: scrollAreaRoot.getRootProps,
+    render: render ?? 'div',
+    ref: forwardedRef,
+    className,
+    state,
+    extraProps: otherProps,
+  });
+
+  const contextValue = React.useMemo(() => scrollAreaRoot, [scrollAreaRoot]);
+
+  const viewportId = `[data-id="${rootId}-viewport"]`;
+
+  const html = React.useMemo(
+    () => ({
+      __html: `${viewportId}{scrollbar-width:none}${viewportId}::-webkit-scrollbar{display:none}`,
+    }),
+    [viewportId],
+  );
+
+  return (
+    <ScrollAreaRootContext.Provider value={contextValue}>
+      {rootId && (
+        <style
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={html}
+        />
+      )}
+      {renderElement()}
+    </ScrollAreaRootContext.Provider>
+  );
+});
+
+namespace ScrollAreaRoot {
+  export interface Props extends BaseUIComponentProps<'div', State> {}
+
+  export interface State {}
+}
+
+ScrollAreaRoot.propTypes /* remove-proptypes */ = {
+  // ┌────────────────────────────── Warning ──────────────────────────────┐
+  // │ These PropTypes are generated from the TypeScript type definitions. │
+  // │ To update them, edit the TypeScript types and run `pnpm proptypes`. │
+  // └─────────────────────────────────────────────────────────────────────┘
+  /**
+   * @ignore
+   */
+  children: PropTypes.node,
+  /**
+   * CSS class applied to the element, or a function that
+   * returns a class based on the component’s state.
+   */
+  className: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  /**
+   * Allows you to replace the component’s HTML element
+   * with a different tag, or compose it with another component.
+   *
+   * Accepts a `ReactElement` or a function that returns the element to render.
+   */
+  render: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+} as any;
+
+export { ScrollAreaRoot };
