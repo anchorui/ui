@@ -1,48 +1,55 @@
-<!-- markdownlint-disable MD041 -->
+# Anchor UI
 
-<a href="https://base-ui.com" rel="noopener" target="_blank"><img width="150" height="133" src="https://base-ui.com/static/logo.svg" alt="Base UI logo"></a>
+A fully customizable, unstyled React component library built on top of **Base UI**, designed to give you complete control over your app's UI, accessibility, and CSS. Part of the **Anchor UI** monorepo.
 
-Base UI is a library of unstyled React components. You gain complete control over your app's CSS and accessibility features.
+---
 
 ## Installation
 
-Install the package in your project directory with:
+To install `@anchor-ui/react` in your project, run:
 
 ```bash
 npm install @anchor-ui/react
 ```
 
+---
+
 ## Documentation
 
-<!-- #default-branch-switch -->
+Visit the [Anchor UI documentation](https://github.com/anchorui/ui) to explore:
 
-Visit [base-ui.com](https://base-ui.com) to view the full documentation.
+- Full API reference for React components.
+- Usage examples.
+- Guides on customizing components and integrating into your project.
 
-## Questions
+---
 
-For how-to questions that don't involve making changes to the code base, please use [Stack Overflow](https://stackoverflow.com/questions/tagged/base-ui) instead of GitHub issues.
-Use the "base-ui" tag on Stack Overflow to make it easier for the community to find your question.
+## Community
+
+- **X** Follow [@anchor_ui](https://x.com/anchor_ui) for updates, tips, and release announcements.
+- Join discussions and share your feedback on [GitHub Discussions](https://github.com/anchorui/ui/discussions).
+
+---
 
 ## Contributing
 
-Read the [contributing guide](/CONTRIBUTING.md) to learn about our development process, how to propose bug fixes and improvements, and how to build and test your changes.
+We welcome contributions! Read our [contributing guide](https://github.com/anchorui/ui/blob/master/CONTRIBUTING.md) to learn about how to get involved.  
 
-Contributing to Base UI is about more than just issues and pull requests!
-There are many other ways to [support Base UI](https://mui.com/material-ui/getting-started/faq/#mui-is-awesome-how-can-i-support-the-project) beyond contributing to the code base.
+---
 
-## Changelog
+## Releases
 
-The [changelog](https://github.com/mui/base-ui/releases) is regularly updated to reflect what's changed in each new release.
+Stay up-to-date by reviewing the latest [releases](https://github.com/anchorui/ui/releases).
 
-## Roadmap
+---
 
-Future plans and high-priority features and enhancements can be found in the [roadmap](https://github.com/orgs/mui/projects/1).
+## Team
+
+- **Pushpendra Singh** (Creator)  
+  [@_iPushpendra](https://x.com/_iPushpendra)
+
+---
 
 ## License
 
-This project is licensed under the terms of the
-[MIT license](/LICENSE).
-
-## Security
-
-For details of supported versions and contact details for reporting security issues, please refer to the [security policy](https://github.com/mui/base-ui/security/policy).
+This project is licensed under the terms of the [MIT license](https://github.com/anchorui/ui/blob/master/LICENSE).

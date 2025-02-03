@@ -11,10 +11,10 @@ export default function Homepage() {
       <div className="HomepageContent">
         <Logo className="mb-8 ml-px" aria-label="Anchor UI" />
         <h1 className="HomepageHeading">
-          Unstyled UI components for building accessible web apps and design systems.
+          Build with Stability, Craft with Confidence
         </h1>
         <p className="HomepageCaption">
-          From the creators of Radix, Floating&nbsp;UI, and Material&nbsp;UI.
+          Built on top of Base UI, Anchor UI gives you full control over design while ensuring flexibility and accessibility.
         </p>
         <Link
           className="-m-1 inline-flex items-center gap-1 p-1"
@@ -28,7 +28,8 @@ export default function Homepage() {
 }
 
 const description =
-  'Unstyled UI components for building accessible web apps and design systems.';
+  'Anchor UI provides unstyled, customizable, and accessible React components for building scalable UI systems.';
+
 
 export const metadata: Metadata = {
   description,
