@@ -1,0 +1,5224 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.4.1",
+  "pathMappings": {
+    "@anchor-ui/react": [
+      "./packages/react/src"
+    ],
+    "@anchor-ui/react/*": [
+      "./packages/react/src/*"
+    ],
+    "@mui-internal/api-docs-builder": [
+      "./node_modules/@mui/monorepo/packages/api-docs-builder"
+    ],
+    "@mui-internal/api-docs-builder/*": [
+      "./node_modules/@mui/monorepo/packages/api-docs-builder/*"
+    ],
+    "docs/*": [
+      "./docs/*"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "projectFileMap": {
+      "@anchor-ui/react": [
+        {
+          "file": "packages/react/.npmignore",
+          "hash": "5420056330226656258"
+        },
+        {
+          "file": "packages/react/README.md",
+          "hash": "4616596097844440342"
+        },
+        {
+          "file": "packages/react/package.json",
+          "hash": "18310959425597738591",
+          "deps": [
+            "npm:@types/react",
+            "npm:react",
+            "npm:react-dom",
+            "npm:@arethetypeswrong/cli",
+            "npm:@mui/internal-test-utils",
+            "npm:@testing-library/react",
+            "npm:@testing-library/user-event",
+            "npm:@types/chai",
+            "npm:@types/chai-dom",
+            "npm:@types/prop-types",
+            "npm:@types/react-dom",
+            "npm:@types/sinon",
+            "npm:@types/use-sync-external-store",
+            "npm:chai@4.5.0",
+            "npm:fs-extra",
+            "npm:lodash",
+            "npm:publint",
+            "npm:react-router-dom",
+            "npm:sinon",
+            "npm:typescript",
+            "npm:@babel/runtime",
+            "npm:@floating-ui/react",
+            "npm:@floating-ui/utils",
+            "npm:@react-aria/overlays",
+            "npm:prop-types",
+            "npm:use-sync-external-store"
+          ]
+        },
+        {
+          "file": "packages/react/scripts/createPackageManifest.mts",
+          "hash": "11483236336123538899"
+        },
+        {
+          "file": "packages/react/src/accordion/header/AccordionHeader.test.tsx",
+          "hash": "17627105486347477208"
+        },
+        {
+          "file": "packages/react/src/accordion/header/AccordionHeader.tsx",
+          "hash": "9362840317250438213"
+        },
+        {
+          "file": "packages/react/src/accordion/header/AccordionHeaderDataAttributes.ts",
+          "hash": "10821823745958267281"
+        },
+        {
+          "file": "packages/react/src/accordion/index.parts.ts",
+          "hash": "8103575801622721676"
+        },
+        {
+          "file": "packages/react/src/accordion/index.ts",
+          "hash": "9355332395048757836"
+        },
+        {
+          "file": "packages/react/src/accordion/item/AccordionItem.test.tsx",
+          "hash": "9005610199348167388"
+        },
+        {
+          "file": "packages/react/src/accordion/item/AccordionItem.tsx",
+          "hash": "16131270636305846005"
+        },
+        {
+          "file": "packages/react/src/accordion/item/AccordionItemContext.ts",
+          "hash": "6205594345426028622"
+        },
+        {
+          "file": "packages/react/src/accordion/item/AccordionItemDataAttributes.ts",
+          "hash": "17198807488803559209"
+        },
+        {
+          "file": "packages/react/src/accordion/item/styleHooks.ts",
+          "hash": "16572619560591049153"
+        },
+        {
+          "file": "packages/react/src/accordion/panel/AccordionPanel.test.tsx",
+          "hash": "5283614920691482828"
+        },
+        {
+          "file": "packages/react/src/accordion/panel/AccordionPanel.tsx",
+          "hash": "688722199847379545"
+        },
+        {
+          "file": "packages/react/src/accordion/panel/AccordionPanelCssVars.ts",
+          "hash": "12976335991781011834"
+        },
+        {
+          "file": "packages/react/src/accordion/panel/AccordionPanelDataAttributes.ts",
+          "hash": "7295233834898714778"
+        },
+        {
+          "file": "packages/react/src/accordion/root/AccordionRoot.test.tsx",
+          "hash": "5827433134486639003"
+        },
+        {
+          "file": "packages/react/src/accordion/root/AccordionRoot.tsx",
+          "hash": "11844628409426797592"
+        },
+        {
+          "file": "packages/react/src/accordion/root/AccordionRootContext.ts",
+          "hash": "3716591008414542494"
+        },
+        {
+          "file": "packages/react/src/accordion/root/AccordionRootDataAttributes.ts",
+          "hash": "15259897547087221621"
+        },
+        {
+          "file": "packages/react/src/accordion/root/useAccordionRoot.ts",
+          "hash": "14418238154167064857"
+        },
+        {
+          "file": "packages/react/src/accordion/trigger/AccordionTrigger.test.tsx",
+          "hash": "11177393893651010012"
+        },
+        {
+          "file": "packages/react/src/accordion/trigger/AccordionTrigger.tsx",
+          "hash": "6775897121485957711"
+        },
+        {
+          "file": "packages/react/src/accordion/trigger/AccordionTriggerDataAttributes.ts",
+          "hash": "9676990078523342673"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/backdrop/AlertDialogBackdrop.test.tsx",
+          "hash": "12032872533739515074"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/backdrop/AlertDialogBackdrop.tsx",
+          "hash": "16042483426924387550"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/backdrop/AlertDialogBackdropDataAttributes.ts",
+          "hash": "4908830115189863981"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/close/AlertDialogClose.test.tsx",
+          "hash": "2573531056181772810"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/close/AlertDialogClose.tsx",
+          "hash": "1461992936796489109"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/description/AlertDialogDescription.test.tsx",
+          "hash": "3948586311445239036"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/description/AlertDialogDescription.tsx",
+          "hash": "17353767396107241228"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/index.parts.ts",
+          "hash": "11685223235950451270"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/index.ts",
+          "hash": "1759182725591870596"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/popup/AlertDialogPopup.test.tsx",
+          "hash": "6084949052816934133"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/popup/AlertDialogPopup.tsx",
+          "hash": "17455649038696420040"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/popup/AlertDialogPopupDataAttributes.ts",
+          "hash": "2261227498878642246"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/portal/AlertDialogPortal.tsx",
+          "hash": "7507689873942988799"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/portal/AlertDialogPortalContext.ts",
+          "hash": "15249109703522559856"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/root/AlertDialogRoot.test.tsx",
+          "hash": "2910255672263911696"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/root/AlertDialogRoot.tsx",
+          "hash": "18113878237878511206"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/root/AlertDialogRootContext.ts",
+          "hash": "7905550383840411230"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/title/AlertDialogTitle.test.tsx",
+          "hash": "15149831728580042438"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/title/AlertDialogTitle.tsx",
+          "hash": "9118890270762471120"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/trigger/AlertDialogTrigger.test.tsx",
+          "hash": "8802024369304497476"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/trigger/AlertDialogTrigger.tsx",
+          "hash": "9955009761324849383"
+        },
+        {
+          "file": "packages/react/src/alert-dialog/trigger/AlertDialogTriggerDataAttributes.ts",
+          "hash": "10769628679028380087"
+        },
+        {
+          "file": "packages/react/src/checkbox-group/CheckboxGroup.test.tsx",
+          "hash": "13517712393786761753"
+        },
+        {
+          "file": "packages/react/src/checkbox-group/CheckboxGroup.tsx",
+          "hash": "2893770949059131486"
+        },
+        {
+          "file": "packages/react/src/checkbox-group/CheckboxGroupContext.ts",
+          "hash": "8420721431033767883"
+        },
+        {
+          "file": "packages/react/src/checkbox-group/CheckboxGroupDataAttributes.ts",
+          "hash": "8833836525927853734"
+        },
+        {
+          "file": "packages/react/src/checkbox-group/index.parts.ts",
+          "hash": "11471804521182340355"
+        },
+        {
+          "file": "packages/react/src/checkbox-group/index.ts",
+          "hash": "11471804521182340355"
+        },
+        {
+          "file": "packages/react/src/checkbox-group/useCheckboxGroup.tsx",
+          "hash": "14606002135381514730"
+        },
+        {
+          "file": "packages/react/src/checkbox-group/useCheckboxGroupParent.test.tsx",
+          "hash": "1945354524152426783"
+        },
+        {
+          "file": "packages/react/src/checkbox-group/useCheckboxGroupParent.ts",
+          "hash": "14850356610663754771"
+        },
+        {
+          "file": "packages/react/src/checkbox/index.parts.ts",
+          "hash": "14441955078133895116"
+        },
+        {
+          "file": "packages/react/src/checkbox/index.ts",
+          "hash": "1215544609160817901"
+        },
+        {
+          "file": "packages/react/src/checkbox/indicator/CheckboxIndicator.test.tsx",
+          "hash": "11773030797225239775"
+        },
+        {
+          "file": "packages/react/src/checkbox/indicator/CheckboxIndicator.tsx",
+          "hash": "4170690961517264957"
+        },
+        {
+          "file": "packages/react/src/checkbox/indicator/CheckboxIndicatorDataAttributes.ts",
+          "hash": "6787884161364302792"
+        },
+        {
+          "file": "packages/react/src/checkbox/root/CheckboxRoot.test.tsx",
+          "hash": "8072779896948921436"
+        },
+        {
+          "file": "packages/react/src/checkbox/root/CheckboxRoot.tsx",
+          "hash": "9204343565091864681"
+        },
+        {
+          "file": "packages/react/src/checkbox/root/CheckboxRootContext.ts",
+          "hash": "16427814287906019843"
+        },
+        {
+          "file": "packages/react/src/checkbox/root/CheckboxRootDataAttributes.ts",
+          "hash": "12552981345287820152"
+        },
+        {
+          "file": "packages/react/src/checkbox/root/useCheckboxRoot.ts",
+          "hash": "10414834580426115161"
+        },
+        {
+          "file": "packages/react/src/checkbox/utils/useCustomStyleHookMapping.ts",
+          "hash": "692379164476986724"
+        },
+        {
+          "file": "packages/react/src/collapsible/index.parts.ts",
+          "hash": "9865394786500473826"
+        },
+        {
+          "file": "packages/react/src/collapsible/index.ts",
+          "hash": "1707272565051290768"
+        },
+        {
+          "file": "packages/react/src/collapsible/panel/CollapsiblePanel.test.tsx",
+          "hash": "14042110815191803799"
+        },
+        {
+          "file": "packages/react/src/collapsible/panel/CollapsiblePanel.tsx",
+          "hash": "5988237368933854629"
+        },
+        {
+          "file": "packages/react/src/collapsible/panel/CollapsiblePanelCssVars.ts",
+          "hash": "12488662617598745032"
+        },
+        {
+          "file": "packages/react/src/collapsible/panel/CollapsiblePanelDataAttributes.ts",
+          "hash": "8364734983130819358"
+        },
+        {
+          "file": "packages/react/src/collapsible/panel/useCollapsiblePanel.ts",
+          "hash": "10465220951147065787"
+        },
+        {
+          "file": "packages/react/src/collapsible/root/CollapsibleRoot.test.tsx",
+          "hash": "15800163060997884621"
+        },
+        {
+          "file": "packages/react/src/collapsible/root/CollapsibleRoot.tsx",
+          "hash": "9096735047439420740"
+        },
+        {
+          "file": "packages/react/src/collapsible/root/CollapsibleRootContext.ts",
+          "hash": "10454824735710192629"
+        },
+        {
+          "file": "packages/react/src/collapsible/root/styleHooks.ts",
+          "hash": "17078395334401372513"
+        },
+        {
+          "file": "packages/react/src/collapsible/root/useCollapsibleRoot.ts",
+          "hash": "6787968775546010088"
+        },
+        {
+          "file": "packages/react/src/collapsible/trigger/CollapsibleTrigger.test.tsx",
+          "hash": "2518511736788044398"
+        },
+        {
+          "file": "packages/react/src/collapsible/trigger/CollapsibleTrigger.tsx",
+          "hash": "3176089819186476431"
+        },
+        {
+          "file": "packages/react/src/collapsible/trigger/CollapsibleTriggerDataAttributes.ts",
+          "hash": "5155533944415958009"
+        },
+        {
+          "file": "packages/react/src/collapsible/trigger/useCollapsibleTrigger.ts",
+          "hash": "3620739834280498735"
+        },
+        {
+          "file": "packages/react/src/composite/composite.ts",
+          "hash": "16114891460864338299"
+        },
+        {
+          "file": "packages/react/src/composite/item/CompositeItem.tsx",
+          "hash": "2397455031050144782"
+        },
+        {
+          "file": "packages/react/src/composite/item/useCompositeItem.ts",
+          "hash": "15275346819495234912"
+        },
+        {
+          "file": "packages/react/src/composite/list/CompositeList.tsx",
+          "hash": "18027433760766564629"
+        },
+        {
+          "file": "packages/react/src/composite/list/CompositeListContext.ts",
+          "hash": "13293143734595741934"
+        },
+        {
+          "file": "packages/react/src/composite/list/useCompositeListItem.ts",
+          "hash": "1169114062633878891"
+        },
+        {
+          "file": "packages/react/src/composite/root/CompositeRoot.test.tsx",
+          "hash": "5369975158245418478"
+        },
+        {
+          "file": "packages/react/src/composite/root/CompositeRoot.tsx",
+          "hash": "10732777501760380945"
+        },
+        {
+          "file": "packages/react/src/composite/root/CompositeRootContext.ts",
+          "hash": "9007593600033334005"
+        },
+        {
+          "file": "packages/react/src/composite/root/useCompositeRoot.ts",
+          "hash": "17753052445339571342"
+        },
+        {
+          "file": "packages/react/src/dialog/backdrop/DialogBackdrop.test.tsx",
+          "hash": "13213761487399439019"
+        },
+        {
+          "file": "packages/react/src/dialog/backdrop/DialogBackdrop.tsx",
+          "hash": "3020500127847799268"
+        },
+        {
+          "file": "packages/react/src/dialog/backdrop/DialogBackdropDataAttributes.ts",
+          "hash": "14814234248506090725"
+        },
+        {
+          "file": "packages/react/src/dialog/close/DialogClose.test.tsx",
+          "hash": "1564821993058841148"
+        },
+        {
+          "file": "packages/react/src/dialog/close/DialogClose.tsx",
+          "hash": "3762537559141762647"
+        },
+        {
+          "file": "packages/react/src/dialog/close/useDialogClose.ts",
+          "hash": "7134242849541283774"
+        },
+        {
+          "file": "packages/react/src/dialog/description/DialogDescription.test.tsx",
+          "hash": "6528372368605165170"
+        },
+        {
+          "file": "packages/react/src/dialog/description/DialogDescription.tsx",
+          "hash": "8951888933375648287"
+        },
+        {
+          "file": "packages/react/src/dialog/index.parts.ts",
+          "hash": "11171268510246200512"
+        },
+        {
+          "file": "packages/react/src/dialog/index.ts",
+          "hash": "3199467314477079216"
+        },
+        {
+          "file": "packages/react/src/dialog/popup/DialogPopup.test.tsx",
+          "hash": "15416633954407273703"
+        },
+        {
+          "file": "packages/react/src/dialog/popup/DialogPopup.tsx",
+          "hash": "13150623202456800610"
+        },
+        {
+          "file": "packages/react/src/dialog/popup/DialogPopupCssVars.ts",
+          "hash": "16080920920735190471"
+        },
+        {
+          "file": "packages/react/src/dialog/popup/DialogPopupDataAttributes.ts",
+          "hash": "6555692143914053317"
+        },
+        {
+          "file": "packages/react/src/dialog/popup/useDialogPopup.tsx",
+          "hash": "1807090141012594550"
+        },
+        {
+          "file": "packages/react/src/dialog/portal/DialogPortal.tsx",
+          "hash": "8145370643910469798"
+        },
+        {
+          "file": "packages/react/src/dialog/portal/DialogPortalContext.ts",
+          "hash": "10954494922380297031"
+        },
+        {
+          "file": "packages/react/src/dialog/root/DialogRoot.test.tsx",
+          "hash": "11784468365820480505"
+        },
+        {
+          "file": "packages/react/src/dialog/root/DialogRoot.tsx",
+          "hash": "14389954486091260068"
+        },
+        {
+          "file": "packages/react/src/dialog/root/DialogRootContext.ts",
+          "hash": "9358889113894619460"
+        },
+        {
+          "file": "packages/react/src/dialog/root/useDialogRoot.ts",
+          "hash": "9818033425136229956"
+        },
+        {
+          "file": "packages/react/src/dialog/title/DialogTitle.test.tsx",
+          "hash": "17604331087439824257"
+        },
+        {
+          "file": "packages/react/src/dialog/title/DialogTitle.tsx",
+          "hash": "17149581355701746220"
+        },
+        {
+          "file": "packages/react/src/dialog/trigger/DialogTrigger.test.tsx",
+          "hash": "1683808049903175805"
+        },
+        {
+          "file": "packages/react/src/dialog/trigger/DialogTrigger.tsx",
+          "hash": "516910560111567263"
+        },
+        {
+          "file": "packages/react/src/dialog/trigger/DialogTriggerDataAttributes.ts",
+          "hash": "557019254540797732"
+        },
+        {
+          "file": "packages/react/src/dialog/utils/DialogContext.ts",
+          "hash": "15850347732115575731"
+        },
+        {
+          "file": "packages/react/src/direction-provider/DirectionContext.tsx",
+          "hash": "1758900935614763261"
+        },
+        {
+          "file": "packages/react/src/direction-provider/DirectionProvider.tsx",
+          "hash": "2782885480961764838"
+        },
+        {
+          "file": "packages/react/src/direction-provider/index.parts.ts",
+          "hash": "15019303487254109173"
+        },
+        {
+          "file": "packages/react/src/direction-provider/index.ts",
+          "hash": "8790131579735773852"
+        },
+        {
+          "file": "packages/react/src/field/control/FieldControl.test.tsx",
+          "hash": "11765971549042769872"
+        },
+        {
+          "file": "packages/react/src/field/control/FieldControl.tsx",
+          "hash": "14373797297948618687"
+        },
+        {
+          "file": "packages/react/src/field/control/FieldControlDataAttributes.ts",
+          "hash": "4363691465576030419"
+        },
+        {
+          "file": "packages/react/src/field/control/useFieldControl.ts",
+          "hash": "11413916593852689221"
+        },
+        {
+          "file": "packages/react/src/field/control/useFieldControlValidation.ts",
+          "hash": "12740286155799411228"
+        },
+        {
+          "file": "packages/react/src/field/description/FieldDescription.test.tsx",
+          "hash": "15384705781212906333"
+        },
+        {
+          "file": "packages/react/src/field/description/FieldDescription.tsx",
+          "hash": "999748947812810504"
+        },
+        {
+          "file": "packages/react/src/field/description/FieldDescriptionDataAttributes.ts",
+          "hash": "13204852328023115602"
+        },
+        {
+          "file": "packages/react/src/field/description/useFieldDescription.ts",
+          "hash": "17264756031963568523"
+        },
+        {
+          "file": "packages/react/src/field/error/FieldError.test.tsx",
+          "hash": "10890573757609332029"
+        },
+        {
+          "file": "packages/react/src/field/error/FieldError.tsx",
+          "hash": "3687882839615910707"
+        },
+        {
+          "file": "packages/react/src/field/error/FieldErrorDataAttributes.ts",
+          "hash": "6132429578056742967"
+        },
+        {
+          "file": "packages/react/src/field/error/useFieldError.ts",
+          "hash": "6149526226754530217"
+        },
+        {
+          "file": "packages/react/src/field/index.parts.ts",
+          "hash": "9524195757466610781"
+        },
+        {
+          "file": "packages/react/src/field/index.ts",
+          "hash": "7399650427743027155"
+        },
+        {
+          "file": "packages/react/src/field/label/FieldLabel.test.tsx",
+          "hash": "16798578652237712321"
+        },
+        {
+          "file": "packages/react/src/field/label/FieldLabel.tsx",
+          "hash": "7285795655482702485"
+        },
+        {
+          "file": "packages/react/src/field/label/FieldLabelDataAttributes.ts",
+          "hash": "17338827048254158613"
+        },
+        {
+          "file": "packages/react/src/field/label/useFieldLabel.ts",
+          "hash": "18082671613341227840"
+        },
+        {
+          "file": "packages/react/src/field/root/FieldRoot.test.tsx",
+          "hash": "15600076032041976023"
+        },
+        {
+          "file": "packages/react/src/field/root/FieldRoot.tsx",
+          "hash": "11079783102046294592"
+        },
+        {
+          "file": "packages/react/src/field/root/FieldRootContext.ts",
+          "hash": "7202104313559146379"
+        },
+        {
+          "file": "packages/react/src/field/root/FieldRootDataAttributes.ts",
+          "hash": "13541901059795200008"
+        },
+        {
+          "file": "packages/react/src/field/useField.ts",
+          "hash": "1604330236772831877"
+        },
+        {
+          "file": "packages/react/src/field/utils/constants.ts",
+          "hash": "12163204217265507788"
+        },
+        {
+          "file": "packages/react/src/field/utils/getCombinedFieldValidityData.ts",
+          "hash": "2705459048457771898"
+        },
+        {
+          "file": "packages/react/src/field/validity/FieldValidity.test.tsx",
+          "hash": "4334000325234409606"
+        },
+        {
+          "file": "packages/react/src/field/validity/FieldValidity.tsx",
+          "hash": "17647602426878590351"
+        },
+        {
+          "file": "packages/react/src/fieldset/index.parts.ts",
+          "hash": "4466388510874608936"
+        },
+        {
+          "file": "packages/react/src/fieldset/index.ts",
+          "hash": "8483421819282104383"
+        },
+        {
+          "file": "packages/react/src/fieldset/legend/FieldsetLegend.test.tsx",
+          "hash": "14083433404011483025"
+        },
+        {
+          "file": "packages/react/src/fieldset/legend/FieldsetLegend.tsx",
+          "hash": "10573230311339875638"
+        },
+        {
+          "file": "packages/react/src/fieldset/legend/useFieldsetLegend.ts",
+          "hash": "6639107309232705577"
+        },
+        {
+          "file": "packages/react/src/fieldset/root/FieldsetRoot.test.tsx",
+          "hash": "5704372302613418186"
+        },
+        {
+          "file": "packages/react/src/fieldset/root/FieldsetRoot.tsx",
+          "hash": "8452113505447183060"
+        },
+        {
+          "file": "packages/react/src/fieldset/root/FieldsetRootContext.ts",
+          "hash": "10380751388208094662"
+        },
+        {
+          "file": "packages/react/src/fieldset/root/useFieldsetRoot.ts",
+          "hash": "13068636247074647411"
+        },
+        {
+          "file": "packages/react/src/form/Form.test.tsx",
+          "hash": "8586047894850214735"
+        },
+        {
+          "file": "packages/react/src/form/Form.tsx",
+          "hash": "15740049074001050068"
+        },
+        {
+          "file": "packages/react/src/form/FormContext.ts",
+          "hash": "6585980548220404347"
+        },
+        {
+          "file": "packages/react/src/form/index.ts",
+          "hash": "1936952045072841081"
+        },
+        {
+          "file": "packages/react/src/global.d.ts",
+          "hash": "16850578744167727143"
+        },
+        {
+          "file": "packages/react/src/index.test.js",
+          "hash": "17351354604333162812"
+        },
+        {
+          "file": "packages/react/src/index.ts",
+          "hash": "121276436390484376"
+        },
+        {
+          "file": "packages/react/src/input/Input.test.tsx",
+          "hash": "191170301397151121"
+        },
+        {
+          "file": "packages/react/src/input/Input.tsx",
+          "hash": "353353272087926531"
+        },
+        {
+          "file": "packages/react/src/input/InputDataAttributes.ts",
+          "hash": "14700510038603531203"
+        },
+        {
+          "file": "packages/react/src/input/index.ts",
+          "hash": "3770040670399285892"
+        },
+        {
+          "file": "packages/react/src/menu/arrow/MenuArrow.test.tsx",
+          "hash": "11819333864037838583"
+        },
+        {
+          "file": "packages/react/src/menu/arrow/MenuArrow.tsx",
+          "hash": "14534764950996160535"
+        },
+        {
+          "file": "packages/react/src/menu/arrow/MenuArrowDataAttributes.ts",
+          "hash": "14877583361435003333"
+        },
+        {
+          "file": "packages/react/src/menu/backdrop/MenuBackdrop.test.tsx",
+          "hash": "18356094296461758889"
+        },
+        {
+          "file": "packages/react/src/menu/backdrop/MenuBackdrop.tsx",
+          "hash": "16800311487959899460"
+        },
+        {
+          "file": "packages/react/src/menu/backdrop/MenuBackdropDataAttributes.ts",
+          "hash": "887164133354251732"
+        },
+        {
+          "file": "packages/react/src/menu/checkbox-item-indicator/MenuCheckboxItemIndicator.test.tsx",
+          "hash": "8348475650370054344"
+        },
+        {
+          "file": "packages/react/src/menu/checkbox-item-indicator/MenuCheckboxItemIndicator.tsx",
+          "hash": "13264370013752233585"
+        },
+        {
+          "file": "packages/react/src/menu/checkbox-item-indicator/MenuCheckboxItemIndicatorDataAttributes.ts",
+          "hash": "12198188189692280467"
+        },
+        {
+          "file": "packages/react/src/menu/checkbox-item/MenuCheckboxItem.test.tsx",
+          "hash": "10656883175477367227"
+        },
+        {
+          "file": "packages/react/src/menu/checkbox-item/MenuCheckboxItem.tsx",
+          "hash": "17531024771671050538"
+        },
+        {
+          "file": "packages/react/src/menu/checkbox-item/MenuCheckboxItemContext.ts",
+          "hash": "16239080543942216753"
+        },
+        {
+          "file": "packages/react/src/menu/checkbox-item/MenuCheckboxItemDataAttributes.ts",
+          "hash": "17758762572906159312"
+        },
+        {
+          "file": "packages/react/src/menu/checkbox-item/useMenuCheckboxItem.ts",
+          "hash": "1422178095532763643"
+        },
+        {
+          "file": "packages/react/src/menu/group-label/MenuGroupLabel.test.tsx",
+          "hash": "3313029022346125076"
+        },
+        {
+          "file": "packages/react/src/menu/group-label/MenuGroupLabel.tsx",
+          "hash": "10262316677106353251"
+        },
+        {
+          "file": "packages/react/src/menu/group/MenuGroup.test.tsx",
+          "hash": "5149221632658667741"
+        },
+        {
+          "file": "packages/react/src/menu/group/MenuGroup.tsx",
+          "hash": "6421778495480890537"
+        },
+        {
+          "file": "packages/react/src/menu/group/MenuGroupContext.ts",
+          "hash": "16897285440856963031"
+        },
+        {
+          "file": "packages/react/src/menu/index.parts.ts",
+          "hash": "7681185968125275497"
+        },
+        {
+          "file": "packages/react/src/menu/index.ts",
+          "hash": "2458991272651766094"
+        },
+        {
+          "file": "packages/react/src/menu/item/MenuItem.test.tsx",
+          "hash": "7914730915046457124"
+        },
+        {
+          "file": "packages/react/src/menu/item/MenuItem.tsx",
+          "hash": "12099591406546087960"
+        },
+        {
+          "file": "packages/react/src/menu/item/useMenuItem.ts",
+          "hash": "8573107102196229098"
+        },
+        {
+          "file": "packages/react/src/menu/popup/MenuPopup.test.tsx",
+          "hash": "12568435580678249042"
+        },
+        {
+          "file": "packages/react/src/menu/popup/MenuPopup.tsx",
+          "hash": "874568641109339749"
+        },
+        {
+          "file": "packages/react/src/menu/popup/MenuPopupDataAttributes.ts",
+          "hash": "2049702611543011546"
+        },
+        {
+          "file": "packages/react/src/menu/popup/useMenuPopup.ts",
+          "hash": "18106708101437035864"
+        },
+        {
+          "file": "packages/react/src/menu/portal/MenuPortal.tsx",
+          "hash": "7794209548979101225"
+        },
+        {
+          "file": "packages/react/src/menu/portal/MenuPortalContext.ts",
+          "hash": "15758460065895364714"
+        },
+        {
+          "file": "packages/react/src/menu/positioner/MenuPositioner.test.tsx",
+          "hash": "906875079728482250"
+        },
+        {
+          "file": "packages/react/src/menu/positioner/MenuPositioner.tsx",
+          "hash": "12913361311187606591"
+        },
+        {
+          "file": "packages/react/src/menu/positioner/MenuPositionerContext.ts",
+          "hash": "10152461361598328856"
+        },
+        {
+          "file": "packages/react/src/menu/positioner/MenuPositionerCssVars.ts",
+          "hash": "10700427767389235113"
+        },
+        {
+          "file": "packages/react/src/menu/positioner/MenuPositionerDataAttributes.ts",
+          "hash": "12550030365145693751"
+        },
+        {
+          "file": "packages/react/src/menu/positioner/useMenuPositioner.ts",
+          "hash": "18386934691157659120"
+        },
+        {
+          "file": "packages/react/src/menu/radio-group/MenuRadioGroup.test.tsx",
+          "hash": "15823309466328811732"
+        },
+        {
+          "file": "packages/react/src/menu/radio-group/MenuRadioGroup.tsx",
+          "hash": "7949745474455984603"
+        },
+        {
+          "file": "packages/react/src/menu/radio-group/MenuRadioGroupContext.ts",
+          "hash": "5067322609595511047"
+        },
+        {
+          "file": "packages/react/src/menu/radio-item-indicator/MenuRadioItemIndicator.test.tsx",
+          "hash": "1541797544548427422"
+        },
+        {
+          "file": "packages/react/src/menu/radio-item-indicator/MenuRadioItemIndicator.tsx",
+          "hash": "16788203276349407123"
+        },
+        {
+          "file": "packages/react/src/menu/radio-item-indicator/MenuRadioItemIndicatorDataAttributes.ts",
+          "hash": "9545196866765813948"
+        },
+        {
+          "file": "packages/react/src/menu/radio-item/MenuRadioItem.test.tsx",
+          "hash": "10819257408161924045"
+        },
+        {
+          "file": "packages/react/src/menu/radio-item/MenuRadioItem.tsx",
+          "hash": "7020027104609533014"
+        },
+        {
+          "file": "packages/react/src/menu/radio-item/MenuRadioItemContext.ts",
+          "hash": "6642754040046514949"
+        },
+        {
+          "file": "packages/react/src/menu/radio-item/MenuRadioItemDataAttributes.ts",
+          "hash": "14408736421788540215"
+        },
+        {
+          "file": "packages/react/src/menu/radio-item/useMenuRadioItem.ts",
+          "hash": "6193674097920661272"
+        },
+        {
+          "file": "packages/react/src/menu/root/MenuRoot.test.tsx",
+          "hash": "14064829321802544574"
+        },
+        {
+          "file": "packages/react/src/menu/root/MenuRoot.tsx",
+          "hash": "3069370291681079130"
+        },
+        {
+          "file": "packages/react/src/menu/root/MenuRootContext.ts",
+          "hash": "11729921055713053501"
+        },
+        {
+          "file": "packages/react/src/menu/root/useMenuRoot.ts",
+          "hash": "708478113690210165"
+        },
+        {
+          "file": "packages/react/src/menu/submenu-trigger/MenuSubmenuTrigger.tsx",
+          "hash": "11872861896008841247"
+        },
+        {
+          "file": "packages/react/src/menu/submenu-trigger/MenuSubmenuTriggerDataAttributes.ts",
+          "hash": "5900521008771934459"
+        },
+        {
+          "file": "packages/react/src/menu/submenu-trigger/useMenuSubmenuTrigger.ts",
+          "hash": "10957610973474088026"
+        },
+        {
+          "file": "packages/react/src/menu/trigger/MenuTrigger.test.tsx",
+          "hash": "14162010654372717776"
+        },
+        {
+          "file": "packages/react/src/menu/trigger/MenuTrigger.tsx",
+          "hash": "13898723680129504134"
+        },
+        {
+          "file": "packages/react/src/menu/trigger/MenuTriggerDataAttributes.ts",
+          "hash": "635830840971004569"
+        },
+        {
+          "file": "packages/react/src/menu/trigger/useMenuTrigger.ts",
+          "hash": "7733225973129300220"
+        },
+        {
+          "file": "packages/react/src/menu/utils/styleHookMapping.ts",
+          "hash": "17656854322877957193"
+        },
+        {
+          "file": "packages/react/src/number-field/decrement/NumberFieldDecrement.test.tsx",
+          "hash": "12325602214358230905"
+        },
+        {
+          "file": "packages/react/src/number-field/decrement/NumberFieldDecrement.tsx",
+          "hash": "11709370496208268594"
+        },
+        {
+          "file": "packages/react/src/number-field/decrement/NumberFieldDecrementDataAttributes.ts",
+          "hash": "16910744724494375369"
+        },
+        {
+          "file": "packages/react/src/number-field/group/NumberFieldGroup.test.tsx",
+          "hash": "6955223043338416106"
+        },
+        {
+          "file": "packages/react/src/number-field/group/NumberFieldGroup.tsx",
+          "hash": "15269315945010048268"
+        },
+        {
+          "file": "packages/react/src/number-field/group/NumberFieldGroupDataAttributes.ts",
+          "hash": "7245519506913199684"
+        },
+        {
+          "file": "packages/react/src/number-field/increment/NumberFieldIncrement.test.tsx",
+          "hash": "10363275506446296826"
+        },
+        {
+          "file": "packages/react/src/number-field/increment/NumberFieldIncrement.tsx",
+          "hash": "16053905453685561924"
+        },
+        {
+          "file": "packages/react/src/number-field/increment/NumberFieldIncrementDataAttributes.ts",
+          "hash": "16093837250552793848"
+        },
+        {
+          "file": "packages/react/src/number-field/index.parts.ts",
+          "hash": "9746059982721080644"
+        },
+        {
+          "file": "packages/react/src/number-field/index.ts",
+          "hash": "14213389320136226684"
+        },
+        {
+          "file": "packages/react/src/number-field/input/NumberFieldInput.test.tsx",
+          "hash": "14375106905392667028"
+        },
+        {
+          "file": "packages/react/src/number-field/input/NumberFieldInput.tsx",
+          "hash": "9059406716413187629"
+        },
+        {
+          "file": "packages/react/src/number-field/input/NumberFieldInputDataAttributes.ts",
+          "hash": "12563497692837379431"
+        },
+        {
+          "file": "packages/react/src/number-field/root/NumberFieldRoot.test.tsx",
+          "hash": "10962527431502460198"
+        },
+        {
+          "file": "packages/react/src/number-field/root/NumberFieldRoot.tsx",
+          "hash": "4772993514269814401"
+        },
+        {
+          "file": "packages/react/src/number-field/root/NumberFieldRootContext.ts",
+          "hash": "7202117436096164737"
+        },
+        {
+          "file": "packages/react/src/number-field/root/NumberFieldRootDataAttributes.ts",
+          "hash": "5993183194332916762"
+        },
+        {
+          "file": "packages/react/src/number-field/root/useNumberFieldRoot.ts",
+          "hash": "9532102931851195492"
+        },
+        {
+          "file": "packages/react/src/number-field/root/useScrub.ts",
+          "hash": "6621500188692283106"
+        },
+        {
+          "file": "packages/react/src/number-field/root/useScrub.types.ts",
+          "hash": "399672722746390351"
+        },
+        {
+          "file": "packages/react/src/number-field/scrub-area-cursor/NumberFieldScrubAreaCursor.test.tsx",
+          "hash": "4715160932432555964"
+        },
+        {
+          "file": "packages/react/src/number-field/scrub-area-cursor/NumberFieldScrubAreaCursor.tsx",
+          "hash": "8796806779394718053"
+        },
+        {
+          "file": "packages/react/src/number-field/scrub-area-cursor/NumberFieldScrubAreaCursorDataAttributes.ts",
+          "hash": "15925491935155776396"
+        },
+        {
+          "file": "packages/react/src/number-field/scrub-area/NumberFieldScrubArea.test.tsx",
+          "hash": "2587432860814188876"
+        },
+        {
+          "file": "packages/react/src/number-field/scrub-area/NumberFieldScrubArea.tsx",
+          "hash": "17134610439159515005"
+        },
+        {
+          "file": "packages/react/src/number-field/scrub-area/NumberFieldScrubAreaDataAttributes.ts",
+          "hash": "11540773646193077147"
+        },
+        {
+          "file": "packages/react/src/number-field/utils/constants.ts",
+          "hash": "14384754588957334332"
+        },
+        {
+          "file": "packages/react/src/number-field/utils/getViewportRect.ts",
+          "hash": "3077589496875113911"
+        },
+        {
+          "file": "packages/react/src/number-field/utils/parse.test.ts",
+          "hash": "7028630621014801278"
+        },
+        {
+          "file": "packages/react/src/number-field/utils/parse.ts",
+          "hash": "13734745411491911899"
+        },
+        {
+          "file": "packages/react/src/number-field/utils/subscribeToVisualViewportResize.ts",
+          "hash": "11390418293483055168"
+        },
+        {
+          "file": "packages/react/src/number-field/utils/validate.test.ts",
+          "hash": "17491827379602564587"
+        },
+        {
+          "file": "packages/react/src/number-field/utils/validate.ts",
+          "hash": "9998212836061227085"
+        },
+        {
+          "file": "packages/react/src/popover/arrow/PopoverArrow.test.tsx",
+          "hash": "904585017268895599"
+        },
+        {
+          "file": "packages/react/src/popover/arrow/PopoverArrow.tsx",
+          "hash": "1180484657256330648"
+        },
+        {
+          "file": "packages/react/src/popover/arrow/PopoverArrowDataAttributes.ts",
+          "hash": "6136342698845913867"
+        },
+        {
+          "file": "packages/react/src/popover/backdrop/PopoverBackdrop.test.tsx",
+          "hash": "5398952633593228120"
+        },
+        {
+          "file": "packages/react/src/popover/backdrop/PopoverBackdrop.tsx",
+          "hash": "17333695068171342254"
+        },
+        {
+          "file": "packages/react/src/popover/backdrop/PopoverBackdropDataAttributes.ts",
+          "hash": "16317456905414291556"
+        },
+        {
+          "file": "packages/react/src/popover/close/PopoverClose.test.tsx",
+          "hash": "2646491539876386199"
+        },
+        {
+          "file": "packages/react/src/popover/close/PopoverClose.tsx",
+          "hash": "8665096975309081159"
+        },
+        {
+          "file": "packages/react/src/popover/close/usePopoverClose.ts",
+          "hash": "11371409007285312237"
+        },
+        {
+          "file": "packages/react/src/popover/description/PopoverDescription.test.tsx",
+          "hash": "11938538240743590548"
+        },
+        {
+          "file": "packages/react/src/popover/description/PopoverDescription.tsx",
+          "hash": "11761271735026129685"
+        },
+        {
+          "file": "packages/react/src/popover/description/usePopoverDescription.ts",
+          "hash": "13648700496918597106"
+        },
+        {
+          "file": "packages/react/src/popover/index.parts.ts",
+          "hash": "17535784972807018095"
+        },
+        {
+          "file": "packages/react/src/popover/index.ts",
+          "hash": "9039811725284939743"
+        },
+        {
+          "file": "packages/react/src/popover/popup/PopoverPopup.test.tsx",
+          "hash": "7081090965634551452"
+        },
+        {
+          "file": "packages/react/src/popover/popup/PopoverPopup.tsx",
+          "hash": "7493287258882100402"
+        },
+        {
+          "file": "packages/react/src/popover/popup/PopoverPopupDataAttributes.ts",
+          "hash": "10459420238248987335"
+        },
+        {
+          "file": "packages/react/src/popover/popup/usePopoverPopup.ts",
+          "hash": "3554943308444906959"
+        },
+        {
+          "file": "packages/react/src/popover/portal/PopoverPortal.tsx",
+          "hash": "4704214805393100805"
+        },
+        {
+          "file": "packages/react/src/popover/portal/PopoverPortalContext.ts",
+          "hash": "13100923872418910365"
+        },
+        {
+          "file": "packages/react/src/popover/positioner/PopoverPositioner.test.tsx",
+          "hash": "2664041858889505473"
+        },
+        {
+          "file": "packages/react/src/popover/positioner/PopoverPositioner.tsx",
+          "hash": "4543637354752806967"
+        },
+        {
+          "file": "packages/react/src/popover/positioner/PopoverPositionerContext.ts",
+          "hash": "7163316516703086340"
+        },
+        {
+          "file": "packages/react/src/popover/positioner/PopoverPositionerCssVars.ts",
+          "hash": "2455727101439895376"
+        },
+        {
+          "file": "packages/react/src/popover/positioner/PopoverPositionerDataAttributes.ts",
+          "hash": "6202731570308200646"
+        },
+        {
+          "file": "packages/react/src/popover/positioner/usePopoverPositioner.tsx",
+          "hash": "12721784841213813290"
+        },
+        {
+          "file": "packages/react/src/popover/root/PopoverRoot.test.tsx",
+          "hash": "12209697859745031002"
+        },
+        {
+          "file": "packages/react/src/popover/root/PopoverRoot.tsx",
+          "hash": "15034216052273499749"
+        },
+        {
+          "file": "packages/react/src/popover/root/PopoverRootContext.ts",
+          "hash": "11924633341357537573"
+        },
+        {
+          "file": "packages/react/src/popover/root/usePopoverRoot.ts",
+          "hash": "8656142677993681545"
+        },
+        {
+          "file": "packages/react/src/popover/title/PopoverTitle.test.tsx",
+          "hash": "13960611205948841306"
+        },
+        {
+          "file": "packages/react/src/popover/title/PopoverTitle.tsx",
+          "hash": "3167904083116549091"
+        },
+        {
+          "file": "packages/react/src/popover/title/usePopoverTitle.ts",
+          "hash": "16631642998470617396"
+        },
+        {
+          "file": "packages/react/src/popover/trigger/PopoverTrigger.test.tsx",
+          "hash": "4803128000457568247"
+        },
+        {
+          "file": "packages/react/src/popover/trigger/PopoverTrigger.tsx",
+          "hash": "8761154980185854224"
+        },
+        {
+          "file": "packages/react/src/popover/trigger/PopoverTriggerDataAttributes.ts",
+          "hash": "6601864717853284446"
+        },
+        {
+          "file": "packages/react/src/popover/utils/constants.ts",
+          "hash": "1256598090049391774"
+        },
+        {
+          "file": "packages/react/src/preview-card/arrow/PreviewCardArrow.test.tsx",
+          "hash": "2460644145982407555"
+        },
+        {
+          "file": "packages/react/src/preview-card/arrow/PreviewCardArrow.tsx",
+          "hash": "11714545502287966951"
+        },
+        {
+          "file": "packages/react/src/preview-card/arrow/PreviewCardArrowDataAttributes.ts",
+          "hash": "3682661630369726816"
+        },
+        {
+          "file": "packages/react/src/preview-card/backdrop/PreviewCardBackdrop.test.tsx",
+          "hash": "10621430201658823059"
+        },
+        {
+          "file": "packages/react/src/preview-card/backdrop/PreviewCardBackdrop.tsx",
+          "hash": "13086046117655210081"
+        },
+        {
+          "file": "packages/react/src/preview-card/backdrop/PreviewCardBackdropDataAttributes.ts",
+          "hash": "15961811625761699712"
+        },
+        {
+          "file": "packages/react/src/preview-card/index.parts.ts",
+          "hash": "12966826106877504647"
+        },
+        {
+          "file": "packages/react/src/preview-card/index.ts",
+          "hash": "8155202468963039317"
+        },
+        {
+          "file": "packages/react/src/preview-card/popup/PreviewCardPopup.test.tsx",
+          "hash": "16415252915518742727"
+        },
+        {
+          "file": "packages/react/src/preview-card/popup/PreviewCardPopup.tsx",
+          "hash": "12392307619796262799"
+        },
+        {
+          "file": "packages/react/src/preview-card/popup/PreviewCardPopupDataAttributes.ts",
+          "hash": "7044114273960055604"
+        },
+        {
+          "file": "packages/react/src/preview-card/popup/usePreviewCardPopup.ts",
+          "hash": "2422433653947301377"
+        },
+        {
+          "file": "packages/react/src/preview-card/portal/PreviewCardPortal.tsx",
+          "hash": "13228340702388986532"
+        },
+        {
+          "file": "packages/react/src/preview-card/portal/PreviewCardPortalContext.ts",
+          "hash": "7057815455315796349"
+        },
+        {
+          "file": "packages/react/src/preview-card/positioner/PreviewCardPositioner.test.tsx",
+          "hash": "498718977967064946"
+        },
+        {
+          "file": "packages/react/src/preview-card/positioner/PreviewCardPositioner.tsx",
+          "hash": "3940711033494334888"
+        },
+        {
+          "file": "packages/react/src/preview-card/positioner/PreviewCardPositionerContext.ts",
+          "hash": "7942762259353708202"
+        },
+        {
+          "file": "packages/react/src/preview-card/positioner/PreviewCardPositionerCssVars.ts",
+          "hash": "2145767660139850363"
+        },
+        {
+          "file": "packages/react/src/preview-card/positioner/PreviewCardPositionerDataAttributes.ts",
+          "hash": "7112231190247096227"
+        },
+        {
+          "file": "packages/react/src/preview-card/positioner/usePreviewCardPositioner.ts",
+          "hash": "16198146330857786608"
+        },
+        {
+          "file": "packages/react/src/preview-card/root/PreviewCardContext.ts",
+          "hash": "7292043607532810918"
+        },
+        {
+          "file": "packages/react/src/preview-card/root/PreviewCardRoot.test.tsx",
+          "hash": "7849712157700851014"
+        },
+        {
+          "file": "packages/react/src/preview-card/root/PreviewCardRoot.tsx",
+          "hash": "7429027494111814611"
+        },
+        {
+          "file": "packages/react/src/preview-card/root/usePreviewCardRoot.ts",
+          "hash": "878619001729561377"
+        },
+        {
+          "file": "packages/react/src/preview-card/trigger/PreviewCardTrigger.test.tsx",
+          "hash": "1022947082043459407"
+        },
+        {
+          "file": "packages/react/src/preview-card/trigger/PreviewCardTrigger.tsx",
+          "hash": "14839067314361652883"
+        },
+        {
+          "file": "packages/react/src/preview-card/trigger/PreviewCardTriggerDataAttributes.ts",
+          "hash": "13479719042875621625"
+        },
+        {
+          "file": "packages/react/src/preview-card/utils/constants.ts",
+          "hash": "16677963536339489514"
+        },
+        {
+          "file": "packages/react/src/preview-card/utils/useFocusExtended.ts",
+          "hash": "1342694949896752959"
+        },
+        {
+          "file": "packages/react/src/progress/index.parts.ts",
+          "hash": "10967797816126556152"
+        },
+        {
+          "file": "packages/react/src/progress/index.ts",
+          "hash": "15102710704503678179"
+        },
+        {
+          "file": "packages/react/src/progress/indicator/ProgressIndicator.test.tsx",
+          "hash": "15508244222738963245"
+        },
+        {
+          "file": "packages/react/src/progress/indicator/ProgressIndicator.tsx",
+          "hash": "3188024873202604992"
+        },
+        {
+          "file": "packages/react/src/progress/indicator/ProgressIndicatorDataAttributes.ts",
+          "hash": "9775105713197151471"
+        },
+        {
+          "file": "packages/react/src/progress/indicator/useProgressIndicator.ts",
+          "hash": "4417689914230412875"
+        },
+        {
+          "file": "packages/react/src/progress/root/ProgressRoot.test.tsx",
+          "hash": "3082493845197532587"
+        },
+        {
+          "file": "packages/react/src/progress/root/ProgressRoot.tsx",
+          "hash": "16073272980328950600"
+        },
+        {
+          "file": "packages/react/src/progress/root/ProgressRootContext.tsx",
+          "hash": "17145333681433054286"
+        },
+        {
+          "file": "packages/react/src/progress/root/ProgressRootDataAttributes.ts",
+          "hash": "17072464914674611026"
+        },
+        {
+          "file": "packages/react/src/progress/root/styleHooks.ts",
+          "hash": "8407016942247653867"
+        },
+        {
+          "file": "packages/react/src/progress/root/useProgressRoot.ts",
+          "hash": "11696606054717543819"
+        },
+        {
+          "file": "packages/react/src/progress/track/ProgressTrack.test.tsx",
+          "hash": "7070407689754982519"
+        },
+        {
+          "file": "packages/react/src/progress/track/ProgressTrack.tsx",
+          "hash": "17491786160438995406"
+        },
+        {
+          "file": "packages/react/src/progress/track/ProgressTrackDataAttributes.ts",
+          "hash": "12742058443536521173"
+        },
+        {
+          "file": "packages/react/src/radio-group/RadioGroup.test.tsx",
+          "hash": "8635199417650308908"
+        },
+        {
+          "file": "packages/react/src/radio-group/RadioGroup.tsx",
+          "hash": "6916897970049652981"
+        },
+        {
+          "file": "packages/react/src/radio-group/RadioGroupContext.ts",
+          "hash": "1588366312753790231"
+        },
+        {
+          "file": "packages/react/src/radio-group/RadioGroupDataAttributes.ts",
+          "hash": "15577790262698076452"
+        },
+        {
+          "file": "packages/react/src/radio-group/index.ts",
+          "hash": "6764743295430035975"
+        },
+        {
+          "file": "packages/react/src/radio-group/useRadioGroup.ts",
+          "hash": "5887891331816555299"
+        },
+        {
+          "file": "packages/react/src/radio/index.parts.ts",
+          "hash": "6712182462932991676"
+        },
+        {
+          "file": "packages/react/src/radio/index.ts",
+          "hash": "18340511549357745017"
+        },
+        {
+          "file": "packages/react/src/radio/indicator/RadioIndicator.test.tsx",
+          "hash": "14633436061032267284"
+        },
+        {
+          "file": "packages/react/src/radio/indicator/RadioIndicator.tsx",
+          "hash": "17458136756671907522"
+        },
+        {
+          "file": "packages/react/src/radio/indicator/RadioIndicatorDataAttributes.ts",
+          "hash": "9420181842625399597"
+        },
+        {
+          "file": "packages/react/src/radio/root/RadioRoot.test.tsx",
+          "hash": "11742644587745958831"
+        },
+        {
+          "file": "packages/react/src/radio/root/RadioRoot.tsx",
+          "hash": "3877311227461980228"
+        },
+        {
+          "file": "packages/react/src/radio/root/RadioRootContext.ts",
+          "hash": "593857682495223093"
+        },
+        {
+          "file": "packages/react/src/radio/root/RadioRootDataAttributes.ts",
+          "hash": "3255075263883273934"
+        },
+        {
+          "file": "packages/react/src/radio/root/useRadioRoot.tsx",
+          "hash": "15408045164946921422"
+        },
+        {
+          "file": "packages/react/src/radio/utils/customStyleHookMapping.ts",
+          "hash": "14482060937383748991"
+        },
+        {
+          "file": "packages/react/src/scroll-area/constants.ts",
+          "hash": "9675009829229930941"
+        },
+        {
+          "file": "packages/react/src/scroll-area/corner/ScrollAreaCorner.test.tsx",
+          "hash": "1216272822928635408"
+        },
+        {
+          "file": "packages/react/src/scroll-area/corner/ScrollAreaCorner.tsx",
+          "hash": "14363061307561089663"
+        },
+        {
+          "file": "packages/react/src/scroll-area/index.parts.ts",
+          "hash": "543701417535707432"
+        },
+        {
+          "file": "packages/react/src/scroll-area/index.ts",
+          "hash": "14488709285542774211"
+        },
+        {
+          "file": "packages/react/src/scroll-area/root/ScrollAreaRoot.test.tsx",
+          "hash": "9206809975284699288"
+        },
+        {
+          "file": "packages/react/src/scroll-area/root/ScrollAreaRoot.tsx",
+          "hash": "9228240609781662505"
+        },
+        {
+          "file": "packages/react/src/scroll-area/root/ScrollAreaRootContext.ts",
+          "hash": "655081382471970541"
+        },
+        {
+          "file": "packages/react/src/scroll-area/root/ScrollAreaRootCssVars.ts",
+          "hash": "14591390955732186069"
+        },
+        {
+          "file": "packages/react/src/scroll-area/root/useScrollAreaRoot.ts",
+          "hash": "1966648026790046435"
+        },
+        {
+          "file": "packages/react/src/scroll-area/scrollbar/ScrollAreaScrollbar.test.tsx",
+          "hash": "8781207713763329525"
+        },
+        {
+          "file": "packages/react/src/scroll-area/scrollbar/ScrollAreaScrollbar.tsx",
+          "hash": "15085005528454275268"
+        },
+        {
+          "file": "packages/react/src/scroll-area/scrollbar/ScrollAreaScrollbarContext.ts",
+          "hash": "16620595756249218658"
+        },
+        {
+          "file": "packages/react/src/scroll-area/scrollbar/ScrollAreaScrollbarCssVars.ts",
+          "hash": "13037357961254112829"
+        },
+        {
+          "file": "packages/react/src/scroll-area/scrollbar/ScrollAreaScrollbarDataAttributes.ts",
+          "hash": "887553601406515635"
+        },
+        {
+          "file": "packages/react/src/scroll-area/scrollbar/useScrollAreaScrollbar.ts",
+          "hash": "1626740756048334720"
+        },
+        {
+          "file": "packages/react/src/scroll-area/thumb/ScrollAreaThumb.test.tsx",
+          "hash": "8167434056850198891"
+        },
+        {
+          "file": "packages/react/src/scroll-area/thumb/ScrollAreaThumb.tsx",
+          "hash": "5051391662763360750"
+        },
+        {
+          "file": "packages/react/src/scroll-area/thumb/ScrollAreaThumbDataAttributes.ts",
+          "hash": "17572242898474948348"
+        },
+        {
+          "file": "packages/react/src/scroll-area/utils/getOffset.ts",
+          "hash": "15975893319600978243"
+        },
+        {
+          "file": "packages/react/src/scroll-area/viewport/ScrollAreaViewport.test.tsx",
+          "hash": "8794810976466476331"
+        },
+        {
+          "file": "packages/react/src/scroll-area/viewport/ScrollAreaViewport.tsx",
+          "hash": "6451643053955265524"
+        },
+        {
+          "file": "packages/react/src/scroll-area/viewport/useScrollAreaViewport.tsx",
+          "hash": "17145944224475777509"
+        },
+        {
+          "file": "packages/react/src/select/arrow/SelectArrow.test.tsx",
+          "hash": "18180086268519966534"
+        },
+        {
+          "file": "packages/react/src/select/arrow/SelectArrow.tsx",
+          "hash": "2630891521301758556"
+        },
+        {
+          "file": "packages/react/src/select/arrow/SelectArrowDataAttributes.ts",
+          "hash": "11904172620033610466"
+        },
+        {
+          "file": "packages/react/src/select/backdrop/SelectBackdrop.test.tsx",
+          "hash": "17827057515743092637"
+        },
+        {
+          "file": "packages/react/src/select/backdrop/SelectBackdrop.tsx",
+          "hash": "7619790054174528786"
+        },
+        {
+          "file": "packages/react/src/select/backdrop/SelectBackdropDataAttributes.ts",
+          "hash": "14225737240085616955"
+        },
+        {
+          "file": "packages/react/src/select/group-label/SelectGroupLabel.test.tsx",
+          "hash": "17858004524305383083"
+        },
+        {
+          "file": "packages/react/src/select/group-label/SelectGroupLabel.tsx",
+          "hash": "15593306359150189938"
+        },
+        {
+          "file": "packages/react/src/select/group/SelectGroup.test.tsx",
+          "hash": "9095520510885432745"
+        },
+        {
+          "file": "packages/react/src/select/group/SelectGroup.tsx",
+          "hash": "7804596878966629521"
+        },
+        {
+          "file": "packages/react/src/select/group/SelectGroupContext.ts",
+          "hash": "13988326039669227169"
+        },
+        {
+          "file": "packages/react/src/select/icon/SelectIcon.test.tsx",
+          "hash": "13567907285690716929"
+        },
+        {
+          "file": "packages/react/src/select/icon/SelectIcon.tsx",
+          "hash": "259857185645955534"
+        },
+        {
+          "file": "packages/react/src/select/index.parts.ts",
+          "hash": "11279922609405672271"
+        },
+        {
+          "file": "packages/react/src/select/index.ts",
+          "hash": "14269361393075954489"
+        },
+        {
+          "file": "packages/react/src/select/item-indicator/SelectItemIndicator.test.tsx",
+          "hash": "4537005981286519400"
+        },
+        {
+          "file": "packages/react/src/select/item-indicator/SelectItemIndicator.tsx",
+          "hash": "11883840334370402701"
+        },
+        {
+          "file": "packages/react/src/select/item-text/SelectItemText.test.tsx",
+          "hash": "7274257314593464323"
+        },
+        {
+          "file": "packages/react/src/select/item-text/SelectItemText.tsx",
+          "hash": "12442989898958430846"
+        },
+        {
+          "file": "packages/react/src/select/item/SelectItem.test.tsx",
+          "hash": "9112326502574543930"
+        },
+        {
+          "file": "packages/react/src/select/item/SelectItem.tsx",
+          "hash": "6620677493141803168"
+        },
+        {
+          "file": "packages/react/src/select/item/SelectItemContext.ts",
+          "hash": "10719958599178045255"
+        },
+        {
+          "file": "packages/react/src/select/item/useSelectItem.ts",
+          "hash": "15753435998537669893"
+        },
+        {
+          "file": "packages/react/src/select/popup/SelectPopup.test.tsx",
+          "hash": "3096401191215688475"
+        },
+        {
+          "file": "packages/react/src/select/popup/SelectPopup.tsx",
+          "hash": "6673698452872634350"
+        },
+        {
+          "file": "packages/react/src/select/popup/SelectPopupDataAttributes.ts",
+          "hash": "9007431787959160823"
+        },
+        {
+          "file": "packages/react/src/select/popup/useSelectPopup.ts",
+          "hash": "1514010196445692310"
+        },
+        {
+          "file": "packages/react/src/select/popup/utils.ts",
+          "hash": "16137459515470633778"
+        },
+        {
+          "file": "packages/react/src/select/portal/SelectPortal.tsx",
+          "hash": "13576735276150848485"
+        },
+        {
+          "file": "packages/react/src/select/portal/SelectPortalContext.ts",
+          "hash": "10554910688565081098"
+        },
+        {
+          "file": "packages/react/src/select/positioner/SelectPositioner.test.tsx",
+          "hash": "549214306134626912"
+        },
+        {
+          "file": "packages/react/src/select/positioner/SelectPositioner.tsx",
+          "hash": "16070882571832092300"
+        },
+        {
+          "file": "packages/react/src/select/positioner/SelectPositionerContext.ts",
+          "hash": "8233703549636675969"
+        },
+        {
+          "file": "packages/react/src/select/positioner/SelectPositionerCssVars.ts",
+          "hash": "4327249049985612738"
+        },
+        {
+          "file": "packages/react/src/select/positioner/SelectPositionerDataAttributes.ts",
+          "hash": "1920620627852050277"
+        },
+        {
+          "file": "packages/react/src/select/positioner/useSelectPositioner.ts",
+          "hash": "12968186727685124803"
+        },
+        {
+          "file": "packages/react/src/select/root/SelectIndexContext.ts",
+          "hash": "18260598161328634198"
+        },
+        {
+          "file": "packages/react/src/select/root/SelectRoot.test.tsx",
+          "hash": "15408161278792148181"
+        },
+        {
+          "file": "packages/react/src/select/root/SelectRoot.tsx",
+          "hash": "3885080551186363722"
+        },
+        {
+          "file": "packages/react/src/select/root/SelectRootContext.ts",
+          "hash": "11822368086206561030"
+        },
+        {
+          "file": "packages/react/src/select/root/useSelectRoot.ts",
+          "hash": "14862962611092731607"
+        },
+        {
+          "file": "packages/react/src/select/scroll-arrow/SelectScrollArrow.tsx",
+          "hash": "17039624182909777364"
+        },
+        {
+          "file": "packages/react/src/select/scroll-arrow/SelectScrollArrowDataAttributes.ts",
+          "hash": "12230433965124880388"
+        },
+        {
+          "file": "packages/react/src/select/scroll-down-arrow/SelectScrollDownArrow.test.tsx",
+          "hash": "6718312178790911892"
+        },
+        {
+          "file": "packages/react/src/select/scroll-down-arrow/SelectScrollDownArrow.tsx",
+          "hash": "1323329153497658170"
+        },
+        {
+          "file": "packages/react/src/select/scroll-down-arrow/SelectScrollDownArrowDataAttributes.ts",
+          "hash": "11572153291338430055"
+        },
+        {
+          "file": "packages/react/src/select/scroll-up-arrow/SelectScrollUpArrow.test.tsx",
+          "hash": "6718312178790911892"
+        },
+        {
+          "file": "packages/react/src/select/scroll-up-arrow/SelectScrollUpArrow.tsx",
+          "hash": "14977677371146843623"
+        },
+        {
+          "file": "packages/react/src/select/scroll-up-arrow/SelectScrollUpArrowDataAttributes.ts",
+          "hash": "509070265523267036"
+        },
+        {
+          "file": "packages/react/src/select/trigger/SelectTrigger.test.tsx",
+          "hash": "1115648797277449058"
+        },
+        {
+          "file": "packages/react/src/select/trigger/SelectTrigger.tsx",
+          "hash": "4624355853935863676"
+        },
+        {
+          "file": "packages/react/src/select/trigger/SelectTriggerDataAttributes.ts",
+          "hash": "15206115730377962181"
+        },
+        {
+          "file": "packages/react/src/select/trigger/useSelectTrigger.ts",
+          "hash": "5945930574195824878"
+        },
+        {
+          "file": "packages/react/src/select/value/SelectValue.tsx",
+          "hash": "3785928429741538497"
+        },
+        {
+          "file": "packages/react/src/separator/Separator.test.tsx",
+          "hash": "13416070234010803974"
+        },
+        {
+          "file": "packages/react/src/separator/Separator.tsx",
+          "hash": "8513625016624891100"
+        },
+        {
+          "file": "packages/react/src/separator/index.ts",
+          "hash": "9976387318833138619"
+        },
+        {
+          "file": "packages/react/src/slider/control/SliderControl.test.tsx",
+          "hash": "7836312067139366717"
+        },
+        {
+          "file": "packages/react/src/slider/control/SliderControl.tsx",
+          "hash": "17437905247331287054"
+        },
+        {
+          "file": "packages/react/src/slider/control/SliderControlDataAttributes.ts",
+          "hash": "17478193559980287998"
+        },
+        {
+          "file": "packages/react/src/slider/control/useSliderControl.ts",
+          "hash": "7146824265261055060"
+        },
+        {
+          "file": "packages/react/src/slider/index.parts.ts",
+          "hash": "16594237944399027787"
+        },
+        {
+          "file": "packages/react/src/slider/index.ts",
+          "hash": "6105646566096736449"
+        },
+        {
+          "file": "packages/react/src/slider/indicator/SliderIndicator.test.tsx",
+          "hash": "12109407392426361702"
+        },
+        {
+          "file": "packages/react/src/slider/indicator/SliderIndicator.tsx",
+          "hash": "898838258773120214"
+        },
+        {
+          "file": "packages/react/src/slider/indicator/SliderIndicatorDataAttributes.ts",
+          "hash": "347465662402138234"
+        },
+        {
+          "file": "packages/react/src/slider/indicator/useSliderIndicator.ts",
+          "hash": "17390497263306911792"
+        },
+        {
+          "file": "packages/react/src/slider/root/SliderRoot.test.tsx",
+          "hash": "12344239828927166500"
+        },
+        {
+          "file": "packages/react/src/slider/root/SliderRoot.tsx",
+          "hash": "3191085918043127274"
+        },
+        {
+          "file": "packages/react/src/slider/root/SliderRootContext.ts",
+          "hash": "4625004215180811488"
+        },
+        {
+          "file": "packages/react/src/slider/root/SliderRootDataAttributes.ts",
+          "hash": "10386915605138565470"
+        },
+        {
+          "file": "packages/react/src/slider/root/styleHooks.ts",
+          "hash": "1071280512380415600"
+        },
+        {
+          "file": "packages/react/src/slider/root/useSliderRoot.ts",
+          "hash": "10583472769906588567"
+        },
+        {
+          "file": "packages/react/src/slider/thumb/SliderThumb.test.tsx",
+          "hash": "9144204630872319521"
+        },
+        {
+          "file": "packages/react/src/slider/thumb/SliderThumb.tsx",
+          "hash": "15026610670829552765"
+        },
+        {
+          "file": "packages/react/src/slider/thumb/SliderThumbDataAttributes.ts",
+          "hash": "12891870098228892565"
+        },
+        {
+          "file": "packages/react/src/slider/thumb/useSliderThumb.ts",
+          "hash": "7478870954049469950"
+        },
+        {
+          "file": "packages/react/src/slider/track/SliderTrack.test.tsx",
+          "hash": "5849014825554592808"
+        },
+        {
+          "file": "packages/react/src/slider/track/SliderTrack.tsx",
+          "hash": "14102636024009173824"
+        },
+        {
+          "file": "packages/react/src/slider/track/SliderTrackDataAttributes.ts",
+          "hash": "1381130543486999243"
+        },
+        {
+          "file": "packages/react/src/slider/utils/asc.ts",
+          "hash": "16555395133381706465"
+        },
+        {
+          "file": "packages/react/src/slider/utils/getSliderValue.ts",
+          "hash": "17963834875340705375"
+        },
+        {
+          "file": "packages/react/src/slider/utils/replaceArrayItemAtIndex.ts",
+          "hash": "17273928295805710663"
+        },
+        {
+          "file": "packages/react/src/slider/utils/roundValueToStep.ts",
+          "hash": "11146352691204682279"
+        },
+        {
+          "file": "packages/react/src/slider/value/SliderValue.test.tsx",
+          "hash": "5098523373091073746"
+        },
+        {
+          "file": "packages/react/src/slider/value/SliderValue.tsx",
+          "hash": "2894093918033989609"
+        },
+        {
+          "file": "packages/react/src/slider/value/SliderValueDataAttributes.ts",
+          "hash": "2075180731395392485"
+        },
+        {
+          "file": "packages/react/src/slider/value/useSliderValue.ts",
+          "hash": "13499882265285021693"
+        },
+        {
+          "file": "packages/react/src/switch/index.parts.ts",
+          "hash": "11352513791648738893"
+        },
+        {
+          "file": "packages/react/src/switch/index.ts",
+          "hash": "4634668882007004697"
+        },
+        {
+          "file": "packages/react/src/switch/root/SwitchRoot.test.tsx",
+          "hash": "13761349336612115896"
+        },
+        {
+          "file": "packages/react/src/switch/root/SwitchRoot.tsx",
+          "hash": "1039258176539173951"
+        },
+        {
+          "file": "packages/react/src/switch/root/SwitchRootContext.ts",
+          "hash": "9079752842254127469"
+        },
+        {
+          "file": "packages/react/src/switch/root/SwitchRootDataAttributes.ts",
+          "hash": "2746057063110644231"
+        },
+        {
+          "file": "packages/react/src/switch/root/useSwitchRoot.ts",
+          "hash": "8613453507526488655"
+        },
+        {
+          "file": "packages/react/src/switch/styleHooks.ts",
+          "hash": "13535460144679938812"
+        },
+        {
+          "file": "packages/react/src/switch/thumb/SwitchThumb.test.tsx",
+          "hash": "17374850436878621069"
+        },
+        {
+          "file": "packages/react/src/switch/thumb/SwitchThumb.tsx",
+          "hash": "12957565726496710853"
+        },
+        {
+          "file": "packages/react/src/switch/thumb/SwitchThumbDataAttributes.ts",
+          "hash": "14780663564735197823"
+        },
+        {
+          "file": "packages/react/src/tabs/index.parts.ts",
+          "hash": "1492320823744596920"
+        },
+        {
+          "file": "packages/react/src/tabs/index.ts",
+          "hash": "3170386915274769658"
+        },
+        {
+          "file": "packages/react/src/tabs/indicator/TabsIndicator.test.tsx",
+          "hash": "11229599380847039022"
+        },
+        {
+          "file": "packages/react/src/tabs/indicator/TabsIndicator.tsx",
+          "hash": "14911034139336154975"
+        },
+        {
+          "file": "packages/react/src/tabs/indicator/TabsIndicatorCssVars.ts",
+          "hash": "14041032988039137864"
+        },
+        {
+          "file": "packages/react/src/tabs/indicator/TabsIndicatorDataAttributes.ts",
+          "hash": "1236836972985863435"
+        },
+        {
+          "file": "packages/react/src/tabs/indicator/prehydrationScript.min.ts",
+          "hash": "8599043125502653295"
+        },
+        {
+          "file": "packages/react/src/tabs/indicator/prehydrationScript.template.js",
+          "hash": "10694825550374199576"
+        },
+        {
+          "file": "packages/react/src/tabs/indicator/useTabsIndicator.ts",
+          "hash": "7354875066857993680"
+        },
+        {
+          "file": "packages/react/src/tabs/list/TabsList.test.tsx",
+          "hash": "17083223928487935812"
+        },
+        {
+          "file": "packages/react/src/tabs/list/TabsList.tsx",
+          "hash": "6436567633721770821"
+        },
+        {
+          "file": "packages/react/src/tabs/list/TabsListContext.ts",
+          "hash": "9746552706942592251"
+        },
+        {
+          "file": "packages/react/src/tabs/list/TabsListDataAttributes.ts",
+          "hash": "5699456138553900064"
+        },
+        {
+          "file": "packages/react/src/tabs/list/useTabsList.ts",
+          "hash": "7504753378354908762"
+        },
+        {
+          "file": "packages/react/src/tabs/panel/TabsPanel.test.tsx",
+          "hash": "11579142603635905865"
+        },
+        {
+          "file": "packages/react/src/tabs/panel/TabsPanel.tsx",
+          "hash": "4769443446346272162"
+        },
+        {
+          "file": "packages/react/src/tabs/panel/TabsPanelDataAttributes.ts",
+          "hash": "14745583307300222611"
+        },
+        {
+          "file": "packages/react/src/tabs/panel/useTabsPanel.ts",
+          "hash": "16265992305483053024"
+        },
+        {
+          "file": "packages/react/src/tabs/root/TabsRoot.test.tsx",
+          "hash": "17122848968679933794"
+        },
+        {
+          "file": "packages/react/src/tabs/root/TabsRoot.tsx",
+          "hash": "10929859515114410630"
+        },
+        {
+          "file": "packages/react/src/tabs/root/TabsRootContext.ts",
+          "hash": "14376485141891429588"
+        },
+        {
+          "file": "packages/react/src/tabs/root/TabsRootDataAttributes.ts",
+          "hash": "7318018878180098645"
+        },
+        {
+          "file": "packages/react/src/tabs/root/styleHooks.ts",
+          "hash": "11460096238100217772"
+        },
+        {
+          "file": "packages/react/src/tabs/root/useTabsRoot.ts",
+          "hash": "1310454916903120873"
+        },
+        {
+          "file": "packages/react/src/tabs/tab/TabsTab.test.tsx",
+          "hash": "8793857717475126980"
+        },
+        {
+          "file": "packages/react/src/tabs/tab/TabsTab.tsx",
+          "hash": "2877146451308041066"
+        },
+        {
+          "file": "packages/react/src/tabs/tab/TabsTabDataAttributes.ts",
+          "hash": "7628979246720199205"
+        },
+        {
+          "file": "packages/react/src/tabs/tab/useTabsTab.ts",
+          "hash": "6784749314993091534"
+        },
+        {
+          "file": "packages/react/src/toggle-group/ToggleGroup.test.tsx",
+          "hash": "7784348334824869489"
+        },
+        {
+          "file": "packages/react/src/toggle-group/ToggleGroup.tsx",
+          "hash": "11146093463982489052"
+        },
+        {
+          "file": "packages/react/src/toggle-group/ToggleGroupContext.ts",
+          "hash": "11636619124756442783"
+        },
+        {
+          "file": "packages/react/src/toggle-group/ToggleGroupDataAttributes.ts",
+          "hash": "1106135478829802963"
+        },
+        {
+          "file": "packages/react/src/toggle-group/index.ts",
+          "hash": "9461053542218929485"
+        },
+        {
+          "file": "packages/react/src/toggle-group/useToggleGroup.ts",
+          "hash": "8412878585364807499"
+        },
+        {
+          "file": "packages/react/src/toggle/Toggle.test.tsx",
+          "hash": "17173000626883508091"
+        },
+        {
+          "file": "packages/react/src/toggle/Toggle.tsx",
+          "hash": "9020450801974804931"
+        },
+        {
+          "file": "packages/react/src/toggle/ToggleDataAttributes.ts",
+          "hash": "12899434526124101755"
+        },
+        {
+          "file": "packages/react/src/toggle/index.ts",
+          "hash": "7451836165038432653"
+        },
+        {
+          "file": "packages/react/src/toggle/useToggle.ts",
+          "hash": "10431298881572915615"
+        },
+        {
+          "file": "packages/react/src/tooltip/arrow/TooltipArrow.test.tsx",
+          "hash": "17830526761195797487"
+        },
+        {
+          "file": "packages/react/src/tooltip/arrow/TooltipArrow.tsx",
+          "hash": "5418441895725249623"
+        },
+        {
+          "file": "packages/react/src/tooltip/arrow/TooltipArrowDataAttributes.ts",
+          "hash": "5788134241628676620"
+        },
+        {
+          "file": "packages/react/src/tooltip/index.parts.ts",
+          "hash": "9256242627124143665"
+        },
+        {
+          "file": "packages/react/src/tooltip/index.ts",
+          "hash": "17691308735206561542"
+        },
+        {
+          "file": "packages/react/src/tooltip/popup/TooltipPopup.test.tsx",
+          "hash": "2634268375927960476"
+        },
+        {
+          "file": "packages/react/src/tooltip/popup/TooltipPopup.tsx",
+          "hash": "16463686459613393591"
+        },
+        {
+          "file": "packages/react/src/tooltip/popup/TooltipPopupDataAttributes.ts",
+          "hash": "12391621677070525731"
+        },
+        {
+          "file": "packages/react/src/tooltip/portal/TooltipPortal.tsx",
+          "hash": "7256696907804625410"
+        },
+        {
+          "file": "packages/react/src/tooltip/portal/TooltipPortalContext.ts",
+          "hash": "16175789030090649884"
+        },
+        {
+          "file": "packages/react/src/tooltip/positioner/TooltipPositioner.test.tsx",
+          "hash": "8681327658845508398"
+        },
+        {
+          "file": "packages/react/src/tooltip/positioner/TooltipPositioner.tsx",
+          "hash": "2886972889536169064"
+        },
+        {
+          "file": "packages/react/src/tooltip/positioner/TooltipPositionerContext.ts",
+          "hash": "11892778565627486759"
+        },
+        {
+          "file": "packages/react/src/tooltip/positioner/TooltipPositionerCssVars.ts",
+          "hash": "12142491856573507947"
+        },
+        {
+          "file": "packages/react/src/tooltip/positioner/TooltipPositionerDataAttributes.ts",
+          "hash": "3606163719183377724"
+        },
+        {
+          "file": "packages/react/src/tooltip/positioner/useTooltipPositioner.ts",
+          "hash": "9772925772666474475"
+        },
+        {
+          "file": "packages/react/src/tooltip/provider/TooltipProvider.test.tsx",
+          "hash": "3531080771613272902"
+        },
+        {
+          "file": "packages/react/src/tooltip/provider/TooltipProvider.tsx",
+          "hash": "7653963012981370129"
+        },
+        {
+          "file": "packages/react/src/tooltip/root/TooltipRoot.test.tsx",
+          "hash": "16823869624190775787"
+        },
+        {
+          "file": "packages/react/src/tooltip/root/TooltipRoot.tsx",
+          "hash": "6345769402718052255"
+        },
+        {
+          "file": "packages/react/src/tooltip/root/TooltipRootContext.ts",
+          "hash": "9433908498265197688"
+        },
+        {
+          "file": "packages/react/src/tooltip/root/useTooltipRoot.ts",
+          "hash": "15293157631368237784"
+        },
+        {
+          "file": "packages/react/src/tooltip/trigger/TooltipTrigger.spec.tsx",
+          "hash": "2566915440131367588"
+        },
+        {
+          "file": "packages/react/src/tooltip/trigger/TooltipTrigger.test.tsx",
+          "hash": "4971548705320637274"
+        },
+        {
+          "file": "packages/react/src/tooltip/trigger/TooltipTrigger.tsx",
+          "hash": "1865508935435628995"
+        },
+        {
+          "file": "packages/react/src/tooltip/trigger/TooltipTriggerDataAttributes.ts",
+          "hash": "16808796525707895564"
+        },
+        {
+          "file": "packages/react/src/tooltip/utils/constants.ts",
+          "hash": "16098222643790430123"
+        },
+        {
+          "file": "packages/react/src/unstable-no-ssr/NoSsr.test.tsx",
+          "hash": "885931624394334703"
+        },
+        {
+          "file": "packages/react/src/unstable-no-ssr/NoSsr.tsx",
+          "hash": "4576703391941254035"
+        },
+        {
+          "file": "packages/react/src/unstable-no-ssr/NoSsr.types.ts",
+          "hash": "6262768838848701116"
+        },
+        {
+          "file": "packages/react/src/unstable-no-ssr/index.ts",
+          "hash": "3807913743817181795"
+        },
+        {
+          "file": "packages/react/src/unstable-use-media-query/index.ts",
+          "hash": "14914206445164668677"
+        },
+        {
+          "file": "packages/react/src/use-button/index.ts",
+          "hash": "1175011716015870045"
+        },
+        {
+          "file": "packages/react/src/use-button/useButton.test.tsx",
+          "hash": "6108909251792195217"
+        },
+        {
+          "file": "packages/react/src/use-button/useButton.ts",
+          "hash": "5439782761450564029"
+        },
+        {
+          "file": "packages/react/src/utils/FloatingPortalLite.tsx",
+          "hash": "12075083744034692018"
+        },
+        {
+          "file": "packages/react/src/utils/InternalBackdrop.tsx",
+          "hash": "577171800861598338"
+        },
+        {
+          "file": "packages/react/src/utils/areArraysEqual.ts",
+          "hash": "1715532527294265114"
+        },
+        {
+          "file": "packages/react/src/utils/clamp.test.ts",
+          "hash": "3068079622396019208"
+        },
+        {
+          "file": "packages/react/src/utils/clamp.ts",
+          "hash": "8378717242545365044"
+        },
+        {
+          "file": "packages/react/src/utils/collapsibleOpenStateMapping.ts",
+          "hash": "7926800707932831972"
+        },
+        {
+          "file": "packages/react/src/utils/constants.ts",
+          "hash": "3340394551560728027"
+        },
+        {
+          "file": "packages/react/src/utils/defaultRenderFunctions.tsx",
+          "hash": "17547083374771137365"
+        },
+        {
+          "file": "packages/react/src/utils/detectBrowser.ts",
+          "hash": "4718158520484479654"
+        },
+        {
+          "file": "packages/react/src/utils/evaluateRenderProp.test.tsx",
+          "hash": "1255280314996955186"
+        },
+        {
+          "file": "packages/react/src/utils/evaluateRenderProp.ts",
+          "hash": "16108334433392809879"
+        },
+        {
+          "file": "packages/react/src/utils/fastObjectShallowCompare.ts",
+          "hash": "17272151194017512573"
+        },
+        {
+          "file": "packages/react/src/utils/formatNumber.test.ts",
+          "hash": "16039298081918926440"
+        },
+        {
+          "file": "packages/react/src/utils/formatNumber.ts",
+          "hash": "16680937057656182140"
+        },
+        {
+          "file": "packages/react/src/utils/getPseudoElementBounds.ts",
+          "hash": "14286284879019300679"
+        },
+        {
+          "file": "packages/react/src/utils/getReactElementRef.test.tsx",
+          "hash": "13117778315784081184"
+        },
+        {
+          "file": "packages/react/src/utils/getReactElementRef.ts",
+          "hash": "3957201467833117295"
+        },
+        {
+          "file": "packages/react/src/utils/getStyleHookProps.test.ts",
+          "hash": "12294638107206884198"
+        },
+        {
+          "file": "packages/react/src/utils/getStyleHookProps.ts",
+          "hash": "8707510147889718093"
+        },
+        {
+          "file": "packages/react/src/utils/hasComputedStyleMapSupport.ts",
+          "hash": "14444854429665218765"
+        },
+        {
+          "file": "packages/react/src/utils/index.ts",
+          "hash": "11420173771376798581"
+        },
+        {
+          "file": "packages/react/src/utils/isHostComponent.ts",
+          "hash": "9798973313678321388"
+        },
+        {
+          "file": "packages/react/src/utils/mergeReactProps.test.ts",
+          "hash": "15165877629816261018"
+        },
+        {
+          "file": "packages/react/src/utils/mergeReactProps.ts",
+          "hash": "8421626040649385927"
+        },
+        {
+          "file": "packages/react/src/utils/noop.ts",
+          "hash": "8181012608365814435"
+        },
+        {
+          "file": "packages/react/src/utils/owner.ts",
+          "hash": "12727242823293018656"
+        },
+        {
+          "file": "packages/react/src/utils/popupStateMapping.ts",
+          "hash": "17181925094327470067"
+        },
+        {
+          "file": "packages/react/src/utils/proptypes.test.ts",
+          "hash": "11356770008265347643"
+        },
+        {
+          "file": "packages/react/src/utils/proptypes.ts",
+          "hash": "17364331554870674078"
+        },
+        {
+          "file": "packages/react/src/utils/reactVersion.ts",
+          "hash": "1325480262608033510"
+        },
+        {
+          "file": "packages/react/src/utils/resolveClassName.ts",
+          "hash": "17368846215270313933"
+        },
+        {
+          "file": "packages/react/src/utils/styleHookMapping.ts",
+          "hash": "12992846548350050145"
+        },
+        {
+          "file": "packages/react/src/utils/translateOpenChangeReason.ts",
+          "hash": "18574398527649644"
+        },
+        {
+          "file": "packages/react/src/utils/types.ts",
+          "hash": "4299126219831197780"
+        },
+        {
+          "file": "packages/react/src/utils/useAfterExitAnimation.tsx",
+          "hash": "17518727997730886889"
+        },
+        {
+          "file": "packages/react/src/utils/useAnchorPositioning.ts",
+          "hash": "8443111398926871096"
+        },
+        {
+          "file": "packages/react/src/utils/useAnimationsFinished.ts",
+          "hash": "4348288532339702032"
+        },
+        {
+          "file": "packages/react/src/utils/useBaseUiId.ts",
+          "hash": "15904729531888816817"
+        },
+        {
+          "file": "packages/react/src/utils/useComponentRenderer.test.tsx",
+          "hash": "13492941096783610830"
+        },
+        {
+          "file": "packages/react/src/utils/useComponentRenderer.ts",
+          "hash": "5652775520098768559"
+        },
+        {
+          "file": "packages/react/src/utils/useControllableReducer.test.tsx",
+          "hash": "17679124442140743801"
+        },
+        {
+          "file": "packages/react/src/utils/useControllableReducer.ts",
+          "hash": "5228727229131161155"
+        },
+        {
+          "file": "packages/react/src/utils/useControllableReducer.types.ts",
+          "hash": "818190965848071447"
+        },
+        {
+          "file": "packages/react/src/utils/useControlled.test.tsx",
+          "hash": "9807387470888784384"
+        },
+        {
+          "file": "packages/react/src/utils/useControlled.ts",
+          "hash": "17918742230202442282"
+        },
+        {
+          "file": "packages/react/src/utils/useEnhancedClickHandler.ts",
+          "hash": "11907699379640098892"
+        },
+        {
+          "file": "packages/react/src/utils/useEnhancedEffect.ts",
+          "hash": "7135191385651016553"
+        },
+        {
+          "file": "packages/react/src/utils/useEventCallback.ts",
+          "hash": "10943215726193811175"
+        },
+        {
+          "file": "packages/react/src/utils/useForcedRerendering.ts",
+          "hash": "6366666725503430386"
+        },
+        {
+          "file": "packages/react/src/utils/useForkRef.test.tsx",
+          "hash": "3690317880299609477"
+        },
+        {
+          "file": "packages/react/src/utils/useForkRef.ts",
+          "hash": "7303098349817213667"
+        },
+        {
+          "file": "packages/react/src/utils/useId.test.tsx",
+          "hash": "9948376719533436082"
+        },
+        {
+          "file": "packages/react/src/utils/useId.ts",
+          "hash": "2726430411156758065"
+        },
+        {
+          "file": "packages/react/src/utils/useLatestRef.ts",
+          "hash": "16464057319525353825"
+        },
+        {
+          "file": "packages/react/src/utils/useOnMount.ts",
+          "hash": "10991228814447189219"
+        },
+        {
+          "file": "packages/react/src/utils/useOpenInteractionType.ts",
+          "hash": "8038787388082980368"
+        },
+        {
+          "file": "packages/react/src/utils/useRenderPropForkRef.ts",
+          "hash": "12696272373908836473"
+        },
+        {
+          "file": "packages/react/src/utils/useRootElementName.ts",
+          "hash": "7477108148676342121"
+        },
+        {
+          "file": "packages/react/src/utils/useScrollLock.ts",
+          "hash": "237795618462016916"
+        },
+        {
+          "file": "packages/react/src/utils/useTextNavigation.ts",
+          "hash": "5259163236800756055"
+        },
+        {
+          "file": "packages/react/src/utils/useTransitionStatus.ts",
+          "hash": "14013189947906801514"
+        },
+        {
+          "file": "packages/react/src/utils/valueToPercent.ts",
+          "hash": "5127181886302654771"
+        },
+        {
+          "file": "packages/react/src/utils/visuallyHidden.ts",
+          "hash": "11329388372991622805"
+        },
+        {
+          "file": "packages/react/src/utils/warn.ts",
+          "hash": "3733389958913431748"
+        },
+        {
+          "file": "packages/react/test/conformanceTests/className.tsx",
+          "hash": "13292702593271921263"
+        },
+        {
+          "file": "packages/react/test/conformanceTests/propForwarding.tsx",
+          "hash": "15371296756317052569"
+        },
+        {
+          "file": "packages/react/test/conformanceTests/refForwarding.tsx",
+          "hash": "14080328547329162804"
+        },
+        {
+          "file": "packages/react/test/conformanceTests/renderProp.tsx",
+          "hash": "1576004411353039055"
+        },
+        {
+          "file": "packages/react/test/conformanceTests/utils.ts",
+          "hash": "6313615029884230023"
+        },
+        {
+          "file": "packages/react/test/createRenderer.ts",
+          "hash": "7746195067758813471"
+        },
+        {
+          "file": "packages/react/test/describeConformance.tsx",
+          "hash": "9162133707065535783"
+        },
+        {
+          "file": "packages/react/test/index.ts",
+          "hash": "1315796640505993216"
+        },
+        {
+          "file": "packages/react/test/setup.ts",
+          "hash": "9403518776370544743"
+        },
+        {
+          "file": "packages/react/test/utils.ts",
+          "hash": "7808836044806770804"
+        },
+        {
+          "file": "packages/react/tsconfig.build.json",
+          "hash": "16144172891423257507"
+        },
+        {
+          "file": "packages/react/tsconfig.json",
+          "hash": "4112020219971011169"
+        },
+        {
+          "file": "packages/react/tsconfig.test.json",
+          "hash": "14314802521623049610"
+        },
+        {
+          "file": "packages/react/vitest.config.mts",
+          "hash": "10861425696080056928"
+        }
+      ],
+      "docs": [
+        {
+          "file": "docs/.env",
+          "hash": "16208536989907415712"
+        },
+        {
+          "file": "docs/.link-check-errors.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/README.md",
+          "hash": "16022548382725428213"
+        },
+        {
+          "file": "docs/next-env.d.ts",
+          "hash": "1320675027584673186"
+        },
+        {
+          "file": "docs/next.config.mjs",
+          "hash": "11089052726983030323"
+        },
+        {
+          "file": "docs/package.json",
+          "hash": "7983858155119094339",
+          "deps": [
+            "npm:@babel/plugin-transform-react-constant-elements",
+            "npm:@babel/preset-typescript",
+            "npm:@mui/internal-docs-utils",
+            "npm:@mui/internal-scripts",
+            "npm:@mui/internal-test-utils",
+            "npm:@netlify/plugin-nextjs",
+            "npm:@tailwindcss/postcss",
+            "npm:@types/chai",
+            "npm:@types/gtag.js",
+            "npm:@types/hast@3.0.4",
+            "npm:@types/node",
+            "npm:@types/prop-types",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@types/unist@3.0.3",
+            "npm:chai@5.1.2",
+            "npm:framer-motion",
+            "npm:fs-extra",
+            "npm:mdast-util-mdx-jsx",
+            "npm:prettier",
+            "npm:rimraf",
+            "npm:serve",
+            "npm:tailwindcss",
+            "npm:unified",
+            "npm:webpack-bundle-analyzer",
+            "npm:yargs",
+            "@anchor-ui/react",
+            "npm:@babel/core",
+            "npm:@babel/runtime",
+            "npm:@babel/runtime-corejs3",
+            "npm:@emotion/cache",
+            "npm:@emotion/react",
+            "npm:@emotion/server",
+            "npm:@emotion/styled",
+            "npm:@mdx-js/loader",
+            "npm:@mdx-js/mdx",
+            "npm:@mdx-js/react",
+            "npm:@mui/system",
+            "npm:@next/mdx",
+            "npm:@react-spring/web",
+            "npm:@stefanprobst/rehype-extract-toc",
+            "npm:@types/mdx",
+            "npm:babel-plugin-module-resolver",
+            "npm:babel-plugin-optimize-clsx",
+            "npm:babel-plugin-react-remove-properties",
+            "npm:babel-plugin-transform-react-remove-prop-types",
+            "npm:clipboard-copy",
+            "npm:clsx",
+            "npm:core-js",
+            "npm:cross-env",
+            "npm:estree-util-value-to-estree@3.3.2",
+            "npm:fast-glob",
+            "npm:hast",
+            "npm:hast-util-heading-rank@3.0.0",
+            "npm:hast-util-to-string@3.0.1",
+            "npm:lodash",
+            "npm:lz-string",
+            "npm:next",
+            "npm:postcss",
+            "npm:postcss-custom-media",
+            "npm:postcss-import",
+            "npm:prop-types",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-error-boundary",
+            "npm:react-is@19.0.0",
+            "npm:react-router-dom",
+            "npm:react-runner",
+            "npm:rehype-pretty-code",
+            "npm:remark",
+            "npm:remark-frontmatter",
+            "npm:remark-gfm",
+            "npm:remark-mdx-frontmatter",
+            "npm:remark-parse",
+            "npm:remark-rehype",
+            "npm:remark-typography",
+            "npm:scroll-into-view-if-needed",
+            "npm:shiki",
+            "npm:to-vfile",
+            "npm:unist-util-visit",
+            "npm:unist-util-visit-parents@6.0.1",
+            "npm:vfile-matter"
+          ]
+        },
+        {
+          "file": "docs/postcss.config.js",
+          "hash": "5304943459702966757"
+        },
+        {
+          "file": "docs/public/_headers",
+          "hash": "10933538747223303251"
+        },
+        {
+          "file": "docs/public/_redirects",
+          "hash": "15295538793217716236"
+        },
+        {
+          "file": "docs/public/robots.txt",
+          "hash": "643822287013368473"
+        },
+        {
+          "file": "docs/public/static/apple-touch-icon.png",
+          "hash": "5138009201216167161"
+        },
+        {
+          "file": "docs/public/static/error-codes.json",
+          "hash": "15753941481085060538"
+        },
+        {
+          "file": "docs/public/static/favicon-dev.ico",
+          "hash": "13129690851126107162"
+        },
+        {
+          "file": "docs/public/static/favicon.ico",
+          "hash": "9871245097129926035"
+        },
+        {
+          "file": "docs/public/static/favicon.svg",
+          "hash": "14437704773046741023"
+        },
+        {
+          "file": "docs/public/static/logo.svg",
+          "hash": "13318280950525178914"
+        },
+        {
+          "file": "docs/reference/generated/accordion-header.json",
+          "hash": "11172693059906682033"
+        },
+        {
+          "file": "docs/reference/generated/accordion-item.json",
+          "hash": "16216518010550292318"
+        },
+        {
+          "file": "docs/reference/generated/accordion-panel.json",
+          "hash": "6796940005621036063"
+        },
+        {
+          "file": "docs/reference/generated/accordion-root.json",
+          "hash": "15923693202400965855"
+        },
+        {
+          "file": "docs/reference/generated/accordion-trigger.json",
+          "hash": "1554036719131507538"
+        },
+        {
+          "file": "docs/reference/generated/alert-dialog-backdrop.json",
+          "hash": "4837101259303924395"
+        },
+        {
+          "file": "docs/reference/generated/alert-dialog-close.json",
+          "hash": "6540296584448612409"
+        },
+        {
+          "file": "docs/reference/generated/alert-dialog-description.json",
+          "hash": "11100523477639035444"
+        },
+        {
+          "file": "docs/reference/generated/alert-dialog-popup.json",
+          "hash": "15161759410320762999"
+        },
+        {
+          "file": "docs/reference/generated/alert-dialog-portal.json",
+          "hash": "156813412629053532"
+        },
+        {
+          "file": "docs/reference/generated/alert-dialog-root.json",
+          "hash": "1400306503608721353"
+        },
+        {
+          "file": "docs/reference/generated/alert-dialog-title.json",
+          "hash": "12850610303047923098"
+        },
+        {
+          "file": "docs/reference/generated/alert-dialog-trigger.json",
+          "hash": "14402050596118999493"
+        },
+        {
+          "file": "docs/reference/generated/checkbox-group.json",
+          "hash": "15204253157215735944"
+        },
+        {
+          "file": "docs/reference/generated/checkbox-indicator.json",
+          "hash": "5736282076923587907"
+        },
+        {
+          "file": "docs/reference/generated/checkbox-root.json",
+          "hash": "2359075179018653305"
+        },
+        {
+          "file": "docs/reference/generated/collapsible-panel.json",
+          "hash": "12416783164048304864"
+        },
+        {
+          "file": "docs/reference/generated/collapsible-root.json",
+          "hash": "4011834152455189031"
+        },
+        {
+          "file": "docs/reference/generated/collapsible-trigger.json",
+          "hash": "9769577937198376775"
+        },
+        {
+          "file": "docs/reference/generated/dialog-backdrop.json",
+          "hash": "1911564809311757848"
+        },
+        {
+          "file": "docs/reference/generated/dialog-close.json",
+          "hash": "15208639176329646635"
+        },
+        {
+          "file": "docs/reference/generated/dialog-description.json",
+          "hash": "13737117949880648929"
+        },
+        {
+          "file": "docs/reference/generated/dialog-popup.json",
+          "hash": "1777308380141995755"
+        },
+        {
+          "file": "docs/reference/generated/dialog-portal.json",
+          "hash": "5033447253418710477"
+        },
+        {
+          "file": "docs/reference/generated/dialog-root.json",
+          "hash": "5109897502866571651"
+        },
+        {
+          "file": "docs/reference/generated/dialog-title.json",
+          "hash": "5677857677186944897"
+        },
+        {
+          "file": "docs/reference/generated/dialog-trigger.json",
+          "hash": "12477131523179943840"
+        },
+        {
+          "file": "docs/reference/generated/direction-provider.json",
+          "hash": "870276824182564012"
+        },
+        {
+          "file": "docs/reference/generated/field-control.json",
+          "hash": "4893986344077637335"
+        },
+        {
+          "file": "docs/reference/generated/field-description.json",
+          "hash": "10352401517637107792"
+        },
+        {
+          "file": "docs/reference/generated/field-error.json",
+          "hash": "3086301846949304760"
+        },
+        {
+          "file": "docs/reference/generated/field-label.json",
+          "hash": "9366484622405228677"
+        },
+        {
+          "file": "docs/reference/generated/field-root.json",
+          "hash": "6901092656736840232"
+        },
+        {
+          "file": "docs/reference/generated/field-validity.json",
+          "hash": "2268053455035008367"
+        },
+        {
+          "file": "docs/reference/generated/fieldset-legend.json",
+          "hash": "6286523914686038708"
+        },
+        {
+          "file": "docs/reference/generated/fieldset-root.json",
+          "hash": "9286000654183643261"
+        },
+        {
+          "file": "docs/reference/generated/form.json",
+          "hash": "3128737676788214660"
+        },
+        {
+          "file": "docs/reference/generated/input.json",
+          "hash": "1614136499433314436"
+        },
+        {
+          "file": "docs/reference/generated/menu-arrow.json",
+          "hash": "8866669682177864164"
+        },
+        {
+          "file": "docs/reference/generated/menu-backdrop.json",
+          "hash": "13796240507825087286"
+        },
+        {
+          "file": "docs/reference/generated/menu-checkbox-item-indicator.json",
+          "hash": "14018492110396826170"
+        },
+        {
+          "file": "docs/reference/generated/menu-checkbox-item.json",
+          "hash": "15745245388911867693"
+        },
+        {
+          "file": "docs/reference/generated/menu-group-label.json",
+          "hash": "10023312453136366601"
+        },
+        {
+          "file": "docs/reference/generated/menu-group.json",
+          "hash": "4160896167383798896"
+        },
+        {
+          "file": "docs/reference/generated/menu-item.json",
+          "hash": "6419140581970316379"
+        },
+        {
+          "file": "docs/reference/generated/menu-popup.json",
+          "hash": "16712112318495872478"
+        },
+        {
+          "file": "docs/reference/generated/menu-portal.json",
+          "hash": "16450581944167449445"
+        },
+        {
+          "file": "docs/reference/generated/menu-positioner.json",
+          "hash": "2455485157252107890"
+        },
+        {
+          "file": "docs/reference/generated/menu-radio-group.json",
+          "hash": "6636123786299704755"
+        },
+        {
+          "file": "docs/reference/generated/menu-radio-item-indicator.json",
+          "hash": "11625094239569551716"
+        },
+        {
+          "file": "docs/reference/generated/menu-radio-item.json",
+          "hash": "13366209129060954849"
+        },
+        {
+          "file": "docs/reference/generated/menu-root.json",
+          "hash": "14777183698557361937"
+        },
+        {
+          "file": "docs/reference/generated/menu-submenu-trigger.json",
+          "hash": "424945329678457181"
+        },
+        {
+          "file": "docs/reference/generated/menu-trigger.json",
+          "hash": "15305495520920587439"
+        },
+        {
+          "file": "docs/reference/generated/no-ssr.json",
+          "hash": "5197146863883497052"
+        },
+        {
+          "file": "docs/reference/generated/number-field-decrement.json",
+          "hash": "11072192537840936549"
+        },
+        {
+          "file": "docs/reference/generated/number-field-group.json",
+          "hash": "450921579394020965"
+        },
+        {
+          "file": "docs/reference/generated/number-field-increment.json",
+          "hash": "8838853467049944636"
+        },
+        {
+          "file": "docs/reference/generated/number-field-input.json",
+          "hash": "10127825934433605021"
+        },
+        {
+          "file": "docs/reference/generated/number-field-root.json",
+          "hash": "3490796384859838226"
+        },
+        {
+          "file": "docs/reference/generated/number-field-scrub-area-cursor.json",
+          "hash": "8504081244606022134"
+        },
+        {
+          "file": "docs/reference/generated/number-field-scrub-area.json",
+          "hash": "12057195233704240540"
+        },
+        {
+          "file": "docs/reference/generated/popover-arrow.json",
+          "hash": "12773316679536392312"
+        },
+        {
+          "file": "docs/reference/generated/popover-backdrop.json",
+          "hash": "12819845384610855931"
+        },
+        {
+          "file": "docs/reference/generated/popover-close.json",
+          "hash": "12716964738873171012"
+        },
+        {
+          "file": "docs/reference/generated/popover-description.json",
+          "hash": "17056463805949557"
+        },
+        {
+          "file": "docs/reference/generated/popover-popup.json",
+          "hash": "10753421300488233319"
+        },
+        {
+          "file": "docs/reference/generated/popover-portal.json",
+          "hash": "2131232076517187614"
+        },
+        {
+          "file": "docs/reference/generated/popover-positioner.json",
+          "hash": "8581885341180954183"
+        },
+        {
+          "file": "docs/reference/generated/popover-root.json",
+          "hash": "5246534733774196760"
+        },
+        {
+          "file": "docs/reference/generated/popover-title.json",
+          "hash": "9149748953327036238"
+        },
+        {
+          "file": "docs/reference/generated/popover-trigger.json",
+          "hash": "3466470358652878570"
+        },
+        {
+          "file": "docs/reference/generated/preview-card-arrow.json",
+          "hash": "10412447259675905851"
+        },
+        {
+          "file": "docs/reference/generated/preview-card-backdrop.json",
+          "hash": "18071671887457955233"
+        },
+        {
+          "file": "docs/reference/generated/preview-card-popup.json",
+          "hash": "2139662761105520693"
+        },
+        {
+          "file": "docs/reference/generated/preview-card-portal.json",
+          "hash": "11721228246187721589"
+        },
+        {
+          "file": "docs/reference/generated/preview-card-positioner.json",
+          "hash": "9890355912639059963"
+        },
+        {
+          "file": "docs/reference/generated/preview-card-root.json",
+          "hash": "196755475878692629"
+        },
+        {
+          "file": "docs/reference/generated/preview-card-trigger.json",
+          "hash": "17118572362124643929"
+        },
+        {
+          "file": "docs/reference/generated/progress-indicator.json",
+          "hash": "14074891816070988105"
+        },
+        {
+          "file": "docs/reference/generated/progress-root.json",
+          "hash": "9556777047405923979"
+        },
+        {
+          "file": "docs/reference/generated/progress-track.json",
+          "hash": "11365766975614174352"
+        },
+        {
+          "file": "docs/reference/generated/radio-group.json",
+          "hash": "6819797338915515835"
+        },
+        {
+          "file": "docs/reference/generated/radio-indicator.json",
+          "hash": "1976146548598679022"
+        },
+        {
+          "file": "docs/reference/generated/radio-root.json",
+          "hash": "4100497930440309908"
+        },
+        {
+          "file": "docs/reference/generated/scroll-area-corner.json",
+          "hash": "12436390987377593003"
+        },
+        {
+          "file": "docs/reference/generated/scroll-area-root.json",
+          "hash": "13308054918303509551"
+        },
+        {
+          "file": "docs/reference/generated/scroll-area-scrollbar.json",
+          "hash": "858699284580565991"
+        },
+        {
+          "file": "docs/reference/generated/scroll-area-thumb.json",
+          "hash": "8563824230766053665"
+        },
+        {
+          "file": "docs/reference/generated/scroll-area-viewport.json",
+          "hash": "3985098472912384938"
+        },
+        {
+          "file": "docs/reference/generated/select-arrow.json",
+          "hash": "6591175681047168254"
+        },
+        {
+          "file": "docs/reference/generated/select-backdrop.json",
+          "hash": "5033361875460494356"
+        },
+        {
+          "file": "docs/reference/generated/select-group-label.json",
+          "hash": "3817270813904294540"
+        },
+        {
+          "file": "docs/reference/generated/select-group.json",
+          "hash": "2911993728032248860"
+        },
+        {
+          "file": "docs/reference/generated/select-icon.json",
+          "hash": "8833048463638219474"
+        },
+        {
+          "file": "docs/reference/generated/select-item-indicator.json",
+          "hash": "4817167826325226523"
+        },
+        {
+          "file": "docs/reference/generated/select-item-text.json",
+          "hash": "750001497081080696"
+        },
+        {
+          "file": "docs/reference/generated/select-item.json",
+          "hash": "2117440763829973793"
+        },
+        {
+          "file": "docs/reference/generated/select-popup.json",
+          "hash": "12770384778629391069"
+        },
+        {
+          "file": "docs/reference/generated/select-portal.json",
+          "hash": "5223426145243922073"
+        },
+        {
+          "file": "docs/reference/generated/select-positioner.json",
+          "hash": "442797945910464497"
+        },
+        {
+          "file": "docs/reference/generated/select-root.json",
+          "hash": "18232757805067695044"
+        },
+        {
+          "file": "docs/reference/generated/select-scroll-down-arrow.json",
+          "hash": "3190440605843609844"
+        },
+        {
+          "file": "docs/reference/generated/select-scroll-up-arrow.json",
+          "hash": "13343354859359377059"
+        },
+        {
+          "file": "docs/reference/generated/select-trigger.json",
+          "hash": "6708150007192309365"
+        },
+        {
+          "file": "docs/reference/generated/select-value.json",
+          "hash": "3183820288953419368"
+        },
+        {
+          "file": "docs/reference/generated/separator.json",
+          "hash": "16109470592965008732"
+        },
+        {
+          "file": "docs/reference/generated/slider-control.json",
+          "hash": "2978845350598852550"
+        },
+        {
+          "file": "docs/reference/generated/slider-indicator.json",
+          "hash": "11209549507344104695"
+        },
+        {
+          "file": "docs/reference/generated/slider-root.json",
+          "hash": "11003424621416553030"
+        },
+        {
+          "file": "docs/reference/generated/slider-thumb.json",
+          "hash": "17462256014690404426"
+        },
+        {
+          "file": "docs/reference/generated/slider-track.json",
+          "hash": "1741702652974409851"
+        },
+        {
+          "file": "docs/reference/generated/slider-value.json",
+          "hash": "12270220974726737885"
+        },
+        {
+          "file": "docs/reference/generated/switch-root.json",
+          "hash": "16105031455182595603"
+        },
+        {
+          "file": "docs/reference/generated/switch-thumb.json",
+          "hash": "5374400439654586401"
+        },
+        {
+          "file": "docs/reference/generated/tabs-indicator.json",
+          "hash": "15207942900536335550"
+        },
+        {
+          "file": "docs/reference/generated/tabs-list.json",
+          "hash": "10038826017778131708"
+        },
+        {
+          "file": "docs/reference/generated/tabs-panel.json",
+          "hash": "13693294876878160914"
+        },
+        {
+          "file": "docs/reference/generated/tabs-root.json",
+          "hash": "2443738728099961738"
+        },
+        {
+          "file": "docs/reference/generated/tabs-tab.json",
+          "hash": "6456048334119309383"
+        },
+        {
+          "file": "docs/reference/generated/toggle-group.json",
+          "hash": "11787539001763575229"
+        },
+        {
+          "file": "docs/reference/generated/toggle.json",
+          "hash": "9444180202335031483"
+        },
+        {
+          "file": "docs/reference/generated/tooltip-arrow.json",
+          "hash": "12316106944373631936"
+        },
+        {
+          "file": "docs/reference/generated/tooltip-popup.json",
+          "hash": "15067719097275311447"
+        },
+        {
+          "file": "docs/reference/generated/tooltip-portal.json",
+          "hash": "17488538207550249493"
+        },
+        {
+          "file": "docs/reference/generated/tooltip-positioner.json",
+          "hash": "17365481078915019098"
+        },
+        {
+          "file": "docs/reference/generated/tooltip-provider.json",
+          "hash": "6680407654834611054"
+        },
+        {
+          "file": "docs/reference/generated/tooltip-root.json",
+          "hash": "12858515339602253810"
+        },
+        {
+          "file": "docs/reference/generated/tooltip-trigger.json",
+          "hash": "6889861835430829123"
+        },
+        {
+          "file": "docs/reference/order.json",
+          "hash": "11797806565423264253"
+        },
+        {
+          "file": "docs/reference/overrides/accordion-item.json",
+          "hash": "17842608754090380069"
+        },
+        {
+          "file": "docs/reference/overrides/accordion-root.json",
+          "hash": "14699319442246553954"
+        },
+        {
+          "file": "docs/reference/overrides/alert-dialog-root.json",
+          "hash": "1094978592691162026"
+        },
+        {
+          "file": "docs/reference/overrides/checkbox-group.json",
+          "hash": "17573421884555472939"
+        },
+        {
+          "file": "docs/reference/overrides/checkbox-root.json",
+          "hash": "7536316617236991012"
+        },
+        {
+          "file": "docs/reference/overrides/collapsible-root.json",
+          "hash": "11010728067194953912"
+        },
+        {
+          "file": "docs/reference/overrides/common.json",
+          "hash": "7567025288038376309"
+        },
+        {
+          "file": "docs/reference/overrides/dialog-root.json",
+          "hash": "10111421608894858665"
+        },
+        {
+          "file": "docs/reference/overrides/field-control.json",
+          "hash": "17630484224101912940"
+        },
+        {
+          "file": "docs/reference/overrides/field-root.json",
+          "hash": "16115726138198099910"
+        },
+        {
+          "file": "docs/reference/overrides/field-validity.json",
+          "hash": "9227418575053895998"
+        },
+        {
+          "file": "docs/reference/overrides/form.json",
+          "hash": "927870726425438830"
+        },
+        {
+          "file": "docs/reference/overrides/menu-checkbox-item.json",
+          "hash": "6278381775123984366"
+        },
+        {
+          "file": "docs/reference/overrides/menu-radio-group.json",
+          "hash": "10020964563420349699"
+        },
+        {
+          "file": "docs/reference/overrides/menu-root.json",
+          "hash": "8436157447038487451"
+        },
+        {
+          "file": "docs/reference/overrides/number-field-root.json",
+          "hash": "17078955252339091887"
+        },
+        {
+          "file": "docs/reference/overrides/popover-root.json",
+          "hash": "4501696653698732820"
+        },
+        {
+          "file": "docs/reference/overrides/preview-card-root.json",
+          "hash": "69632270663710876"
+        },
+        {
+          "file": "docs/reference/overrides/progress-root.json",
+          "hash": "13104183184905373775"
+        },
+        {
+          "file": "docs/reference/overrides/radio-group.json",
+          "hash": "11712432761510392565"
+        },
+        {
+          "file": "docs/reference/overrides/select-root.json",
+          "hash": "6015371308445312458"
+        },
+        {
+          "file": "docs/reference/overrides/select-value.json",
+          "hash": "11029910661687458885"
+        },
+        {
+          "file": "docs/reference/overrides/slider-root.json",
+          "hash": "15416685903171607240"
+        },
+        {
+          "file": "docs/reference/overrides/slider-value.json",
+          "hash": "4392260821853803721"
+        },
+        {
+          "file": "docs/reference/overrides/switch-root.json",
+          "hash": "7870368465724215043"
+        },
+        {
+          "file": "docs/reference/overrides/tabs-root.json",
+          "hash": "4660219802385208797"
+        },
+        {
+          "file": "docs/reference/overrides/tooltip-root.json",
+          "hash": "10980986600442916590"
+        },
+        {
+          "file": "docs/scripts/playground.template.tsx",
+          "hash": "2694813951160768535"
+        },
+        {
+          "file": "docs/scripts/rehypeExtractLinkUrls.mts",
+          "hash": "16403991768976114762"
+        },
+        {
+          "file": "docs/scripts/reportBrokenLinks.mts",
+          "hash": "11726265463587441352"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/[slug]/page.tsx",
+          "hash": "1503851888353912330"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/accordion-animations.tsx",
+          "hash": "1108921340070485439"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/accordion-horizontal.tsx",
+          "hash": "10769582020283472218"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/accordion.horizontal.module.css",
+          "hash": "4009572903953195250"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/accordion.module.css",
+          "hash": "14982677493536891133"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/anchor-positioning.tsx",
+          "hash": "3515017377705760374"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/anchor-side-animations.module.css",
+          "hash": "7276065575561102983"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/anchor-side-animations.tsx",
+          "hash": "9865746448078845121"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/collapsible-cls.tsx",
+          "hash": "10594138952793413223"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/collapsible-framer.tsx",
+          "hash": "9753778471293807761"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/collapsible-hidden-until-found.tsx",
+          "hash": "6620856167245737804"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/collapsible.module.css",
+          "hash": "7214402804480278228"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/collapsible.tsx",
+          "hash": "6330881908969603907"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/dialog.module.css",
+          "hash": "10901533928046862764"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/dialog.tsx",
+          "hash": "9800827611613545732"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/experiments.module.css",
+          "hash": "18389046005519326385"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/layout.tsx",
+          "hash": "2585854824340277813"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/menu-anchor-el.tsx",
+          "hash": "16095298920437164038"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/menu-anchor-ref.tsx",
+          "hash": "11343503709142255945"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/menu-nested.tsx",
+          "hash": "13428415580794645655"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/menu-rtl.tsx",
+          "hash": "14703890606199502497"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/menu.module.css",
+          "hash": "7711658121252478770"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/modality.tsx",
+          "hash": "3401759324954647458"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/page.tsx",
+          "hash": "13820821883700740625"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/popup-transform-origin.module.css",
+          "hash": "13059357572535865056"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/popup-transform-origin.tsx",
+          "hash": "18446213718900257691"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/popups-in-popups.tsx",
+          "hash": "13771482107403644633"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/rtl.module.css",
+          "hash": "3993314273740138987"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/rtl.tsx",
+          "hash": "8656860186687395155"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/scroll-area-inset.module.css",
+          "hash": "3168920342534462070"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/scroll-area-inset.tsx",
+          "hash": "4562108616651383339"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/scroll-area.tsx",
+          "hash": "17170097196083613918"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/scroll-lock.tsx",
+          "hash": "12324349164021269037"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/select-perf.tsx",
+          "hash": "10974784891326755087"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/tabs.tsx",
+          "hash": "10687504794966549981"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/toggle-group.tsx",
+          "hash": "3505165543292020450"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/toggle.module.css",
+          "hash": "1526596833024712943"
+        },
+        {
+          "file": "docs/src/app/(private)/experiments/tooltip.tsx",
+          "hash": "9940666366493951966"
+        },
+        {
+          "file": "docs/src/app/(private)/layout.css",
+          "hash": "18016148535584577563"
+        },
+        {
+          "file": "docs/src/app/(private)/layout.tsx",
+          "hash": "6521074907885515064"
+        },
+        {
+          "file": "docs/src/app/(private)/playground/[slug]/page.tsx",
+          "hash": "10913110716626282292"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/layout.css",
+          "hash": "18165110499049245412"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/layout.tsx",
+          "hash": "4742478035101270243"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/accordion/demos/hero/css-modules/index.module.css",
+          "hash": "8063884341596306854"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/accordion/demos/hero/css-modules/index.tsx",
+          "hash": "5967871637528659427"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/accordion/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/accordion/demos/hero/tailwind/index.tsx",
+          "hash": "12616138825969709274"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/accordion/page.mdx",
+          "hash": "11490370073517434133"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/alert-dialog/demos/hero/css-modules/index.module.css",
+          "hash": "4280710500090770853"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/alert-dialog/demos/hero/css-modules/index.tsx",
+          "hash": "18357242782748838987"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/alert-dialog/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/alert-dialog/demos/hero/tailwind/index.tsx",
+          "hash": "1417572666511537225"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/alert-dialog/page.mdx",
+          "hash": "5518706557118806226"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox-group/demos/hero/css-modules/index.module.css",
+          "hash": "1052120851018349846"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox-group/demos/hero/css-modules/index.tsx",
+          "hash": "14152485507331876219"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox-group/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox-group/demos/hero/tailwind/index.tsx",
+          "hash": "12537590528136998142"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox-group/page.mdx",
+          "hash": "14916666695783379367"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox/demos/hero/css-modules/index.module.css",
+          "hash": "349648516283114588"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox/demos/hero/css-modules/index.tsx",
+          "hash": "7547863213446916046"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox/demos/hero/tailwind/index.tsx",
+          "hash": "11224969554309801037"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/checkbox/page.mdx",
+          "hash": "8066986577262231428"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/collapsible/demos/hero/css-modules/index.module.css",
+          "hash": "11052595024406164418"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/collapsible/demos/hero/css-modules/index.tsx",
+          "hash": "10163967159729498679"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/collapsible/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/collapsible/demos/hero/tailwind/index.tsx",
+          "hash": "6503459745327080080"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/collapsible/page.mdx",
+          "hash": "8645947293367728354"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/close-confirmation/css-modules/index.module.css",
+          "hash": "5623373736456296373"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/close-confirmation/css-modules/index.tsx",
+          "hash": "8157462342562654243"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/close-confirmation/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/close-confirmation/tailwind/index.tsx",
+          "hash": "16006902145141241754"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/hero/css-modules/index.module.css",
+          "hash": "18353217306044612352"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/hero/css-modules/index.tsx",
+          "hash": "17379244336197808230"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/hero/tailwind/index.tsx",
+          "hash": "11540054605755752965"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/nested/css-modules/index.module.css",
+          "hash": "15660533888501669008"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/nested/css-modules/index.tsx",
+          "hash": "1875970702082111291"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/nested/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/demos/nested/tailwind/index.tsx",
+          "hash": "722473660050270553"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/dialog/page.mdx",
+          "hash": "11807931291771427498"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/field/demos/hero/css-modules/index.module.css",
+          "hash": "18305991291549468077"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/field/demos/hero/css-modules/index.tsx",
+          "hash": "15528052498279106818"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/field/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/field/demos/hero/tailwind/index.tsx",
+          "hash": "9093851799478338726"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/field/page.mdx",
+          "hash": "3454895742063331685"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/fieldset/demos/hero/css-modules/index.module.css",
+          "hash": "15286582809917955338"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/fieldset/demos/hero/css-modules/index.tsx",
+          "hash": "14127018302654329621"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/fieldset/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/fieldset/demos/hero/tailwind/index.tsx",
+          "hash": "12926687778035102185"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/fieldset/page.mdx",
+          "hash": "3043786143403314237"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/form/demos/hero/css-modules/index.module.css",
+          "hash": "15943889402777647904"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/form/demos/hero/css-modules/index.tsx",
+          "hash": "8747026034871892741"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/form/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/form/demos/hero/tailwind/index.tsx",
+          "hash": "10817506275496077357"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/form/page.mdx",
+          "hash": "17115824530820674645"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/input/demos/hero/css-modules/index.module.css",
+          "hash": "4058480014483294339"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/input/demos/hero/css-modules/index.tsx",
+          "hash": "10231799776706155452"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/input/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/input/demos/hero/tailwind/index.tsx",
+          "hash": "5708251145457880583"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/input/page.mdx",
+          "hash": "16193789065792574947"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/checkbox-items/css-modules/index.module.css",
+          "hash": "13742668382717884399"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/checkbox-items/css-modules/index.tsx",
+          "hash": "446478220416706746"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/checkbox-items/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/checkbox-items/tailwind/index.tsx",
+          "hash": "5880140351401510924"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/group-labels/css-modules/index.module.css",
+          "hash": "4266893442652065472"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/group-labels/css-modules/index.tsx",
+          "hash": "13846875842944449418"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/group-labels/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/group-labels/tailwind/index.tsx",
+          "hash": "3459143042435677857"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/hero/css-modules/index.module.css",
+          "hash": "7491299793312333238"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/hero/css-modules/index.tsx",
+          "hash": "13609375623026355733"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/hero/tailwind/index.tsx",
+          "hash": "12591310702722115064"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/open-on-hover/css-modules/index.module.css",
+          "hash": "7491299793312333238"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/open-on-hover/css-modules/index.tsx",
+          "hash": "5877363329544827497"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/open-on-hover/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/open-on-hover/tailwind/index.tsx",
+          "hash": "6096342797438500810"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/radio-items/css-modules/index.module.css",
+          "hash": "11567641595308127093"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/radio-items/css-modules/index.tsx",
+          "hash": "826270088231908490"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/radio-items/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/radio-items/tailwind/index.tsx",
+          "hash": "12421702723266061961"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/submenu/css-modules/index.module.css",
+          "hash": "11341961842326752131"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/submenu/css-modules/index.tsx",
+          "hash": "13758317083306898220"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/submenu/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/demos/submenu/tailwind/index.tsx",
+          "hash": "6462066612882281697"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/menu/page.mdx",
+          "hash": "16102994273217497037"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/number-field/demos/hero/css-modules/index.module.css",
+          "hash": "5470527753588468710"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/number-field/demos/hero/css-modules/index.tsx",
+          "hash": "12194177743702185823"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/number-field/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/number-field/demos/hero/tailwind/index.tsx",
+          "hash": "17183831296380044108"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/number-field/page.mdx",
+          "hash": "13768188600788091396"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/popover/demos/hero/css-modules/index.module.css",
+          "hash": "9082760215951774980"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/popover/demos/hero/css-modules/index.tsx",
+          "hash": "12357379996163151756"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/popover/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/popover/demos/hero/tailwind/index.tsx",
+          "hash": "2018358498214805184"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/popover/page.mdx",
+          "hash": "2396226232011256315"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/preview-card/demos/hero/css-modules/index.module.css",
+          "hash": "4479591266512373775"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/preview-card/demos/hero/css-modules/index.tsx",
+          "hash": "10326391486989130563"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/preview-card/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/preview-card/demos/hero/tailwind/index.tsx",
+          "hash": "9023469345000132906"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/preview-card/page.mdx",
+          "hash": "12262720931743429618"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/progress/demos/hero/css-modules/index.module.css",
+          "hash": "3248974161765034790"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/progress/demos/hero/css-modules/index.tsx",
+          "hash": "9783667595918900022"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/progress/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/progress/demos/hero/tailwind/index.tsx",
+          "hash": "14728874180959644967"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/progress/page.mdx",
+          "hash": "13991334922587556380"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/radio/demos/hero/css-modules/index.module.css",
+          "hash": "12532584750085818924"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/radio/demos/hero/css-modules/index.tsx",
+          "hash": "6332391594097360948"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/radio/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/radio/demos/hero/tailwind/index.tsx",
+          "hash": "7024505976254953343"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/radio/page.mdx",
+          "hash": "3253764482356573104"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/scroll-area/demos/hero/css-modules/index.module.css",
+          "hash": "13152594725465351486"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/scroll-area/demos/hero/css-modules/index.tsx",
+          "hash": "2011844859681183526"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/scroll-area/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/scroll-area/demos/hero/tailwind/index.tsx",
+          "hash": "6452891034695298820"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/scroll-area/page.mdx",
+          "hash": "13638460038848104785"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/select/demos/hero/css-modules/index.module.css",
+          "hash": "11194791305544349950"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/select/demos/hero/css-modules/index.tsx",
+          "hash": "9513118938555698654"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/select/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/select/demos/hero/tailwind/index.tsx",
+          "hash": "4350413573319918188"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/select/page.mdx",
+          "hash": "10892871742497882592"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/separator/demos/hero/css-modules/index.module.css",
+          "hash": "5202434229796980997"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/separator/demos/hero/css-modules/index.tsx",
+          "hash": "13417378987319230841"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/separator/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/separator/demos/hero/tailwind/index.tsx",
+          "hash": "1108330518173851115"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/separator/page.mdx",
+          "hash": "15403786322624209736"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/slider/demos/hero/css-modules/index.module.css",
+          "hash": "4182346988053182643"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/slider/demos/hero/css-modules/index.tsx",
+          "hash": "14360269590051328994"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/slider/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/slider/demos/hero/tailwind/index.tsx",
+          "hash": "1923200246347741335"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/slider/page.mdx",
+          "hash": "1540827037004136775"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/switch/demos/hero/css-modules/index.module.css",
+          "hash": "501221315256064465"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/switch/demos/hero/css-modules/index.tsx",
+          "hash": "17420725108898423051"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/switch/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/switch/demos/hero/tailwind/index.tsx",
+          "hash": "2613976269051151746"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/switch/page.mdx",
+          "hash": "14965159058298662388"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tabs/demos/hero/css-modules/index.module.css",
+          "hash": "9177407934291549386"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tabs/demos/hero/css-modules/index.tsx",
+          "hash": "10136231371629915958"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tabs/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tabs/demos/hero/tailwind/index.tsx",
+          "hash": "2573762981063731250"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tabs/page.mdx",
+          "hash": "14118301265186389562"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle-group/demos/hero/css-modules/index.module.css",
+          "hash": "1708985896835799611"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle-group/demos/hero/css-modules/index.tsx",
+          "hash": "9136394101755154707"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle-group/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle-group/demos/hero/tailwind/index.tsx",
+          "hash": "14374561329160329342"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle-group/page.mdx",
+          "hash": "9471395134137115323"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle/demos/hero/css-modules/index.module.css",
+          "hash": "9231364375376593392"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle/demos/hero/css-modules/index.tsx",
+          "hash": "17791534812878006446"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle/demos/hero/tailwind/index.tsx",
+          "hash": "4395136074678903335"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/toggle/page.mdx",
+          "hash": "13138704939967163023"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tooltip/demos/hero/css-modules/index.module.css",
+          "hash": "4769626186776788078"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tooltip/demos/hero/css-modules/index.tsx",
+          "hash": "9783229313322525797"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tooltip/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tooltip/demos/hero/tailwind/index.tsx",
+          "hash": "12280457312396207825"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/components/tooltip/page.mdx",
+          "hash": "15696426657136435212"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/handbook/animation/page.mdx",
+          "hash": "8718028295624909684"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/handbook/composition/page.mdx",
+          "hash": "15939686693456561459"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/handbook/styling/page.mdx",
+          "hash": "5308234985486183332"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/overview/about/page.mdx",
+          "hash": "8367720551549725956"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/overview/accessibility/page.mdx",
+          "hash": "3980896512733303705"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/overview/quick-start/page.mdx",
+          "hash": "7754121853982445882"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/overview/releases/page.mdx",
+          "hash": "10310422346995366371"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/utils/direction-provider/demos/hero/css-modules/index.module.css",
+          "hash": "16686124844564498762"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/utils/direction-provider/demos/hero/css-modules/index.tsx",
+          "hash": "6071644611263919655"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/utils/direction-provider/demos/hero/index.ts",
+          "hash": "13251068422180406349"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/utils/direction-provider/demos/hero/tailwind/index.tsx",
+          "hash": "17465517102368095428"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/react/utils/direction-provider/page.mdx",
+          "hash": "7098728371564309036"
+        },
+        {
+          "file": "docs/src/app/(public)/(content)/test/quick-nav/page.mdx",
+          "hash": "8136037977139824205"
+        },
+        {
+          "file": "docs/src/app/(public)/layout.css",
+          "hash": "7510261766369435029"
+        },
+        {
+          "file": "docs/src/app/(public)/layout.tsx",
+          "hash": "10288308717472155750"
+        },
+        {
+          "file": "docs/src/app/(public)/opengraph-image.png",
+          "hash": "17952052852101048789"
+        },
+        {
+          "file": "docs/src/app/(public)/page.css",
+          "hash": "8198539495301122718"
+        },
+        {
+          "file": "docs/src/app/(public)/page.tsx",
+          "hash": "7265819897452574245"
+        },
+        {
+          "file": "docs/src/app/Favicons.tsx",
+          "hash": "5379291533583582480"
+        },
+        {
+          "file": "docs/src/app/layout.tsx",
+          "hash": "6369004691066705939"
+        },
+        {
+          "file": "docs/src/app/not-found.css",
+          "hash": "11620646383736091671"
+        },
+        {
+          "file": "docs/src/app/not-found.tsx",
+          "hash": "7086291053611736030"
+        },
+        {
+          "file": "docs/src/blocks/Demo/DemoContext.ts",
+          "hash": "2368027231196296760"
+        },
+        {
+          "file": "docs/src/blocks/Demo/DemoPlayground.tsx",
+          "hash": "1636347415622270710"
+        },
+        {
+          "file": "docs/src/blocks/Demo/DemoRoot.tsx",
+          "hash": "16772620670532916489"
+        },
+        {
+          "file": "docs/src/blocks/Demo/DemoSourceBrowser.tsx",
+          "hash": "8990336554439034187"
+        },
+        {
+          "file": "docs/src/blocks/Demo/DemoSourceCopy.tsx",
+          "hash": "10191595548371467241"
+        },
+        {
+          "file": "docs/src/blocks/Demo/index.ts",
+          "hash": "13921287190256634413"
+        },
+        {
+          "file": "docs/src/blocks/Demo/types.ts",
+          "hash": "2429965682726169840"
+        },
+        {
+          "file": "docs/src/blocks/GoogleAnalytics.tsx",
+          "hash": "4361670652903533180"
+        },
+        {
+          "file": "docs/src/blocks/GoogleTagManager.tsx",
+          "hash": "788645204985814444"
+        },
+        {
+          "file": "docs/src/blocks/PackageManagerSnippet/PackageManagerSnippetCode.tsx",
+          "hash": "12930187266036915086"
+        },
+        {
+          "file": "docs/src/blocks/PackageManagerSnippet/PackageManagerSnippetProvider.tsx",
+          "hash": "17197053061197505250"
+        },
+        {
+          "file": "docs/src/blocks/PackageManagerSnippet/PackageManagerSnippetRoot.tsx",
+          "hash": "15386370155112453274"
+        },
+        {
+          "file": "docs/src/blocks/PackageManagerSnippet/index.ts",
+          "hash": "2821536265733396622"
+        },
+        {
+          "file": "docs/src/blocks/README.txt",
+          "hash": "9845639554588029194"
+        },
+        {
+          "file": "docs/src/blocks/createCodeSandbox/CreateReactApp.ts",
+          "hash": "17311475122163984944"
+        },
+        {
+          "file": "docs/src/blocks/createCodeSandbox/addHiddenInput.ts",
+          "hash": "13997625372276915357"
+        },
+        {
+          "file": "docs/src/blocks/createCodeSandbox/createCodeSandbox.ts",
+          "hash": "18311451767955958965"
+        },
+        {
+          "file": "docs/src/blocks/createCodeSandbox/createStackBlitzProject.ts",
+          "hash": "833872846891206985"
+        },
+        {
+          "file": "docs/src/blocks/createCodeSandbox/flattenRelativeImports.ts",
+          "hash": "12353509577543700401"
+        },
+        {
+          "file": "docs/src/blocks/createCodeSandbox/packDemo.test.ts",
+          "hash": "11786756302298466009"
+        },
+        {
+          "file": "docs/src/blocks/createCodeSandbox/packDemo.ts",
+          "hash": "6857643061590757966"
+        },
+        {
+          "file": "docs/src/breakpoints.css",
+          "hash": "7145700005494861999"
+        },
+        {
+          "file": "docs/src/components/Code.css",
+          "hash": "17767699070460528009"
+        },
+        {
+          "file": "docs/src/components/Code.tsx",
+          "hash": "3750999520547948273"
+        },
+        {
+          "file": "docs/src/components/CodeBlock.css",
+          "hash": "4109707323485532511"
+        },
+        {
+          "file": "docs/src/components/CodeBlock.tsx",
+          "hash": "2545772004887107407"
+        },
+        {
+          "file": "docs/src/components/Demo/CodeSandboxLink.tsx",
+          "hash": "11532555281872271973"
+        },
+        {
+          "file": "docs/src/components/Demo/Demo.css",
+          "hash": "15994898579083524445"
+        },
+        {
+          "file": "docs/src/components/Demo/Demo.tsx",
+          "hash": "4973115759666961794"
+        },
+        {
+          "file": "docs/src/components/Demo/DemoCodeBlock.tsx",
+          "hash": "2761400098300229101"
+        },
+        {
+          "file": "docs/src/components/Demo/DemoErrorFallback.tsx",
+          "hash": "5608545622317181413"
+        },
+        {
+          "file": "docs/src/components/Demo/DemoFileSelector.tsx",
+          "hash": "12220090483309639717"
+        },
+        {
+          "file": "docs/src/components/Demo/DemoLoader.tsx",
+          "hash": "16423467572509340694"
+        },
+        {
+          "file": "docs/src/components/Demo/DemoPlayground.tsx",
+          "hash": "5966558045715570924"
+        },
+        {
+          "file": "docs/src/components/Demo/DemoVariantSelector.tsx",
+          "hash": "16215693233181720862"
+        },
+        {
+          "file": "docs/src/components/Demo/DemoVariantSelectorProvider.tsx",
+          "hash": "7395211971919058587"
+        },
+        {
+          "file": "docs/src/components/Demo/rehypeDemos.mjs",
+          "hash": "9067269128454945414"
+        },
+        {
+          "file": "docs/src/components/DocsProviders.tsx",
+          "hash": "9899146071626554025"
+        },
+        {
+          "file": "docs/src/components/GhostButton.css",
+          "hash": "13368900597266958496"
+        },
+        {
+          "file": "docs/src/components/GhostButton.tsx",
+          "hash": "9249719033002074702"
+        },
+        {
+          "file": "docs/src/components/GoogleAnalytics.tsx",
+          "hash": "8076267327309034390"
+        },
+        {
+          "file": "docs/src/components/Header.css",
+          "hash": "8667074357679233343"
+        },
+        {
+          "file": "docs/src/components/Header.tsx",
+          "hash": "12038528154842104684"
+        },
+        {
+          "file": "docs/src/components/Kbd/Kbd.css",
+          "hash": "6096436628886131625"
+        },
+        {
+          "file": "docs/src/components/Kbd/Kbd.tsx",
+          "hash": "18277188371620390157"
+        },
+        {
+          "file": "docs/src/components/Kbd/rehypeKbd.mjs",
+          "hash": "15791411029084552147"
+        },
+        {
+          "file": "docs/src/components/Link.css",
+          "hash": "1653723466659720079"
+        },
+        {
+          "file": "docs/src/components/Link.tsx",
+          "hash": "378591525192724588"
+        },
+        {
+          "file": "docs/src/components/Logo.tsx",
+          "hash": "68932489749597976"
+        },
+        {
+          "file": "docs/src/components/MobileNav.css",
+          "hash": "13881515334777754046"
+        },
+        {
+          "file": "docs/src/components/MobileNav.tsx",
+          "hash": "6208327565999844035"
+        },
+        {
+          "file": "docs/src/components/Popup.css",
+          "hash": "4302158886300382122"
+        },
+        {
+          "file": "docs/src/components/Popup.tsx",
+          "hash": "15073176205089150621"
+        },
+        {
+          "file": "docs/src/components/QuickNav/QuickNav.css",
+          "hash": "10448968189198888402"
+        },
+        {
+          "file": "docs/src/components/QuickNav/QuickNav.tsx",
+          "hash": "10746323243974831462"
+        },
+        {
+          "file": "docs/src/components/QuickNav/rehypeQuickNav.mjs",
+          "hash": "10415863388745045389"
+        },
+        {
+          "file": "docs/src/components/QuickNav/rehypeSlug.mjs",
+          "hash": "12405103438956604422"
+        },
+        {
+          "file": "docs/src/components/ReferenceTable/AttributesReferenceTable.tsx",
+          "hash": "9740817780836308627"
+        },
+        {
+          "file": "docs/src/components/ReferenceTable/CssVariablesReferenceTable.tsx",
+          "hash": "37359915201370204"
+        },
+        {
+          "file": "docs/src/components/ReferenceTable/PropsReferenceTable.tsx",
+          "hash": "926713358659587333"
+        },
+        {
+          "file": "docs/src/components/ReferenceTable/ReferenceTablePopover.tsx",
+          "hash": "8035392701245306361"
+        },
+        {
+          "file": "docs/src/components/ReferenceTable/rehypeReference.mjs",
+          "hash": "7329745998010392388"
+        },
+        {
+          "file": "docs/src/components/ReferenceTable/types.ts",
+          "hash": "9658375438063227655"
+        },
+        {
+          "file": "docs/src/components/ScrollArea.css",
+          "hash": "8345266465412026050"
+        },
+        {
+          "file": "docs/src/components/ScrollArea.tsx",
+          "hash": "16536278814260351269"
+        },
+        {
+          "file": "docs/src/components/Select.css",
+          "hash": "4024283457408349619"
+        },
+        {
+          "file": "docs/src/components/Select.tsx",
+          "hash": "18344202738710602914"
+        },
+        {
+          "file": "docs/src/components/SideNav.css",
+          "hash": "3030725711955195998"
+        },
+        {
+          "file": "docs/src/components/SideNav.tsx",
+          "hash": "8007476214754339644"
+        },
+        {
+          "file": "docs/src/components/Subtitle/Subtitle.css",
+          "hash": "2854700125017254898"
+        },
+        {
+          "file": "docs/src/components/Subtitle/Subtitle.tsx",
+          "hash": "1102138856000441634"
+        },
+        {
+          "file": "docs/src/components/Subtitle/rehypeSubtitle.mjs",
+          "hash": "4641168970662842518"
+        },
+        {
+          "file": "docs/src/components/Table.css",
+          "hash": "5055352135313443449"
+        },
+        {
+          "file": "docs/src/components/Table.tsx",
+          "hash": "10262633561047373946"
+        },
+        {
+          "file": "docs/src/components/TableCode.tsx",
+          "hash": "7705985463515087504"
+        },
+        {
+          "file": "docs/src/demo-theme.css",
+          "hash": "8781647929389248402"
+        },
+        {
+          "file": "docs/src/fonts/bold.woff2",
+          "hash": "9695339822562706563"
+        },
+        {
+          "file": "docs/src/fonts/index.css",
+          "hash": "2982674126035503584"
+        },
+        {
+          "file": "docs/src/fonts/medium.woff2",
+          "hash": "5230773451691911227"
+        },
+        {
+          "file": "docs/src/fonts/regular.woff2",
+          "hash": "15972328702307903166"
+        },
+        {
+          "file": "docs/src/icons/ArrowRightIcon.tsx",
+          "hash": "6029175199750153984"
+        },
+        {
+          "file": "docs/src/icons/CheckIcon.tsx",
+          "hash": "4685910021680572482"
+        },
+        {
+          "file": "docs/src/icons/ChevronDownIcon.tsx",
+          "hash": "10221757448848991890"
+        },
+        {
+          "file": "docs/src/icons/CopyIcon.tsx",
+          "hash": "4430582659586071841"
+        },
+        {
+          "file": "docs/src/icons/ExternalLinkIcon.tsx",
+          "hash": "16813394800140682253"
+        },
+        {
+          "file": "docs/src/icons/GitHubIcon.tsx",
+          "hash": "16940838636558946349"
+        },
+        {
+          "file": "docs/src/icons/NpmIcon.tsx",
+          "hash": "13588772334394892518"
+        },
+        {
+          "file": "docs/src/icons/ThickCheckIcon.tsx",
+          "hash": "2472252757162393140"
+        },
+        {
+          "file": "docs/src/mdx-components.tsx",
+          "hash": "7762989936800215466"
+        },
+        {
+          "file": "docs/src/mdx/createHast.mjs",
+          "hash": "17245113373177243424"
+        },
+        {
+          "file": "docs/src/mdx/createMdxComponent.ts",
+          "hash": "175425736394872724"
+        },
+        {
+          "file": "docs/src/mdx/createMdxElement.mjs",
+          "hash": "42730320316641636"
+        },
+        {
+          "file": "docs/src/nav.ts",
+          "hash": "5404172594848832678"
+        },
+        {
+          "file": "docs/src/styles.css",
+          "hash": "18175496466202762152"
+        },
+        {
+          "file": "docs/src/syntax-highlighting/index.css",
+          "hash": "6446998365343048699"
+        },
+        {
+          "file": "docs/src/syntax-highlighting/index.mjs",
+          "hash": "1574087496927929332"
+        },
+        {
+          "file": "docs/src/syntax-highlighting/index.ts",
+          "hash": "10242995118440183451"
+        },
+        {
+          "file": "docs/src/syntax-highlighting/rehypeEmptyLines.mjs",
+          "hash": "15924846001751638122"
+        },
+        {
+          "file": "docs/src/syntax-highlighting/rehypeInlineCode.mjs",
+          "hash": "5653899819264032356"
+        },
+        {
+          "file": "docs/src/syntax-highlighting/rehypeJsxExpressions.mjs",
+          "hash": "2087355290897088520"
+        },
+        {
+          "file": "docs/src/syntax-highlighting/rehypePrettierIgnore.mjs",
+          "hash": "6105243610246135918"
+        },
+        {
+          "file": "docs/src/utils/getChildrenText.ts",
+          "hash": "9797012983557022307"
+        },
+        {
+          "file": "docs/tsconfig.json",
+          "hash": "12914912618574297107"
+        },
+        {
+          "file": "docs/types.d.ts",
+          "hash": "6078098064001681903"
+        },
+        {
+          "file": "docs/vitest.config.mts",
+          "hash": "11378943530804723202"
+        }
+      ],
+      "eslint-plugin-material-ui": [
+        {
+          "file": "packages/eslint-plugin-material-ui/package.json",
+          "hash": "2587788771042149069",
+          "deps": [
+            "npm:@types/eslint",
+            "npm:@typescript-eslint/experimental-utils",
+            "npm:@typescript-eslint/parser"
+          ]
+        },
+        {
+          "file": "packages/eslint-plugin-material-ui/src/index.js",
+          "hash": "14634989929177203181"
+        }
+      ],
+      "@mui-internal/tests": [
+        {
+          "file": "test/README.md",
+          "hash": "15011822652946316808"
+        },
+        {
+          "file": "test/assets/fake.png",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test/assets/fake2.png",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test/docs-regressions-before.png",
+          "hash": "2949458805363494799"
+        },
+        {
+          "file": "test/docs-regressions-diff.png",
+          "hash": "15741747015175121564"
+        },
+        {
+          "file": "test/e2e/README.md",
+          "hash": "4174653123611196807"
+        },
+        {
+          "file": "test/e2e/TestViewer.tsx",
+          "hash": "17701042610420057289"
+        },
+        {
+          "file": "test/e2e/fixtures/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test/e2e/fixtures/Radio.tsx",
+          "hash": "18158830040522965176"
+        },
+        {
+          "file": "test/e2e/index.html",
+          "hash": "1468238604109158967"
+        },
+        {
+          "file": "test/e2e/index.test.ts",
+          "hash": "5847290447238321741"
+        },
+        {
+          "file": "test/e2e/main.tsx",
+          "hash": "14123200359729744312"
+        },
+        {
+          "file": "test/e2e/postcss.config.js",
+          "hash": "5304943459702966757"
+        },
+        {
+          "file": "test/e2e/serve.json",
+          "hash": "12467088906161027268"
+        },
+        {
+          "file": "test/e2e/vite.config.mjs",
+          "hash": "12925413908332518403"
+        },
+        {
+          "file": "test/e2e/vitest.config.mts",
+          "hash": "2365833414412635509"
+        },
+        {
+          "file": "test/package.json",
+          "hash": "12471301587393081944",
+          "deps": [
+            "npm:@babel/runtime",
+            "@anchor-ui/react",
+            "npm:@mui/internal-test-utils",
+            "npm:@playwright/test",
+            "npm:@testing-library/dom",
+            "npm:@types/chai",
+            "npm:@types/chai-dom",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@types/sinon",
+            "npm:chai@4.5.0",
+            "docs",
+            "npm:fast-glob",
+            "npm:fs-extra",
+            "npm:is-wsl@3.1.0",
+            "npm:lodash",
+            "npm:playwright",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom",
+            "npm:sinon",
+            "npm:util",
+            "npm:webpack",
+            "npm:yargs"
+          ]
+        },
+        {
+          "file": "test/regressions/README.md",
+          "hash": "11301011741586180116"
+        },
+        {
+          "file": "test/regressions/TestViewer.tsx",
+          "hash": "9436744169670836344"
+        },
+        {
+          "file": "test/regressions/fixtures/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test/regressions/index.html",
+          "hash": "1632428902639395230"
+        },
+        {
+          "file": "test/regressions/index.test.ts",
+          "hash": "2508181143233236781"
+        },
+        {
+          "file": "test/regressions/main.tsx",
+          "hash": "12133523352155048591"
+        },
+        {
+          "file": "test/regressions/manual/README.md",
+          "hash": "14370370246009123505"
+        },
+        {
+          "file": "test/regressions/postcss.config.js",
+          "hash": "5304943459702966757"
+        },
+        {
+          "file": "test/regressions/serve.json",
+          "hash": "12467088906161027268"
+        },
+        {
+          "file": "test/regressions/vite.config.mjs",
+          "hash": "8851598458658278588"
+        },
+        {
+          "file": "test/regressions/vitest.config.mts",
+          "hash": "2365833414412635509"
+        },
+        {
+          "file": "test/setupVitest.ts",
+          "hash": "16518347944656784561"
+        },
+        {
+          "file": "test/tsconfig.json",
+          "hash": "17325125282869006416"
+        },
+        {
+          "file": "test/vite.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "test/vite.shared.config.mjs",
+          "hash": "12271123497148781706"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".browserslistrc",
+        "hash": "6452283278047179647"
+      },
+      {
+        "file": ".circleci/config.yml",
+        "hash": "15488846827777828223"
+      },
+      {
+        "file": ".codesandbox/ci.json",
+        "hash": "12329096071627604303"
+      },
+      {
+        "file": ".codesandbox/template/README.md",
+        "hash": "7489753945404905401"
+      },
+      {
+        "file": ".codesandbox/template/package.json",
+        "hash": "5160801526532244718"
+      },
+      {
+        "file": ".codesandbox/template/public/favicon.ico",
+        "hash": "2949791817221603359"
+      },
+      {
+        "file": ".codesandbox/template/public/index.html",
+        "hash": "7467369727830420824"
+      },
+      {
+        "file": ".codesandbox/template/src/App.tsx",
+        "hash": "15366952148066528038"
+      },
+      {
+        "file": ".codesandbox/template/src/index.css",
+        "hash": "3474877231404974864"
+      },
+      {
+        "file": ".codesandbox/template/src/index.tsx",
+        "hash": "1369714449901803716"
+      },
+      {
+        "file": ".codesandbox/template/src/react-app-env.d.ts",
+        "hash": "3195158367843515590"
+      },
+      {
+        "file": ".codesandbox/template/tsconfig.json",
+        "hash": "5484821368003898750"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "9281331455268854640"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "5791858865341550420"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "17438828372752006098"
+      },
+      {
+        "file": ".gitattributes",
+        "hash": "5640042935182272550"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/1.bug.md",
+        "hash": "16197279152177056018"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/2.feature-request.md",
+        "hash": "8983790937297351348"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/3.get-help.md",
+        "hash": "16526187023768095985"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/4.docs-feedback.md",
+        "hash": "16144204816400073997"
+      },
+      {
+        "file": ".github/PULL_REQUEST_TEMPLATE.md",
+        "hash": "5902697953117396781"
+      },
+      {
+        "file": ".github/codeql/codeql-config.yml",
+        "hash": "2224005733729873766"
+      },
+      {
+        "file": ".github/workflows/check-if-pr-has-label.yml",
+        "hash": "1580958605506009507"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "16848288691737415944"
+      },
+      {
+        "file": ".github/workflows/codeql.yml",
+        "hash": "8840672625723851234"
+      },
+      {
+        "file": ".github/workflows/ensure-triage-label.yml",
+        "hash": "12150072470134726873"
+      },
+      {
+        "file": ".github/workflows/maintenance.yml",
+        "hash": "12103829532567272879"
+      },
+      {
+        "file": ".github/workflows/mark-duplicate.yml",
+        "hash": "3928989773744743863"
+      },
+      {
+        "file": ".github/workflows/new-issue-triage.yml",
+        "hash": "9326700259546797354"
+      },
+      {
+        "file": ".github/workflows/no-response.yml",
+        "hash": "13854374513114485374"
+      },
+      {
+        "file": ".github/workflows/scorecards.yml",
+        "hash": "9808380056260697895"
+      },
+      {
+        "file": ".github/workflows/support-stackoverflow.yml",
+        "hash": "13020926977244965998"
+      },
+      {
+        "file": ".github/workflows/vale-action.yml",
+        "hash": "5903946637503987654"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "5238034588097287725"
+      },
+      {
+        "file": ".markdownlint-cli2.cjs",
+        "hash": "2466515494545221040"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "7161200660591779055"
+      },
+      {
+        "file": ".vale.ini",
+        "hash": "1898349710370516488"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "17495205603760495623"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "11162599089713621967"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "13217717989962758095"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "hash": "11487039008536055658"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "15737816592586038230"
+      },
+      {
+        "file": "README.md",
+        "hash": "3048384592362646261"
+      },
+      {
+        "file": "SECURITY.md",
+        "hash": "11560820002336473659"
+      },
+      {
+        "file": "babel.config.js",
+        "hash": "10381853838641933940"
+      },
+      {
+        "file": "codecov.yml",
+        "hash": "15437409570988122184"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "1522295035357258616"
+      },
+      {
+        "file": "netlify.toml",
+        "hash": "9050926044810105877"
+      },
+      {
+        "file": "netlify/functions/deploy-succeeded.js",
+        "hash": "8203412829698344341"
+      },
+      {
+        "file": "nx.json",
+        "hash": "5042829549895496093"
+      },
+      {
+        "file": "package.json",
+        "hash": "2135579530307700921"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "5188776478811776426"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "4940145284680577807"
+      },
+      {
+        "file": "prettier.config.js",
+        "hash": "11562432784352611548"
+      },
+      {
+        "file": "renovate.json",
+        "hash": "10285377993591806409"
+      },
+      {
+        "file": "scripts/README.md",
+        "hash": "15387378958951530436"
+      },
+      {
+        "file": "scripts/build.mjs",
+        "hash": "15657011920323101409"
+      },
+      {
+        "file": "scripts/buildApiDocs/buildReference.ts",
+        "hash": "10510218136554241015"
+      },
+      {
+        "file": "scripts/buildApiDocs/config/getBaseUiComponentInfo.ts",
+        "hash": "3066962894936637873"
+      },
+      {
+        "file": "scripts/buildApiDocs/config/projectSettings.ts",
+        "hash": "12485398400533997099"
+      },
+      {
+        "file": "scripts/buildApiDocs/index.ts",
+        "hash": "5172189015000004049"
+      },
+      {
+        "file": "scripts/buildApiDocs/react-docgen.d.ts",
+        "hash": "3097248490826802635"
+      },
+      {
+        "file": "scripts/buildApiDocs/tsconfig.json",
+        "hash": "15651742479058899922"
+      },
+      {
+        "file": "scripts/buildTypes.mts",
+        "hash": "6224210229274531871"
+      },
+      {
+        "file": "scripts/copyFiles.mjs",
+        "hash": "3611252027040328766"
+      },
+      {
+        "file": "scripts/copyFilesUtils.mjs",
+        "hash": "956402550486270422"
+      },
+      {
+        "file": "scripts/coreTypeScriptProjects.js",
+        "hash": "10107872370288379532"
+      },
+      {
+        "file": "scripts/generateProptypes.ts",
+        "hash": "14989108107938954624"
+      },
+      {
+        "file": "scripts/inlineScripts.mts",
+        "hash": "5564668799741854356"
+      },
+      {
+        "file": "scripts/jsonlint.mjs",
+        "hash": "17527935014959770541"
+      },
+      {
+        "file": "scripts/pushArgos.mjs",
+        "hash": "15888896140750316621"
+      },
+      {
+        "file": "scripts/releaseChangelog.mjs",
+        "hash": "9435760464945423575"
+      },
+      {
+        "file": "scripts/releaseTag.mjs",
+        "hash": "9960317342040228353"
+      },
+      {
+        "file": "scripts/sizeSnapshot/.gitignore",
+        "hash": "9756457554583904358"
+      },
+      {
+        "file": "scripts/sizeSnapshot/create.js",
+        "hash": "17460495312345959763"
+      },
+      {
+        "file": "scripts/sizeSnapshot/index.js",
+        "hash": "7174785504916201066"
+      },
+      {
+        "file": "scripts/sizeSnapshot/loadComparison.js",
+        "hash": "2174348073690053954"
+      },
+      {
+        "file": "scripts/sizeSnapshot/webpack.config.js",
+        "hash": "7028762078617055529"
+      },
+      {
+        "file": "scripts/sizeSnapshot/worker.js",
+        "hash": "13220384679197875513"
+      },
+      {
+        "file": "scripts/testBuiltTypes.mjs",
+        "hash": "8468794613501308582"
+      },
+      {
+        "file": "scripts/useReactVersion.mjs",
+        "hash": "1617487459564608101"
+      },
+      {
+        "file": "scripts/utils.mjs",
+        "hash": "11034019691997892145"
+      },
+      {
+        "file": "scripts/validateTypescriptDeclarations.mts",
+        "hash": "16229554754926848581"
+      },
+      {
+        "file": "stylelint.config.mjs",
+        "hash": "10568139286762841957"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6592774211484796805"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1300832719619241286"
+      },
+      {
+        "file": "vitest.config.mts",
+        "hash": "10257083147025379491"
+      },
+      {
+        "file": "vitest.shared.mts",
+        "hash": "883470811899487464"
+      },
+      {
+        "file": "vitest.workspace.mts",
+        "hash": "17360570556852786684"
+      }
+    ]
+  }
+}

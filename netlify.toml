@@ -5,7 +5,10 @@
   publish = "docs/export/"
 
   # Default build command.
-  command = "pnpm build"
+  command = "pnpm docs:build"
 
 [build.environment]
   NODE_VERSION = "18"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
