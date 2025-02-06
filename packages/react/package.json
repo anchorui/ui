@@ -1,6 +1,6 @@
 {
   "name": "@anchor-ui/react",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "private": false,
   "author": "Anchor UI",
   "description": "Anchor UI is a fully customizable component library built on top of Base UI. It offers headless ('unstyled') React components and low-level hooks, giving you complete control over CSS and accessibility features. Beautiful, accessible, and production-ready.",

@@ -1,7 +1,7 @@
 # Changelog
 
-## [1.0.0-alpha.1]
-**Janurary 25, 2025**
+## [1.0.0-alpha.2]
+**February 25, 2025**
 ### Added
 - Initial release of Anchor UI.
 - Fully customizable and headless React components.

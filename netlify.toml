@@ -9,6 +9,3 @@
 
 [build.environment]
   NODE_VERSION = "18"
-
-[[plugins]]
-  package = "./node_modules/@mui/monorepo/packages/netlify-plugin-cache-docs"
