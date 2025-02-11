@@ -510,9 +510,6 @@ importers:
       '@mui/internal-test-utils':
         specifier: ^1.0.26
         version: 1.0.26(@babel/core@7.26.7)(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      '@netlify/plugin-nextjs':
-        specifier: ^5.9.4
-        version: 5.9.4
       '@tailwindcss/postcss':
         specifier: 4.0.4
         version: 4.0.4
@@ -2480,10 +2477,6 @@ packages:
   '@netlify/node-cookies@0.1.0':
     resolution: {integrity: sha512-OAs1xG+FfLX0LoRASpqzVntVV/RpYkgpI0VrUnw2u0Q1qiZUzcPffxRK8HF3gc4GjuhG5ahOEMJ9bswBiZPq0g==}
     engines: {node: ^14.16.0 || >=16.0.0}
-
-  '@netlify/plugin-nextjs@5.9.4':
-    resolution: {integrity: sha512-Q9qyhGUxFuM3kuWmoaj4yHPUfHhOsZmwdsQv4kIXkBWVu8FOe0RFHRP0A0EXciSVFGwq+XAo3H5jEtVSANAOWw==}
-    engines: {node: '>=18.0.0'}
 
   '@netlify/serverless-functions-api@1.26.1':
     resolution: {integrity: sha512-q3L9i3HoNfz0SGpTIS4zTcKBbRkxzCRpd169eyiTuk3IwcPC3/85mzLHranlKo2b+HYT0gu37YxGB45aD8A3Tw==}
@@ -11445,8 +11438,6 @@ snapshots:
       '@netlify/serverless-functions-api': 1.26.1
 
   '@netlify/node-cookies@0.1.0': {}
-
-  '@netlify/plugin-nextjs@5.9.4': {}
 
   '@netlify/serverless-functions-api@1.26.1':
     dependencies:
