@@ -8,7 +8,7 @@ import { GoogleTagManager } from '../blocks/GoogleTagManager';
 
 const PRODUCTION_GA =
   process.env.DEPLOY_ENV === 'production' || process.env.DEPLOY_ENV === 'staging';
-const GOOGLE_ANALYTICS_ID_V4 = PRODUCTION_GA ? 'G-5NXDQLC2ZK' : 'G-XJ83JQEK7J';
+const GOOGLE_ANALYTICS_ID_V4 = PRODUCTION_GA ? 'G-F47JHCYZ3Y' : 'G-F47JHCYZ3Y';
 
 export function GoogleAnalytics() {
   const currentRoute = usePathname();
@@ -19,7 +19,7 @@ export function GoogleAnalytics() {
     <React.Fragment>
       <GoogleTagManager id={GOOGLE_ANALYTICS_ID_V4} />
       <BaseGoogleAnalytics
-        productId="base-ui"
+        productId="anchor-ui"
         productCategoryId="core"
         currentRoute={currentRoute}
         codeLanguage={demoVariantSelectorContext.selectedLanguage}
