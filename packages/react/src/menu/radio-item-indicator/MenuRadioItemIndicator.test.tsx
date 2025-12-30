@@ -76,7 +76,7 @@ describe('<Menu.RadioItemIndicator />', () => {
       skip();
     }
 
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = false;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = false;
 
     let animationFinished = false;
     const notifyAnimationFinished = () => {

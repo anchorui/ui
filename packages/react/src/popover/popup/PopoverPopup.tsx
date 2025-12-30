@@ -8,7 +8,7 @@ import { usePopoverPositionerContext } from '../positioner/PopoverPositionerCont
 import { usePopoverPopup } from './usePopoverPopup';
 import { useForkRef } from '../../utils/useForkRef';
 import type { Side, Align } from '../../utils/useAnchorPositioning';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { CustomStyleHookMapping } from '../../utils/getStyleHookProps';
 import type { TransitionStatus } from '../../utils/useTransitionStatus';
 import { popupStateMapping as baseMapping } from '../../utils/popupStateMapping';
@@ -106,7 +106,7 @@ namespace PopoverPopup {
     transitionStatus: TransitionStatus;
   }
 
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * Determines the element to focus when the popover is opened.
      * By default, the first focusable element is focused.

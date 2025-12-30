@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { CompositeRoot } from '../../composite/root/CompositeRoot';
 import { tabsStyleHookMapping } from '../root/styleHooks';
@@ -102,7 +102,7 @@ const TabsList = React.forwardRef(function TabsList(
 namespace TabsList {
   export type State = TabsRoot.State;
 
-  export interface Props extends BaseUIComponentProps<'div', TabsList.State> {
+  export interface Props extends AnchorUIComponentProps<'div', TabsList.State> {
     /**
      * Whether to automatically change the active tab on arrow key focus.
      * Otherwise, tabs will be activated using Enter or Spacebar key press.

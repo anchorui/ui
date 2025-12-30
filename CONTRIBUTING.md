@@ -1,25 +1,44 @@
 # Contributing to Anchor UI
 
-Anchor UI is an open-source project built on top of **Base UI**. The repositories share infrastructure, and many contributing guidelines from Base UI apply to Anchor UI.
+Anchor UI is an open-source headless React component library. We welcome contributions from the community!
 
-Please follow the steps below to contribute to Anchor UI.
+## Getting Started
 
-## Anchor UI vs. Base UI
+1. **Fork the repository** and clone your fork locally
+2. **Install dependencies**: `pnpm install`
+3. **Start the development server**: `pnpm start` (runs the docs site on port 3005)
+4. **Run tests**: `pnpm test:jsdom` or `pnpm test:chromium`
 
-Anchor UI is a headless React component library, built using the same code infrastructure as **Base UI**. While it is a standalone library, it leverages many of Base UI’s principles.
+## Development Guidelines
 
-You can find the "contributing" guide for the main repository in [Base UI's contributing guide](https://github.com/mui/material-ui/blob/HEAD/CONTRIBUTING.md).
+- **Package Manager**: Anchor UI uses `pnpm` exclusively. Other package managers are not supported.
+- **Code Style**: Follow the existing code style and use Prettier for formatting
+- **Testing**: All components must have comprehensive tests. Run `pnpm test` before submitting PRs
+- **TypeScript**: All code must be properly typed. Run `pnpm typescript` to verify types
 
-Most of the content in the Base UI "contributing" guide applies to this repository. However, there are a few important differences:
+## Anchor UI Architecture
 
-- The default GitHub branch might be different.
-- The local documentation site for Anchor UI might open on a different port, such as `3005` instead of `3000`.
+Anchor UI is built using proven architectural patterns, but is an independent library with its own codebase, APIs, and development practices. While we leverage architectural inspiration from Base UI, Anchor UI maintains its own:
 
-## Next Steps
+- Component APIs and prop interfaces
+- Type definitions and TypeScript types
+- Build system and tooling
+- Documentation and examples
+- Roadmap and feature development
 
-If you're ready to contribute to Anchor UI, please read the full contributing guide in Base UI. It covers everything from setting up your local development environment to submitting pull requests.
+## Submitting Changes
 
-You can find the full contributing guide here: [Base UI Contributing Guide](https://github.com/mui/material-ui/blob/HEAD/CONTRIBUTING.md).
+1. Create a feature branch from `master`
+2. Make your changes with tests
+3. Ensure all tests pass: `pnpm test`
+4. Run linting: `pnpm eslint`
+5. Submit a pull request with a clear description
+
+## Questions?
+
+- Open an issue on GitHub
+- Check existing discussions in GitHub Discussions
+- Follow [@anchor_ui](https://x.com/anchor_ui) for updates
 
 ## License
 

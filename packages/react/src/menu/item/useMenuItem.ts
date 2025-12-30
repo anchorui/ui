@@ -3,7 +3,7 @@ import * as React from 'react';
 import { FloatingEvents } from '@floating-ui/react';
 import { useButton } from '../../use-button';
 import { mergeReactProps } from '../../utils/mergeReactProps';
-import { GenericHTMLProps, BaseUIEvent } from '../../utils/types';
+import { GenericHTMLProps, AnchorUIEvent } from '../../utils/types';
 import { useForkRef } from '../../utils/useForkRef';
 
 export function useMenuItem(params: useMenuItem.Parameters): useMenuItem.ReturnValue {
@@ -33,9 +33,9 @@ export function useMenuItem(params: useMenuItem.Parameters): useMenuItem.ReturnV
           id,
           role: 'menuitem',
           tabIndex: highlighted ? 0 : -1,
-          onKeyUp: (event: BaseUIEvent<React.KeyboardEvent>) => {
+          onKeyUp: (event: AnchorUIEvent<React.KeyboardEvent>) => {
             if (event.key === ' ' && typingRef.current) {
-              event.preventBaseUIHandler();
+              event.preventAnchorUIHandler();
             }
           },
           onClick: (event: React.MouseEvent | React.KeyboardEvent) => {

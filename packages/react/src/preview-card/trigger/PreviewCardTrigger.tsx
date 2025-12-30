@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { usePreviewCardRootContext } from '../root/PreviewCardContext';
 import { useForkRef } from '../../utils/useForkRef';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { triggerOpenStateMapping } from '../../utils/popupStateMapping';
 
 /**
@@ -46,7 +46,7 @@ namespace PreviewCardTrigger {
     open: boolean;
   }
 
-  export interface Props extends BaseUIComponentProps<'a', State> {}
+  export interface Props extends AnchorUIComponentProps<'a', State> {}
 }
 
 PreviewCardTrigger.propTypes /* remove-proptypes */ = {

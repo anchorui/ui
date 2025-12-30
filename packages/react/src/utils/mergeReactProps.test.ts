@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { spy } from 'sinon';
 import { mergeReactProps } from './mergeReactProps';
-import type { BaseUIEvent } from './types';
+import type { AnchorUIEvent } from './types';
 
 describe('mergeReactProps', () => {
   it('merges event handlers', () => {
@@ -92,7 +92,7 @@ describe('mergeReactProps', () => {
     expect(mergedProps.style).to.equal(undefined);
   });
 
-  it('does not prevent internal handler if event.preventBaseUIHandler() is not called', () => {
+  it('does not prevent internal handler if event.preventAnchorUIHandler() is not called', () => {
     let ran = false;
 
     const mergedProps = mergeReactProps<'button'>(
@@ -111,13 +111,13 @@ describe('mergeReactProps', () => {
     expect(ran).to.equal(true);
   });
 
-  it('prevents internal handler if event.preventBaseUIHandler() is called', () => {
+  it('prevents internal handler if event.preventAnchorUIHandler() is called', () => {
     let ran = false;
 
     const mergedProps = mergeReactProps<'button'>(
       {
         onClick(event) {
-          event.preventBaseUIHandler();
+          event.preventAnchorUIHandler();
         },
       },
       {
@@ -137,7 +137,7 @@ describe('mergeReactProps', () => {
     expect(ran).to.equal(false);
   });
 
-  it('prevents handlers merged after event.preventBaseUIHandler() is called', () => {
+  it('prevents handlers merged after event.preventAnchorUIHandler() is called', () => {
     const log: string[] = [];
 
     const mergedProps = mergeReactProps(
@@ -147,8 +147,8 @@ describe('mergeReactProps', () => {
         },
       },
       {
-        onClick(event: BaseUIEvent<React.MouseEvent>) {
-          event.preventBaseUIHandler();
+        onClick(event: AnchorUIEvent<React.MouseEvent>) {
+          event.preventAnchorUIHandler();
           log.push('1');
         },
       },

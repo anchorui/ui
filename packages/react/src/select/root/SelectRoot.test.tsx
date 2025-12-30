@@ -7,7 +7,7 @@ import { spy } from 'sinon';
 
 describe('<Select.Root />', () => {
   beforeEach(() => {
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = true;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = true;
   });
 
   const { render } = createRenderer();
@@ -250,7 +250,7 @@ describe('<Select.Root />', () => {
         skip();
       }
 
-      globalThis.BASE_UI_ANIMATIONS_DISABLED = false;
+      globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = false;
 
       let animationFinished = false;
       const notifyAnimationFinished = () => {

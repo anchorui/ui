@@ -2,8 +2,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { NOOP } from '../../utils/noop';
-import type { BaseUIComponentProps } from '../../utils/types';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import type { AnchorUIComponentProps } from '../../utils/types';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import type { FieldRoot } from '../../field/root/FieldRoot';
 import { CompositeList } from '../../composite/list/CompositeList';
@@ -44,7 +44,7 @@ const SliderRoot = React.forwardRef(function SliderRoot(
     ...otherProps
   } = props;
 
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   const { labelId, state: fieldState, disabled: fieldDisabled } = useFieldRootContext();
   const disabled = fieldDisabled || disabledProp;
@@ -173,7 +173,7 @@ export namespace SliderRoot {
           | 'step'
         >
       >,
-      Omit<BaseUIComponentProps<'div', State>, 'defaultValue' | 'onChange' | 'values'> {
+      Omit<AnchorUIComponentProps<'div', State>, 'defaultValue' | 'onChange' | 'values'> {
     /**
      * The uncontrolled value of the slider when it’s initially rendered.
      *

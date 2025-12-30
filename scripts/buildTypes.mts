@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { cp, readFile } from 'node:fs/promises';
+import { cp, readFile, readdir, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { $ } from 'execa';
 import { parse } from 'jsonc-parser';
@@ -10,7 +10,8 @@ const $$ = $({ stdio: 'inherit' });
 
 interface RunOptions {
   project: string;
-  copy: string[];
+  copy?: string[];
+  clean?: boolean;
 }
 
 /**
@@ -26,12 +27,16 @@ async function run(options: RunOptions) {
     compilerOptions: { outDir },
   } = tsConfig;
 
-  const promises: Promise<void>[] = [];
-  for (const destination of options.copy) {
-    copyDeclarations(outDir, destination);
-  }
+  const sourceDirectory = path.resolve(outDir);
+  const destinations = Array.from(new Set(options.copy ?? []))
+    .map((destination) => path.resolve(destination))
+    .filter((destination) => destination !== sourceDirectory);
 
-  await Promise.allSettled(promises);
+  await Promise.all(destinations.map((destination) => copyDeclarations(sourceDirectory, destination)));
+
+  if (options.clean) {
+    await removeDeclarationFiles(sourceDirectory);
+  }
 }
 
 function emitDeclarations(tsconfig: string) {
@@ -45,15 +50,35 @@ function addImportExtensions(tsconfig: string) {
 }
 
 async function copyDeclarations(sourceDirectory: string, destinationDirectory: string) {
-  const fullSourceDirectory = path.resolve(sourceDirectory);
-  const fullDestinationDirectory = path.resolve(destinationDirectory);
+  console.log(`Copying declarations from ${sourceDirectory} to ${destinationDirectory}`);
 
-  console.log(`Copying declarations from ${fullSourceDirectory} to ${fullDestinationDirectory}`);
-
-  return cp(fullSourceDirectory, fullDestinationDirectory, {
+  return cp(sourceDirectory, destinationDirectory, {
     recursive: true,
     filter: (src) => !src.includes('.') || src.endsWith('.d.ts'), // include directories and .d.ts files
   });
+}
+
+async function removeDeclarationFiles(directory: string) {
+  const entries = await readdir(directory, { withFileTypes: true });
+
+  await Promise.all(
+    entries.map(async (entry) => {
+      const entryPath = path.join(directory, entry.name);
+
+      if (entry.isDirectory()) {
+        await removeDeclarationFiles(entryPath);
+        const remainingEntries = await readdir(entryPath);
+        if (remainingEntries.length === 0) {
+          await rm(entryPath, { recursive: true, force: true });
+        }
+        return;
+      }
+
+      if (entry.name.endsWith('.d.ts') || entry.name.endsWith('.d.ts.map')) {
+        await rm(entryPath, { force: true });
+      }
+    }),
+  );
 }
 
 yargs(hideBin(process.argv))
@@ -71,8 +96,12 @@ yargs(hideBin(process.argv))
         .option('copy', {
           alias: 'c',
           type: 'array',
-          demandOption: true,
           description: 'Directories where the type definition files should be copied',
+        })
+        .option('clean', {
+          type: 'boolean',
+          default: false,
+          description: 'Remove emitted declaration files from the source directory after copying',
         });
     },
     run,

@@ -25,13 +25,16 @@ export function useAnimationsFinished(ref: React.RefObject<HTMLElement | null>) 
       return;
     }
 
-    if (typeof element.getAnimations !== 'function' || globalThis.BASE_UI_ANIMATIONS_DISABLED) {
+    if (
+      typeof element.getAnimations !== 'function' ||
+      (globalThis as any)['ANCHOR_UI_ANIMATIONS_DISABLED']
+    ) {
       fnToExecute();
     } else {
       frameRef.current = requestAnimationFrame(() => {
         Promise.allSettled(element.getAnimations().map((anim) => anim.finished)).then(() => {
           // Synchronously flush the unmounting of the component so that the browser doesn't
-          // paint: https://github.com/mui/base-ui/issues/979
+          // paint: https://github.com/anchorui/ui/issues/979
           ReactDOM.flushSync(fnToExecute);
         });
       });

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useNumberFieldRootContext } from '../root/NumberFieldRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import type { NumberFieldRoot } from '../root/NumberFieldRoot';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * Groups the input with the increment and decrement buttons.
@@ -34,7 +34,7 @@ const NumberFieldGroup = React.forwardRef(function NumberFieldGroup(
 
 namespace NumberFieldGroup {
   export interface State extends NumberFieldRoot.State {}
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 }
 
 NumberFieldGroup.propTypes /* remove-proptypes */ = {

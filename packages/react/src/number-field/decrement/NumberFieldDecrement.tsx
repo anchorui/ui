@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useNumberFieldRootContext } from '../root/NumberFieldRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import type { NumberFieldRoot } from '../root/NumberFieldRoot';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * A stepper button that decreases the field value when clicked.
@@ -34,7 +34,7 @@ const NumberFieldDecrement = React.forwardRef(function NumberFieldDecrement(
 
 namespace NumberFieldDecrement {
   export interface State extends NumberFieldRoot.State {}
-  export interface Props extends BaseUIComponentProps<'button', State> {}
+  export interface Props extends AnchorUIComponentProps<'button', State> {}
 }
 
 NumberFieldDecrement.propTypes /* remove-proptypes */ = {

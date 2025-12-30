@@ -7,7 +7,7 @@ import { SelectIndexContext, useSelectIndexContext } from '../root/SelectIndexCo
 import { useCompositeListItem } from '../../composite/list/useCompositeListItem';
 import { useForkRef } from '../../utils/useForkRef';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useSelectItem } from './useSelectItem';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
 import { useLatestRef } from '../../utils/useLatestRef';
@@ -310,7 +310,7 @@ namespace SelectItem {
     open: boolean;
   }
 
-  export interface Props extends Omit<BaseUIComponentProps<'div', State>, 'id'> {
+  export interface Props extends Omit<AnchorUIComponentProps<'div', State>, 'id'> {
     children?: React.ReactNode;
     /**
      * A unique value that identifies this select item.

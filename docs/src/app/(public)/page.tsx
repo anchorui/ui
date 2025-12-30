@@ -14,7 +14,7 @@ export default function Homepage() {
           Build with Stability, Craft with Confidence
         </h1>
         <p className="HomepageCaption">
-          Built on top of Base UI, Anchor UI gives you full control over design while ensuring flexibility and accessibility.
+          Anchor UI delivers composable, accessible React primitives so you can craft distinctive product interfaces with total control.
         </p>
         <Link
           className="-m-1 inline-flex items-center gap-1 p-1"

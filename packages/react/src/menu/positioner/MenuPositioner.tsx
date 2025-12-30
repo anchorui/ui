@@ -8,7 +8,7 @@ import type { Align, Side } from '../../utils/useAnchorPositioning';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useForkRef } from '../../utils/useForkRef';
 import { useMenuPositioner } from './useMenuPositioner';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { popupStateMapping } from '../../utils/popupStateMapping';
 import { CompositeList } from '../../composite/list/CompositeList';
 import { InternalBackdrop } from '../../utils/InternalBackdrop';
@@ -154,7 +154,7 @@ export namespace MenuPositioner {
 
   export interface Props
     extends useMenuPositioner.SharedParameters,
-      BaseUIComponentProps<'div', State> {}
+      AnchorUIComponentProps<'div', State> {}
 }
 
 MenuPositioner.propTypes /* remove-proptypes */ = {

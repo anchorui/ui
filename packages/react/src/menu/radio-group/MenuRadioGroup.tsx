@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { MenuRadioGroupContext } from './MenuRadioGroupContext';
 import { NOOP } from '../../utils/noop';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useControlled } from '../../utils/useControlled';
 import { useEventCallback } from '../../utils/useEventCallback';
@@ -72,7 +72,7 @@ const MenuRadioGroup = React.forwardRef(function MenuRadioGroup(
 });
 
 namespace MenuRadioGroup {
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * The content of the component.
      */

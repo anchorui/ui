@@ -2,7 +2,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { usePopoverRootContext } from '../root/PopoverRootContext';
 import { usePopoverTitle } from './usePopoverTitle';
 
@@ -43,7 +43,7 @@ namespace PopoverTitle {
   export interface State {}
 
   export interface Props
-    extends BaseUIComponentProps<'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6', State> {}
+    extends AnchorUIComponentProps<'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6', State> {}
 }
 
 PopoverTitle.propTypes /* remove-proptypes */ = {

@@ -1,6 +1,6 @@
 import path from 'path';
 import { ProjectSettings } from '@mui-internal/api-docs-builder';
-import { getBaseUiComponentInfo } from './getBaseUiComponentInfo.js';
+import { getAnchorUIComponentInfo } from './getAnchorUIComponentInfo.js';
 
 export const projectSettings: ProjectSettings = {
   typeScriptProjects: [
@@ -12,7 +12,7 @@ export const projectSettings: ProjectSettings = {
     },
   ],
   baseApiUrl: 'https://anchorui.com',
-  getComponentInfo: getBaseUiComponentInfo,
+  getComponentInfo: getAnchorUIComponentInfo,
   translationPagesDirectory: 'docs/reference/temp/translations',
 
   // Disabled features

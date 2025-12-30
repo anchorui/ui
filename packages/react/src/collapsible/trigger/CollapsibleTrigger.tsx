@@ -3,7 +3,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { triggerOpenStateMapping } from '../../utils/collapsibleOpenStateMapping';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useCollapsibleRootContext } from '../root/CollapsibleRootContext';
 import { CollapsibleRoot } from '../root/CollapsibleRoot';
 import { useCollapsibleTrigger } from './useCollapsibleTrigger';
@@ -45,7 +45,7 @@ const CollapsibleTrigger = React.forwardRef(function CollapsibleTrigger(
 export { CollapsibleTrigger };
 
 namespace CollapsibleTrigger {
-  export interface Props extends BaseUIComponentProps<'button', CollapsibleRoot.State> {}
+  export interface Props extends AnchorUIComponentProps<'button', CollapsibleRoot.State> {}
 }
 
 CollapsibleTrigger.propTypes /* remove-proptypes */ = {

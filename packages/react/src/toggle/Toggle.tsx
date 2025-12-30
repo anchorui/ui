@@ -3,7 +3,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { NOOP } from '../utils/noop';
 import { useComponentRenderer } from '../utils/useComponentRenderer';
-import type { BaseUIComponentProps } from '../utils/types';
+import type { AnchorUIComponentProps } from '../utils/types';
 import { CompositeItem } from '../composite/item/CompositeItem';
 import { useToggleGroupContext } from '../toggle-group/ToggleGroupContext';
 import { useToggle } from './useToggle';
@@ -83,7 +83,7 @@ export namespace Toggle {
           'pressed' | 'defaultPressed' | 'disabled' | 'onPressedChange' | 'value'
         >
       >,
-      Omit<BaseUIComponentProps<'button', State>, 'value'> {
+      Omit<AnchorUIComponentProps<'button', State>, 'value'> {
     /**
      * The label for the Toggle.
      */

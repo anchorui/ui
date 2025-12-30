@@ -2,7 +2,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { NOOP } from '../../utils/noop';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useCollapsibleRoot } from './useCollapsibleRoot';
 import { CollapsibleRootContext } from './CollapsibleRootContext';
@@ -85,8 +85,8 @@ export namespace CollapsibleRoot {
 
   export interface Props
     extends Partial<useCollapsibleRoot.Parameters>,
-      Omit<BaseUIComponentProps<'div', State>, 'render'> {
-    render?: BaseUIComponentProps<'div', State>['render'] | null;
+      Omit<AnchorUIComponentProps<'div', State>, 'render'> {
+    render?: AnchorUIComponentProps<'div', State>['render'] | null;
   }
 }
 

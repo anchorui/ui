@@ -7,7 +7,7 @@ import { useFieldRootContext } from '../root/FieldRootContext';
 import { useFieldError } from './useFieldError';
 import { STYLE_HOOK_MAPPING } from '../utils/constants';
 import { useFormContext } from '../../form/FormContext';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * An error message displayed if the field control fails validation.
@@ -58,7 +58,7 @@ const FieldError = React.forwardRef(function FieldError(
 namespace FieldError {
   export type State = FieldRoot.State;
 
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * Determines whether to show the error message according to the field’s
      * [ValidityState](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState).

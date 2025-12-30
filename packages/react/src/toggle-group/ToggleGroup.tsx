@@ -3,7 +3,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { NOOP } from '../utils/noop';
 import { useComponentRenderer } from '../utils/useComponentRenderer';
-import type { BaseUIComponentProps } from '../utils/types';
+import type { AnchorUIComponentProps } from '../utils/types';
 import { CompositeRoot } from '../composite/root/CompositeRoot';
 import { useDirection } from '../direction-provider/DirectionContext';
 import { useToggleGroup, type UseToggleGroup } from './useToggleGroup';
@@ -110,7 +110,7 @@ export namespace ToggleGroup {
 
   export interface Props
     extends Partial<UseToggleGroup.Parameters>,
-      Omit<BaseUIComponentProps<'div', State>, 'defaultValue'> {
+      Omit<AnchorUIComponentProps<'div', State>, 'defaultValue'> {
     /**
      * Whether the component should ignore user interaction.
      * @default false

@@ -12,7 +12,7 @@ function Root(props: Popover.Root.Props) {
 
 describe('<Popover.Root />', () => {
   beforeEach(() => {
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = true;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = true;
   });
 
   const { render, clock } = createRenderer();
@@ -225,7 +225,7 @@ describe('<Popover.Root />', () => {
         skip();
       }
 
-      globalThis.BASE_UI_ANIMATIONS_DISABLED = false;
+      globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = false;
 
       let animationFinished = false;
       const notifyAnimationFinished = () => {

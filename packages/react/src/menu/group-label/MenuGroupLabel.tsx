@@ -1,9 +1,9 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useMenuGroupRootContext } from '../group/MenuGroupContext';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
 
@@ -21,7 +21,7 @@ const MenuGroupLabel = React.forwardRef(function MenuGroupLabelComponent(
 ) {
   const { className, render, id: idProp, ...other } = props;
 
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   const { setLabelId } = useMenuGroupRootContext();
 
@@ -71,7 +71,7 @@ MenuGroupLabel.propTypes /* remove-proptypes */ = {
 } as any;
 
 namespace MenuGroupLabel {
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 
   export interface State {}
 }

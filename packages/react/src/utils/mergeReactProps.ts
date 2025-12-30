@@ -1,10 +1,10 @@
 import type * as React from 'react';
-import type { BaseUIEvent, WithBaseUIEvent } from './types';
+import type { AnchorUIEvent, WithAnchorUIEvent } from './types';
 
 /**
  * Merges multiple sets of React props such that their event handlers are called in sequence (the user's
  * before our internal ones), and allows the user to prevent the internal event handlers from being
- * executed by attaching a `preventBaseUIHandler` method. It also merges the `style` prop, whereby
+ * executed by attaching a `preventAnchorUIHandler` method. It also merges the `style` prop, whereby
  * the user's styles overwrite the internal ones.
  * @important **`className` and `ref` are not merged.**
  * @param externalProps the user's external props.
@@ -12,10 +12,10 @@ import type { BaseUIEvent, WithBaseUIEvent } from './types';
  * @returns the merged props.
  */
 export function mergeReactProps<T extends React.ElementType>(
-  externalProps: WithBaseUIEvent<React.ComponentPropsWithRef<T>> | undefined,
+  externalProps: WithAnchorUIEvent<React.ComponentPropsWithRef<T>> | undefined,
   ...internalProps: React.ComponentPropsWithRef<T>[]
-): WithBaseUIEvent<React.ComponentPropsWithRef<T>> {
-  let mergedInternalProps: WithBaseUIEvent<React.ComponentPropsWithRef<T>> = internalProps[0];
+): WithAnchorUIEvent<React.ComponentPropsWithRef<T>> {
+  let mergedInternalProps: WithAnchorUIEvent<React.ComponentPropsWithRef<T>> = internalProps[0];
   for (let i = 1; i < internalProps.length; i += 1) {
     mergedInternalProps = merge(mergedInternalProps, internalProps[i]);
   }
@@ -24,9 +24,9 @@ export function mergeReactProps<T extends React.ElementType>(
 }
 
 function merge<T extends React.ElementType>(
-  externalProps: WithBaseUIEvent<React.ComponentPropsWithRef<T>> | undefined,
+  externalProps: WithAnchorUIEvent<React.ComponentPropsWithRef<T>> | undefined,
   internalProps: React.ComponentPropsWithRef<T>,
-): WithBaseUIEvent<React.ComponentPropsWithRef<T>> {
+): WithAnchorUIEvent<React.ComponentPropsWithRef<T>> {
   if (!externalProps) {
     return internalProps;
   }
@@ -47,16 +47,16 @@ function merge<T extends React.ElementType>(
           const theirHandler = value;
           const ourHandler = internalProps[key];
 
-          const baseUIEvent = event as BaseUIEvent<typeof event>;
+          const anchorUIEvent = event as AnchorUIEvent<typeof event>;
 
-          baseUIEvent.preventBaseUIHandler = () => {
+          anchorUIEvent.preventAnchorUIHandler = () => {
             isPrevented = true;
           };
 
-          const result = theirHandler(baseUIEvent);
+          const result = theirHandler(anchorUIEvent);
 
           if (!isPrevented) {
-            ourHandler?.(baseUIEvent);
+            ourHandler?.(anchorUIEvent);
           }
 
           return result;

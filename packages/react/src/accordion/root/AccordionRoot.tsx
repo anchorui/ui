@@ -2,7 +2,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { NOOP } from '../../utils/noop';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
 import { warn } from '../../utils/warn';
@@ -137,7 +137,7 @@ export namespace AccordionRoot {
           | 'orientation'
         >
       >,
-      Omit<BaseUIComponentProps<'div', State>, 'defaultValue'> {
+      Omit<AnchorUIComponentProps<'div', State>, 'defaultValue'> {
     /**
      * Allows the browser’s built-in page search to find and expand the panel contents.
      *

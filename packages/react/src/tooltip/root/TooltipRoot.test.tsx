@@ -12,7 +12,7 @@ function Root(props: Tooltip.Root.Props) {
 
 describe('<Tooltip.Root />', () => {
   beforeEach(() => {
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = true;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = true;
   });
 
   const { render, clock } = createRenderer();

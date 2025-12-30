@@ -6,7 +6,7 @@ import { useForkRef } from '../../utils/useForkRef';
 import { usePopoverRootContext } from '../root/PopoverRootContext';
 import { usePopoverPositioner } from './usePopoverPositioner';
 import { PopoverPositionerContext } from './PopoverPositionerContext';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { Side, Align } from '../../utils/useAnchorPositioning';
 import { popupStateMapping } from '../../utils/popupStateMapping';
 import { HTMLElementType, refType } from '../../utils/proptypes';
@@ -102,7 +102,7 @@ namespace PopoverPositioner {
 
   export interface Props
     extends usePopoverPositioner.SharedParameters,
-      BaseUIComponentProps<'div', State> {}
+      AnchorUIComponentProps<'div', State> {}
 }
 
 PopoverPositioner.propTypes /* remove-proptypes */ = {

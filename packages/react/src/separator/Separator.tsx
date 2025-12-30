@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../utils/types';
+import type { AnchorUIComponentProps } from '../utils/types';
 import { mergeReactProps } from '../utils/mergeReactProps';
 import { useComponentRenderer } from '../utils/useComponentRenderer';
 
@@ -42,7 +42,7 @@ const Separator = React.forwardRef(function SeparatorComponent(
 type Orientation = 'horizontal' | 'vertical';
 
 namespace Separator {
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * The orientation of the separator.
      * @default 'horizontal'

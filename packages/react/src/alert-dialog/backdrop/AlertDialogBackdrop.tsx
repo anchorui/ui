@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useAlertDialogRootContext } from '../root/AlertDialogRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import type { TransitionStatus } from '../../utils/useTransitionStatus';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { CustomStyleHookMapping } from '../../utils/getStyleHookProps';
 import { popupStateMapping as baseMapping } from '../../utils/popupStateMapping';
 import { transitionStatusMapping } from '../../utils/styleHookMapping';
@@ -54,7 +54,7 @@ const AlertDialogBackdrop = React.forwardRef(function AlertDialogBackdrop(
 });
 
 namespace AlertDialogBackdrop {
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 
   export interface State {
     /**

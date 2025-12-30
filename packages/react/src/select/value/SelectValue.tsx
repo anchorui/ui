@@ -3,7 +3,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useSelectRootContext } from '../root/SelectRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useForkRef } from '../../utils/useForkRef';
 import { mergeReactProps } from '../../utils/mergeReactProps';
 
@@ -46,7 +46,7 @@ const SelectValue = React.forwardRef(function SelectValue(
 });
 
 namespace SelectValue {
-  export interface Props extends Omit<BaseUIComponentProps<'span', State>, 'children'> {
+  export interface Props extends Omit<AnchorUIComponentProps<'span', State>, 'children'> {
     children?: null | ((value: string) => React.ReactNode);
     /**
      * A placeholder value to display when no value is selected.

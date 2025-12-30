@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useDialogRootContext } from '../root/DialogRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useForkRef } from '../../utils/useForkRef';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { triggerOpenStateMapping } from '../../utils/popupStateMapping';
 
 /**
@@ -38,7 +38,7 @@ const DialogTrigger = React.forwardRef(function DialogTrigger(
 });
 
 namespace DialogTrigger {
-  export interface Props extends BaseUIComponentProps<'button', State> {}
+  export interface Props extends AnchorUIComponentProps<'button', State> {}
 
   export interface State {
     /**

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useDialogClose } from './useDialogClose';
 import { useDialogRootContext } from '../root/DialogRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 const state = {};
 
@@ -35,7 +35,7 @@ const DialogClose = React.forwardRef(function DialogClose(
 });
 
 namespace DialogClose {
-  export interface Props extends BaseUIComponentProps<'button', State> {}
+  export interface Props extends AnchorUIComponentProps<'button', State> {}
 
   export interface State {}
 }

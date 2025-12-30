@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../utils/types';
+import type { AnchorUIComponentProps } from '../utils/types';
 import { Field } from '../field';
 
 /**
@@ -19,7 +19,7 @@ const Input = React.forwardRef(function Input(
 });
 
 namespace Input {
-  export interface Props extends BaseUIComponentProps<'input', State> {}
+  export interface Props extends AnchorUIComponentProps<'input', State> {}
 
   export interface State {}
 }

@@ -1,12 +1,12 @@
 # Anchor UI
 
-A fully customizable, unstyled React component library built on top of **Base UI**. Anchor UI empowers you to design your own UI components while ensuring accessibility and flexibility. It provides low-level hooks and components that give you complete control over your app's CSS and behavior.
+Anchor UI is a headless React component library that gives you complete control over styling, accessibility, and behavior. Build custom interfaces with composable parts, robust hooks, and production-ready ergonomics.
 
 ---
 
 ## Documentation
 
-To get started, check out the [Anchor UI documentation](https://github.com/anchorui/ui).
+To get started, check out the [Anchor UI documentation](https://anchorui.com/react/overview/quick-start).
 
 ## Contributing
 
@@ -14,11 +14,15 @@ Read our [contributing guide](/CONTRIBUTING.md) to learn about our development p
 
 ## Releases
 
-To see the latest updates, check out the [releases](https://github.com/anchorui/ui/releases).
+To see the latest updates, check out the [releases](https://anchorui.com/react/overview/releases).
 
 ## Community
 
 - **X** Follow [@anchor_ui](https://x.com/anchor_ui) to stay up-to-date on new releases and announcements.
+
+## Acknowledgements
+
+Anchor UI is built using architectural patterns from the open-source Base UI project. While we leverage proven architecture and patterns, Anchor UI is an independent library with its own codebase, APIs, and roadmap. We're grateful to the Base UI community for their foundational work and architectural contributions.
 
 ## Team
 

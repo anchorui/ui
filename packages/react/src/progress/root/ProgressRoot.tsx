@@ -5,7 +5,7 @@ import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { ProgressStatus, useProgressRoot } from './useProgressRoot';
 import { ProgressRootContext } from './ProgressRootContext';
 import { progressStyleHookMapping } from './styleHooks';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * Groups all parts of the progress bar and provides the task completion status to screen readers.
@@ -83,7 +83,7 @@ namespace ProgressRoot {
     status: ProgressStatus;
   };
 
-  export interface Props extends useProgressRoot.Parameters, BaseUIComponentProps<'div', State> {}
+  export interface Props extends useProgressRoot.Parameters, AnchorUIComponentProps<'div', State> {}
 }
 
 ProgressRoot.propTypes /* remove-proptypes */ = {

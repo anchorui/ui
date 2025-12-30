@@ -6,7 +6,7 @@ import { useSelectRootContext } from '../root/SelectRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useForkRef } from '../../utils/useForkRef';
 import { mergeReactProps } from '../../utils/mergeReactProps';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { popupStateMapping } from '../../utils/popupStateMapping';
 import type { Align, Side } from '../../utils/useAnchorPositioning';
 
@@ -74,7 +74,7 @@ namespace SelectArrow {
     uncentered: boolean;
   }
 
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 }
 
 SelectArrow.propTypes /* remove-proptypes */ = {

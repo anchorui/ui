@@ -6,7 +6,7 @@ import { tabsStyleHookMapping } from '../root/styleHooks';
 import { useTabsRootContext } from '../root/TabsRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { TabsRoot, type TabValue } from '../root/TabsRoot';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * A panel displayed when the corresponding tab is active.
@@ -60,7 +60,7 @@ namespace TabsPanel {
     hidden: boolean;
   }
 
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * The value of the TabPanel. It will be shown when the Tab with the corresponding value is selected.
      * If not provided, it will fall back to the index of the panel.

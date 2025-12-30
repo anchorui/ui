@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useSelectTrigger } from './useSelectTrigger';
 import { useSelectRootContext } from '../root/SelectRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useFieldRootContext } from '../../field/root/FieldRootContext';
 import { pressableTriggerOpenStateMapping } from '../../utils/popupStateMapping';
 
@@ -53,7 +53,7 @@ const SelectTrigger = React.forwardRef(function SelectTrigger(
 });
 
 namespace SelectTrigger {
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     children?: React.ReactNode;
     /**
      * Whether the component should ignore user interaction.

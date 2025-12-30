@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { mergeReactProps } from '../../utils/mergeReactProps';
 import { useScrollAreaRootContext } from '../root/ScrollAreaRootContext';
@@ -51,7 +51,7 @@ const ScrollAreaCorner = React.forwardRef(function ScrollAreaCorner(
 namespace ScrollAreaCorner {
   export interface State {}
 
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 }
 
 ScrollAreaCorner.propTypes /* remove-proptypes */ = {

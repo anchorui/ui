@@ -7,7 +7,7 @@ import { RadioGroup } from '@anchor-ui/react/radio-group';
 
 describe('<Radio.Indicator />', () => {
   beforeEach(() => {
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = true;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = true;
   });
 
   const { render } = createRenderer();
@@ -63,7 +63,7 @@ describe('<Radio.Indicator />', () => {
       skip();
     }
 
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = false;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = false;
 
     let animationFinished = false;
     const notifyAnimationFinished = () => {

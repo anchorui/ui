@@ -8,7 +8,7 @@ import chaiPlugin from '@mui/internal-test-utils/chaiPlugin';
 declare global {
   var before: typeof beforeAll;
   var after: typeof afterAll;
-  var BASE_UI_ANIMATIONS_DISABLED: boolean;
+  var ANCHOR_UI_ANIMATIONS_DISABLED: boolean;
 }
 
 chai.use(chaiDom);
@@ -18,7 +18,7 @@ chai.use(chaiPlugin);
 globalThis.before = beforeAll;
 globalThis.after = afterAll;
 
-globalThis.BASE_UI_ANIMATIONS_DISABLED = true;
+globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = true;
 
 const isVitestJsdom = process.env.VITEST_ENV === 'jsdom';
 

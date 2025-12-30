@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useForkRef } from '../../utils/useForkRef';
 import { useTooltipPositionerContext } from '../positioner/TooltipPositionerContext';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { Side, Align } from '../../utils/useAnchorPositioning';
 import { popupStateMapping } from '../../utils/popupStateMapping';
 import { mergeReactProps } from '../../utils/mergeReactProps';
@@ -70,7 +70,7 @@ namespace TooltipArrow {
     uncentered: boolean;
   }
 
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 }
 
 TooltipArrow.propTypes /* remove-proptypes */ = {

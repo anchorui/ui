@@ -202,8 +202,8 @@ export default function TooltipTransitionExperiment() {
       <h3>CSS Transition with `@starting-style`</h3>
       <p>
         No longer supported due to{' '}
-        <a href="https://github.com/mui/base-ui/pull/992">
-          https://github.com/mui/base-ui/pull/992
+        <a href="https://github.com/anchorui/ui/pull/992">
+          https://github.com/anchorui/ui/pull/992
         </a>
       </p>
       <Tooltip.Root>

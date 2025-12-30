@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import { mergeReactProps } from '../../utils/mergeReactProps';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
 import { useFieldRootContext } from '../root/FieldRootContext';
 
@@ -10,7 +10,7 @@ export function useFieldDescription(params: useFieldDescription.Parameters) {
 
   const { setMessageIds } = useFieldRootContext();
 
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   useEnhancedEffect(() => {
     if (!id) {

@@ -5,7 +5,7 @@ import { useMenuTrigger } from './useMenuTrigger';
 import { useMenuRootContext } from '../root/MenuRootContext';
 import { pressableTriggerOpenStateMapping } from '../../utils/popupStateMapping';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * A button that opens the menu.
@@ -54,7 +54,7 @@ const MenuTrigger = React.forwardRef(function MenuTrigger(
 });
 
 namespace MenuTrigger {
-  export interface Props extends BaseUIComponentProps<'button', State> {
+  export interface Props extends AnchorUIComponentProps<'button', State> {
     children?: React.ReactNode;
     /**
      * Whether the component should ignore user interaction.

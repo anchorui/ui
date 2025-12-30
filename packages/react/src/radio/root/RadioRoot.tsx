@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useRadioGroupContext } from '../../radio-group/RadioGroupContext';
 import { useRadioRoot } from './useRadioRoot';
@@ -81,7 +81,7 @@ const RadioRoot = React.forwardRef(function RadioRoot(
 });
 
 namespace RadioRoot {
-  export interface Props extends Omit<BaseUIComponentProps<'button', State>, 'value'> {
+  export interface Props extends Omit<AnchorUIComponentProps<'button', State>, 'value'> {
     /**
      * The unique identifying value of the radio in a group.
      */

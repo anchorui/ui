@@ -154,7 +154,7 @@ For example, you've opened a PR with the number 64209 and now after everything i
 
 ```bash
 curl --request POST \
-  --url https://circleci.com/api/v2/project/gh/mui/base-ui/pipeline \
+  --url https://circleci.com/api/v2/project/gh/anchorui/ui/pipeline \
   --header 'content-type: application/json' \
   --header 'Circle-Token: $CIRCLE_TOKEN' \
   --data-raw '{"branch":"pull/64209/head","parameters":{"browserstack-force":true}}'
@@ -201,7 +201,7 @@ PR #24289 for `react@next`
 
 ```bash
 curl --request POST \
-  --url https://circleci.com/api/v2/project/gh/mui/base-ui/pipeline \
+  --url https://circleci.com/api/v2/project/gh/anchorui/ui/pipeline \
   --header 'content-type: application/json' \
   --header 'Circle-Token: $CIRCLE_TOKEN' \
   --data-raw '{"branch":"pull/24289/head","parameters":{"react-version":"next"}}'

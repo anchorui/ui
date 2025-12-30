@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useForkRef } from '../../utils/useForkRef';
 import { mergeReactProps } from '../../utils/mergeReactProps';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
@@ -25,7 +25,7 @@ export function useDialogPopup(parameters: useDialogPopup.Parameters): useDialog
 
   const popupRef = React.useRef<HTMLElement>(null);
 
-  const id = useBaseUiId(idParam);
+  const id = useAnchorId(idParam);
   const handleRef = useForkRef(ref, popupRef, setPopupElement);
 
   // Default initial focus logic:

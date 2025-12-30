@@ -100,7 +100,7 @@ describe('useId', () => {
   });
 
   it('can be prefixed', () => {
-    const PREFIX = 'base-ui';
+    const PREFIX = 'anchor-ui';
     function Widget() {
       const id = useId(undefined, PREFIX);
 
@@ -115,7 +115,7 @@ describe('useId', () => {
     }
     render(<Widget />);
 
-    expect(screen.getByTestId('label').id.slice(0, 8)).to.equal(`${PREFIX}-`);
+    expect(screen.getByTestId('label').id.startsWith(`${PREFIX}-`)).to.equal(true);
     expect(screen.getByTestId('labelable')).to.have.attr(
       'aria-labelledby',
       screen.getByTestId('label').id,

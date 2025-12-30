@@ -5,8 +5,8 @@ import { FloatingEvents, useFloatingTree } from '@floating-ui/react';
 import { useMenuRadioItem } from './useMenuRadioItem';
 import { useMenuRootContext } from '../root/MenuRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import { useBaseUiId } from '../../utils/useBaseUiId';
-import type { BaseUIComponentProps, GenericHTMLProps } from '../../utils/types';
+import { useAnchorId } from '../../utils/useAnchorId';
+import type { AnchorUIComponentProps, GenericHTMLProps } from '../../utils/types';
 import { useForkRef } from '../../utils/useForkRef';
 import { useMenuRadioGroupContext } from '../radio-group/MenuRadioGroupContext';
 import { MenuRadioItemContext } from './MenuRadioItemContext';
@@ -173,7 +173,7 @@ const MenuRadioItem = React.forwardRef(function MenuRadioItem(
   const mergedRef = useForkRef(forwardedRef, listItem.ref, itemRef);
 
   const { getItemProps, activeIndex, allowMouseUpTriggerRef, typingRef } = useMenuRootContext();
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   const highlighted = listItem.index === activeIndex;
   const { events: menuEvents } = useFloatingTree()!;
@@ -248,7 +248,7 @@ namespace MenuRadioItem {
     checked: boolean;
   };
 
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * Value of the radio item.
      * This is the value that will be set in the MenuRadioGroup when the item is selected.

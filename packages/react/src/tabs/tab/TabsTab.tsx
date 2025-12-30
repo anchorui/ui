@@ -3,7 +3,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useTabsTab } from './useTabsTab';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { TabsOrientation, TabValue } from '../root/TabsRoot';
 import { useTabsRootContext } from '../root/TabsRootContext';
 import { useTabsListContext } from '../list/TabsListContext';
@@ -66,7 +66,7 @@ const TabsTab = React.forwardRef(function Tab(
 });
 
 namespace TabsTab {
-  export interface Props extends BaseUIComponentProps<'button', TabsTab.State> {
+  export interface Props extends AnchorUIComponentProps<'button', TabsTab.State> {
     /**
      * The value of the Tab.
      * When not specified, the value is the child position index.

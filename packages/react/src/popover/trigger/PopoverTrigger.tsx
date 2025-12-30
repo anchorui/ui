@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { usePopoverRootContext } from '../root/PopoverRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useForkRef } from '../../utils/useForkRef';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import {
   triggerOpenStateMapping,
   pressableTriggerOpenStateMapping,
@@ -63,7 +63,7 @@ namespace PopoverTrigger {
     open: boolean;
   }
 
-  export interface Props extends BaseUIComponentProps<'button', State> {}
+  export interface Props extends AnchorUIComponentProps<'button', State> {}
 }
 
 PopoverTrigger.propTypes /* remove-proptypes */ = {

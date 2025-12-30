@@ -7,7 +7,7 @@ import { DEFAULT_VALIDITY_STATE, STYLE_HOOK_MAPPING } from '../utils/constants';
 import { useFieldsetRootContext } from '../../fieldset/root/FieldsetRootContext';
 import { useEventCallback } from '../../utils/useEventCallback';
 import { useFormContext } from '../../form/FormContext';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * Groups all parts of the field.
@@ -163,7 +163,7 @@ namespace FieldRoot {
     valid: boolean | null;
   }
 
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * Whether the component should ignore user interaction.
      * Takes precedence over the `disabled` prop on the `<Field.Control>` component.

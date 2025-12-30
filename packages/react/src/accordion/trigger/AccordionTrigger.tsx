@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { triggerOpenStateMapping } from '../../utils/collapsibleOpenStateMapping';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useCollapsibleRootContext } from '../../collapsible/root/CollapsibleRootContext';
 import { useCollapsibleTrigger } from '../../collapsible/trigger/useCollapsibleTrigger';
 import type { AccordionItem } from '../item/AccordionItem';
@@ -60,7 +60,7 @@ const AccordionTrigger = React.forwardRef(function AccordionTrigger(
 });
 
 namespace AccordionTrigger {
-  export interface Props extends BaseUIComponentProps<'button', AccordionItem.State> {}
+  export interface Props extends AnchorUIComponentProps<'button', AccordionItem.State> {}
 }
 
 export { AccordionTrigger };

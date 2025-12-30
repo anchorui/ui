@@ -5,7 +5,7 @@ import { useCheckboxRootContext } from '../root/CheckboxRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useCustomStyleHookMapping } from '../utils/useCustomStyleHookMapping';
 import type { CheckboxRoot } from '../root/CheckboxRoot';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useAfterExitAnimation } from '../../utils/useAfterExitAnimation';
 import { type TransitionStatus, useTransitionStatus } from '../../utils/useTransitionStatus';
 import { useForkRef } from '../../utils/useForkRef';
@@ -84,7 +84,7 @@ namespace CheckboxIndicator {
     transitionStatus: TransitionStatus;
   }
 
-  export interface Props extends BaseUIComponentProps<'span', State> {
+  export interface Props extends AnchorUIComponentProps<'span', State> {
     /**
      * Whether to keep the element in the DOM when the checkbox is not checked.
      * @default false

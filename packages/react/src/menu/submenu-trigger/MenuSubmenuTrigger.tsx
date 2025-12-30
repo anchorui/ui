@@ -2,9 +2,9 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useFloatingTree } from '@floating-ui/react';
-import { BaseUIComponentProps, GenericHTMLProps } from '../../utils/types';
+import { AnchorUIComponentProps, GenericHTMLProps } from '../../utils/types';
 import { useMenuRootContext } from '../root/MenuRootContext';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useMenuSubmenuTrigger } from './useMenuSubmenuTrigger';
 import { useForkRef } from '../../utils/useForkRef';
@@ -22,7 +22,7 @@ const MenuSubmenuTrigger = React.forwardRef(function SubmenuTriggerComponent(
   forwardedRef: React.ForwardedRef<Element>,
 ) {
   const { render, className, disabled = false, label, id: idProp, ...other } = props;
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   const {
     getTriggerProps,
@@ -76,7 +76,7 @@ const MenuSubmenuTrigger = React.forwardRef(function SubmenuTriggerComponent(
 });
 
 namespace MenuSubmenuTrigger {
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     children?: React.ReactNode;
     onClick?: React.MouseEventHandler<HTMLElement>;
     /**

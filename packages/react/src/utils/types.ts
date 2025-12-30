@@ -2,23 +2,23 @@ import * as React from 'react';
 
 export type GenericHTMLProps = React.HTMLAttributes<any> & { ref?: React.Ref<any> | undefined };
 
-export type BaseUIEvent<E extends React.SyntheticEvent<Element, Event>> = E & {
-  preventBaseUIHandler: () => void;
+export type AnchorUIEvent<E extends React.SyntheticEvent<Element, Event>> = E & {
+  preventAnchorUIHandler: () => void;
 };
 
-type WithPreventBaseUIHandler<T> = T extends (event: infer E) => any
+type WithPreventAnchorUIHandler<T> = T extends (event: infer E) => any
   ? E extends React.SyntheticEvent<Element, Event>
-    ? (event: BaseUIEvent<E>) => ReturnType<T>
+    ? (event: AnchorUIEvent<E>) => ReturnType<T>
     : T
   : T extends undefined
     ? undefined
     : T;
 
 /**
- * Adds a `preventBaseUIHandler` method to all event handlers.
+ * Adds a `preventAnchorUIHandler` method to all event handlers.
  */
-export type WithBaseUIEvent<T> = {
-  [K in keyof T]: WithPreventBaseUIHandler<T[K]>;
+export type WithAnchorUIEvent<T> = {
+  [K in keyof T]: WithPreventAnchorUIHandler<T[K]>;
 };
 
 /**
@@ -36,11 +36,11 @@ export type ComponentRenderFn<Props, State> = (
  * Props shared by all Anchor UI components.
  * Contains `className` (string or callback taking the component's state as an argument) and `render` (function to customize rendering).
  */
-export type BaseUIComponentProps<
+export type AnchorUIComponentProps<
   ElementType extends React.ElementType,
   State,
   RenderFunctionProps = GenericHTMLProps,
-> = Omit<WithBaseUIEvent<React.ComponentPropsWithoutRef<ElementType>>, 'className'> & {
+> = Omit<WithAnchorUIEvent<React.ComponentPropsWithoutRef<ElementType>>, 'className'> & {
   /**
    * CSS class applied to the element, or a function that
    * returns a class based on the component’s state.

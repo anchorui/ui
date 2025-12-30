@@ -2,7 +2,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { FloatingFocusManager } from '@floating-ui/react';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useSelectRootContext } from '../root/SelectRootContext';
 import { popupStateMapping } from '../../utils/popupStateMapping';
 import type { Side } from '../../utils/useAnchorPositioning';
@@ -96,7 +96,7 @@ const SelectPopup = React.forwardRef(function SelectPopup(
 });
 
 namespace SelectPopup {
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     children?: React.ReactNode;
     /**
      * @ignore

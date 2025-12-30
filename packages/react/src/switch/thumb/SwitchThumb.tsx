@@ -5,7 +5,7 @@ import type { SwitchRoot } from '../root/SwitchRoot';
 import { useSwitchRootContext } from '../root/SwitchRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useFieldRootContext } from '../../field/root/FieldRootContext';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { styleHookMapping } from '../styleHooks';
 
 /**
@@ -38,7 +38,7 @@ const SwitchThumb = React.forwardRef(function SwitchThumb(
 });
 
 namespace SwitchThumb {
-  export interface Props extends BaseUIComponentProps<'span', State> {}
+  export interface Props extends AnchorUIComponentProps<'span', State> {}
 
   export interface State extends SwitchRoot.State {}
 }

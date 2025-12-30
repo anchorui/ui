@@ -5,8 +5,8 @@ import { useDialogRootContext } from '../root/DialogRootContext';
 import { mergeReactProps } from '../../utils/mergeReactProps';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
-import { useBaseUiId } from '../../utils/useBaseUiId';
-import { type BaseUIComponentProps } from '../../utils/types';
+import { useAnchorId } from '../../utils/useAnchorId';
+import { type AnchorUIComponentProps } from '../../utils/types';
 
 const state = {};
 
@@ -23,7 +23,7 @@ const DialogTitle = React.forwardRef(function DialogTitle(
   const { render, className, id: idProp, ...other } = props;
   const { setTitleElementId } = useDialogRootContext();
 
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   useEnhancedEffect(() => {
     setTitleElementId(id);
@@ -53,7 +53,7 @@ const DialogTitle = React.forwardRef(function DialogTitle(
 });
 
 namespace DialogTitle {
-  export interface Props extends BaseUIComponentProps<'h2', State> {}
+  export interface Props extends AnchorUIComponentProps<'h2', State> {}
 
   export interface State {}
 }

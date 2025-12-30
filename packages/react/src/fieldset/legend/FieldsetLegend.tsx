@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useFieldsetLegend } from './useFieldsetLegend';
 import { useFieldsetRootContext } from '../root/FieldsetRootContext';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * An accessible label that is automatically associated with the fieldset.
@@ -49,7 +49,7 @@ namespace FieldsetLegend {
     disabled: boolean;
   }
 
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 }
 
 FieldsetLegend.propTypes /* remove-proptypes */ = {

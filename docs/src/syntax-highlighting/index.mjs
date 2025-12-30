@@ -6,7 +6,7 @@ import { rehypeJsxExpressions } from './rehypeJsxExpressions.mjs';
 
 /** @type {Parameters<typeof import('shiki').createHighlighter>[0]['themes'][number] } */
 export const theme = {
-  name: 'base-ui',
+  name: 'anchor-ui',
   bg: 'var(--color-content)',
   fg: 'var(--syntax-default)',
   settings: [
@@ -344,7 +344,7 @@ export const rehypeSyntaxHighlighting = [
     {
       getHighlighter: () => globalThis.highlighter,
       grid: false,
-      theme: 'base-ui',
+      theme: 'anchor-ui',
       defaultLang: 'tsx',
     },
   ],

@@ -6,7 +6,7 @@ import { useForkRef } from '../../utils/useForkRef';
 import { useCompositeRootContext } from '../root/CompositeRootContext';
 import { useCompositeItem } from './useCompositeItem';
 import { refType } from '../../utils/proptypes';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * @ignore - internal component.
@@ -43,7 +43,7 @@ namespace CompositeItem {
     highlighted: boolean;
   }
 
-  export interface Props<Metadata> extends Omit<BaseUIComponentProps<'div', State>, 'itemRef'> {
+  export interface Props<Metadata> extends Omit<AnchorUIComponentProps<'div', State>, 'itemRef'> {
     // the itemRef name collides with https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemref
     itemRef?: React.RefObject<HTMLElement | null>;
     metadata?: Metadata;

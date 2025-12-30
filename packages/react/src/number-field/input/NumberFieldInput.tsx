@@ -5,7 +5,7 @@ import { useNumberFieldRootContext } from '../root/NumberFieldRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useForkRef } from '../../utils/useForkRef';
 import type { NumberFieldRoot } from '../root/NumberFieldRoot';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * The native input control in the number field.
@@ -37,7 +37,7 @@ const NumberFieldInput = React.forwardRef(function NumberFieldInput(
 
 namespace NumberFieldInput {
   export interface State extends NumberFieldRoot.State {}
-  export interface Props extends BaseUIComponentProps<'input', State> {}
+  export interface Props extends AnchorUIComponentProps<'input', State> {}
 }
 
 NumberFieldInput.propTypes /* remove-proptypes */ = {

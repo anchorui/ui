@@ -6,7 +6,7 @@ import { useDialogPopup } from './useDialogPopup';
 import { useDialogRootContext } from '../root/DialogRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { refType } from '../../utils/proptypes';
-import { type BaseUIComponentProps } from '../../utils/types';
+import { type AnchorUIComponentProps } from '../../utils/types';
 import { type TransitionStatus } from '../../utils/useTransitionStatus';
 import { type CustomStyleHookMapping } from '../../utils/getStyleHookProps';
 import { popupStateMapping as baseMapping } from '../../utils/popupStateMapping';
@@ -114,7 +114,7 @@ const DialogPopup = React.forwardRef(function DialogPopup(
 });
 
 namespace DialogPopup {
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * Determines the element to focus when the dialog is opened.
      * By default, the first focusable element is focused.

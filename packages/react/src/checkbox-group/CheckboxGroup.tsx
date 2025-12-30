@@ -6,7 +6,7 @@ import { useCheckboxGroup } from './useCheckboxGroup';
 import { CheckboxGroupContext } from './CheckboxGroupContext';
 import type { FieldRoot } from '../field/root/FieldRoot';
 import { useFieldRootContext } from '../field/root/FieldRootContext';
-import type { BaseUIComponentProps } from '../utils/types';
+import type { AnchorUIComponentProps } from '../utils/types';
 
 /**
  * Provides a shared state to a series of checkboxes.
@@ -82,7 +82,7 @@ namespace CheckboxGroup {
      */
     disabled: boolean;
   }
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * Names of the checkboxes in the group that should be ticked.
      *

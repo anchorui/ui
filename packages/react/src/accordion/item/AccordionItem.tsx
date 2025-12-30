@@ -2,10 +2,10 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useForkRef } from '../../utils/useForkRef';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useEventCallback } from '../../utils/useEventCallback';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import type { TransitionStatus } from '../../utils/useTransitionStatus';
 import { useCollapsibleRoot } from '../../collapsible/root/useCollapsibleRoot';
 import type { CollapsibleRoot } from '../../collapsible/root/CollapsibleRoot';
@@ -103,7 +103,7 @@ const AccordionItem = React.forwardRef(function AccordionItem(
     [collapsible.transitionStatus, disabled, index, isOpen, rootState],
   );
 
-  const [triggerId, setTriggerId] = React.useState<string | undefined>(useBaseUiId());
+  const [triggerId, setTriggerId] = React.useState<string | undefined>(useAnchorId());
 
   const accordionItemContext: AccordionItemContext = React.useMemo(
     () => ({
@@ -143,7 +143,7 @@ export namespace AccordionItem {
   }
 
   export interface Props
-    extends BaseUIComponentProps<'div', State>,
+    extends AnchorUIComponentProps<'div', State>,
       Partial<Pick<useCollapsibleRoot.Parameters, 'disabled' | 'onOpenChange'>> {
     value?: AccordionItemValue;
   }

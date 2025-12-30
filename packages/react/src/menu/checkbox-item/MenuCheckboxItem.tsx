@@ -6,8 +6,8 @@ import { useMenuCheckboxItem } from './useMenuCheckboxItem';
 import { MenuCheckboxItemContext } from './MenuCheckboxItemContext';
 import { useMenuRootContext } from '../root/MenuRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import { useBaseUiId } from '../../utils/useBaseUiId';
-import type { BaseUIComponentProps, GenericHTMLProps } from '../../utils/types';
+import { useAnchorId } from '../../utils/useAnchorId';
+import type { AnchorUIComponentProps, GenericHTMLProps } from '../../utils/types';
 import { useForkRef } from '../../utils/useForkRef';
 import { itemMapping } from '../utils/styleHookMapping';
 import { useCompositeListItem } from '../../composite/list/useCompositeListItem';
@@ -176,7 +176,7 @@ const MenuCheckboxItem = React.forwardRef(function MenuCheckboxItem(
   const mergedRef = useForkRef(forwardedRef, listItem.ref, itemRef);
 
   const { getItemProps, activeIndex, allowMouseUpTriggerRef, typingRef } = useMenuRootContext();
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   const highlighted = listItem.index === activeIndex;
   const { events: menuEvents } = useFloatingTree()!;
@@ -222,7 +222,7 @@ namespace MenuCheckboxItem {
     checked: boolean;
   };
 
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * Whether the checkbox item is currently ticked.
      *

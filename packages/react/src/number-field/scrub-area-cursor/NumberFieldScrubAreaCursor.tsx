@@ -6,7 +6,7 @@ import { useNumberFieldRootContext } from '../root/NumberFieldRootContext';
 import { isWebKit } from '../../utils/detectBrowser';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useForkRef } from '../../utils/useForkRef';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { NumberFieldRoot } from '../root/NumberFieldRoot';
 import { ownerDocument } from '../../utils/owner';
 
@@ -50,7 +50,7 @@ const NumberFieldScrubAreaCursor = React.forwardRef(function NumberFieldScrubAre
 
 namespace NumberFieldScrubAreaCursor {
   export interface State extends NumberFieldRoot.State {}
-  export interface Props extends BaseUIComponentProps<'span', State> {}
+  export interface Props extends AnchorUIComponentProps<'span', State> {}
 }
 
 NumberFieldScrubAreaCursor.propTypes /* remove-proptypes */ = {

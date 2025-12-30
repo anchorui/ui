@@ -2,7 +2,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { SelectScrollArrow } from '../scroll-arrow/SelectScrollArrow';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * An element that scrolls the select menu down when hovered.
@@ -19,7 +19,7 @@ const SelectScrollUpArrow = React.forwardRef(function SelectScrollUpArrow(
 
 namespace SelectScrollUpArrow {
   export interface State {}
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * Whether to keep the HTML element in the DOM while the select menu is not scrollable.
      * @default false

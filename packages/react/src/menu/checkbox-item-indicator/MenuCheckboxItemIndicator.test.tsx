@@ -6,7 +6,7 @@ import { expect } from 'chai';
 
 describe('<Menu.CheckboxItemIndicator />', () => {
   beforeEach(() => {
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = true;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = true;
   });
 
   const { render } = createRenderer();
@@ -71,7 +71,7 @@ describe('<Menu.CheckboxItemIndicator />', () => {
       skip();
     }
 
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = false;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = false;
 
     let animationFinished = false;
     const notifyAnimationFinished = () => {

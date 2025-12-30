@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Collapsible } from '@anchor-ui/react/collapsible';
 import c from './collapsible.module.css';
 
-// https://github.com/mui/base-ui/issues/740
+// https://github.com/anchorui/ui/issues/740
 export default function AnimatedCollapsibles() {
   return (
     <div className={c.wrapper}>

@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useSliderRootContext } from '../root/SliderRootContext';
 import type { SliderRoot } from '../root/SliderRoot';
@@ -40,7 +40,7 @@ const SliderTrack = React.forwardRef(function SliderTrack(
 });
 
 export namespace SliderTrack {
-  export interface Props extends BaseUIComponentProps<'div', SliderRoot.State> {}
+  export interface Props extends AnchorUIComponentProps<'div', SliderRoot.State> {}
 }
 
 export { SliderTrack };

@@ -155,7 +155,7 @@ function onMounted(ref: React.RefObject<HTMLDivElement | null>) {
   function handleUpdate() {
     cancelAnimationFrame(raf);
     raf = requestAnimationFrame(() => {
-      const isScrollLocked = document.documentElement.hasAttribute('data-base-ui-scroll-locked');
+      const isScrollLocked = document.documentElement.hasAttribute('data-anchor-ui-scroll-locked');
 
       if (!ref.current || isScrollLocked) {
         return;

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useForkRef } from '../../utils/useForkRef';
 import { useSelectRootContext } from '../root/SelectRootContext';
 import { CompositeList } from '../../composite/list/CompositeList';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { popupStateMapping } from '../../utils/popupStateMapping';
 import { useSelectPositioner } from './useSelectPositioner';
@@ -102,7 +102,7 @@ namespace SelectPositioner {
 
   export interface Props
     extends useSelectPositioner.SharedParameters,
-      BaseUIComponentProps<'div', State> {}
+      AnchorUIComponentProps<'div', State> {}
 }
 
 SelectPositioner.propTypes /* remove-proptypes */ = {

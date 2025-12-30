@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useForkRef } from '../../utils/useForkRef';
 import { useScrollAreaRootContext } from '../root/ScrollAreaRootContext';
@@ -39,7 +39,7 @@ const ScrollAreaViewport = React.forwardRef(function ScrollAreaViewport(
 });
 
 namespace ScrollAreaViewport {
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 
   export interface State {}
 }

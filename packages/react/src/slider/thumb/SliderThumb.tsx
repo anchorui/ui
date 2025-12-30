@@ -5,8 +5,8 @@ import { getStyleHookProps } from '../../utils/getStyleHookProps';
 import { mergeReactProps } from '../../utils/mergeReactProps';
 import { NOOP } from '../../utils/noop';
 import { resolveClassName } from '../../utils/resolveClassName';
-import { BaseUIComponentProps } from '../../utils/types';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { AnchorUIComponentProps } from '../../utils/types';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useForkRef } from '../../utils/useForkRef';
 import type { SliderRoot } from '../root/SliderRoot';
 import { useSliderRootContext } from '../root/SliderRootContext';
@@ -53,8 +53,8 @@ const SliderThumb = React.forwardRef(function SliderThumb(
     ...otherProps
   } = props;
 
-  const id = useBaseUiId(idProp);
-  const inputId = useBaseUiId(inputIdProp);
+  const id = useAnchorId(idProp);
+  const inputId = useAnchorId(inputIdProp);
 
   const render = renderProp ?? defaultRender;
 
@@ -155,7 +155,7 @@ export namespace SliderThumb {
 
   export interface Props
     extends Partial<Omit<useSliderThumb.Parameters, 'rootRef'>>,
-      Omit<BaseUIComponentProps<'div', State>, 'render' | 'tabIndex'> {
+      Omit<AnchorUIComponentProps<'div', State>, 'render' | 'tabIndex'> {
     onPointerLeave?: React.PointerEventHandler;
     onPointerOver?: React.PointerEventHandler;
     onBlur?: React.FocusEventHandler;

@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { MenuGroupContext } from './MenuGroupContext';
 
@@ -62,7 +62,7 @@ MenuGroup.propTypes /* remove-proptypes */ = {
 } as any;
 
 namespace MenuGroup {
-  export interface Props extends BaseUIComponentProps<'div', State> {
+  export interface Props extends AnchorUIComponentProps<'div', State> {
     /**
      * The content of the component.
      */

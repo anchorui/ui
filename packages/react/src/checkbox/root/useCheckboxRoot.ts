@@ -4,7 +4,7 @@ import { useControlled } from '../../utils/useControlled';
 import { visuallyHidden } from '../../utils/visuallyHidden';
 import { useForkRef } from '../../utils/useForkRef';
 import { mergeReactProps } from '../../utils/mergeReactProps';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useEventCallback } from '../../utils/useEventCallback';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
 import { useFieldRootContext } from '../../field/root/FieldRootContext';
@@ -52,7 +52,7 @@ export function useCheckboxRoot(params: UseCheckboxRoot.Parameters): UseCheckbox
   } = useFieldControlValidation();
 
   const onCheckedChange = useEventCallback(onCheckedChangeProp);
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   useEnhancedEffect(() => {
     setControlId(id);

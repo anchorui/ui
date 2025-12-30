@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useSelectItemContext } from '../item/SelectItemContext';
 import { mergeReactProps } from '../../utils/mergeReactProps';
@@ -74,7 +74,7 @@ const SelectItemIndicator = React.forwardRef(function SelectItemIndicator(
 });
 
 namespace SelectItemIndicator {
-  export interface Props extends BaseUIComponentProps<'span', State> {
+  export interface Props extends AnchorUIComponentProps<'span', State> {
     children?: React.ReactNode;
     /**
      * Whether to keep the HTML element in the DOM when the item is not selected.

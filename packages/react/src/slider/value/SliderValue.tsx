@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useSliderRootContext } from '../root/SliderRootContext';
 import { sliderStyleHookMapping } from '../root/styleHooks';
@@ -55,7 +55,7 @@ const SliderValue = React.forwardRef(function SliderValue(
 
 export namespace SliderValue {
   export interface Props
-    extends Omit<BaseUIComponentProps<'output', SliderRoot.State>, 'children'> {
+    extends Omit<AnchorUIComponentProps<'output', SliderRoot.State>, 'children'> {
     /**
      * @default 'off'
      */

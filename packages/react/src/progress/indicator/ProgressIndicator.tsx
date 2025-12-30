@@ -6,7 +6,7 @@ import { useProgressIndicator } from './useProgressIndicator';
 import { ProgressRoot } from '../root/ProgressRoot';
 import { useProgressRootContext } from '../root/ProgressRootContext';
 import { progressStyleHookMapping } from '../root/styleHooks';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * Visualizes the completion status of the task.
@@ -44,7 +44,7 @@ const ProgressIndicator = React.forwardRef(function ProgressIndicator(
 namespace ProgressIndicator {
   export interface State extends ProgressRoot.State {}
 
-  export interface Props extends BaseUIComponentProps<'span', State> {}
+  export interface Props extends AnchorUIComponentProps<'span', State> {}
 }
 
 ProgressIndicator.propTypes /* remove-proptypes */ = {

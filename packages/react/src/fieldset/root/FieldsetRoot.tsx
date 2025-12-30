@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { FieldsetRootContext } from './FieldsetRootContext';
 import { useFieldsetRoot } from './useFieldsetRoot';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * Groups the fieldset legend and the associated fields.
@@ -60,7 +60,7 @@ namespace FieldsetRoot {
     disabled: boolean;
   };
 
-  export interface Props extends BaseUIComponentProps<'fieldset', State> {}
+  export interface Props extends AnchorUIComponentProps<'fieldset', State> {}
 }
 
 FieldsetRoot.propTypes /* remove-proptypes */ = {

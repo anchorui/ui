@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useNumberFieldRootContext } from '../root/NumberFieldRootContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useForkRef } from '../../utils/useForkRef';
@@ -50,7 +50,7 @@ const NumberFieldScrubArea = React.forwardRef(function NumberFieldScrubArea(
 
 namespace NumberFieldScrubArea {
   export interface State extends NumberFieldRoot.State {}
-  export interface Props extends BaseUIComponentProps<'span', State> {
+  export interface Props extends AnchorUIComponentProps<'span', State> {
     /**
      * Cursor movement direction in the scrub area.
      * @default 'horizontal'

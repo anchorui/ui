@@ -6,7 +6,7 @@ import { FieldRoot } from '../root/FieldRoot';
 import { useFieldRootContext } from '../root/FieldRootContext';
 import { useFieldDescription } from './useFieldDescription';
 import { STYLE_HOOK_MAPPING } from '../utils/constants';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * A paragraph with additional information about the field.
@@ -40,7 +40,7 @@ const FieldDescription = React.forwardRef(function FieldDescription(
 namespace FieldDescription {
   export type State = FieldRoot.State;
 
-  export interface Props extends BaseUIComponentProps<'p', State> {}
+  export interface Props extends AnchorUIComponentProps<'p', State> {}
 }
 
 FieldDescription.propTypes /* remove-proptypes */ = {

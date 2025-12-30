@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { mergeReactProps } from '../../utils/mergeReactProps';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 
 export function usePopoverDescription(
   params: usePopoverDescription.Parameters,
 ): usePopoverDescription.ReturnValue {
   const { descriptionId, setDescriptionId } = params;
 
-  const id = useBaseUiId(descriptionId);
+  const id = useAnchorId(descriptionId);
 
   const getDescriptionProps = React.useCallback(
     (externalProps = {}) => {

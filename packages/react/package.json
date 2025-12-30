@@ -3,15 +3,16 @@
   "version": "1.0.0-alpha.2",
   "private": false,
   "author": "Anchor UI",
-  "description": "Anchor UI is a fully customizable component library built on top of Base UI. It offers headless ('unstyled') React components and low-level hooks, giving you complete control over CSS and accessibility features. Beautiful, accessible, and production-ready.",
+  "description": "A fully customizable, unstyled React component library designed to give you complete control over your app's UI, accessibility, and CSS.",
   "keywords": [
     "react",
     "react-component",
-    "mui",
     "unstyled",
     "a11y",
-    "base-ui",
-    "anchor-ui"
+    "anchor-ui",
+    "headless",
+    "accessible",
+    "composable"
   ],
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/anchorui/ui/issues"
   },
-  "homepage": "https://github.com/anchorui/ui",
+  "homepage": "https://anchorui.com",
   "exports": {
     ".": "./src/index.ts",
     "./accordion": "./src/accordion/index.ts",
@@ -64,7 +65,7 @@
     "build:node": "node ../../scripts/build.mjs node",
     "build:stable": "node ../../scripts/build.mjs stable",
     "build:copy-files": "node ../../scripts/copyFiles.mjs ./.npmignore:./.npmignore",
-    "build:types": "tsx ../../scripts/buildTypes.mjs --project tsconfig.build.json --copy build/cjs",
+    "build:types": "tsx ../../scripts/buildTypes.mts --project tsconfig.build.json --copy build/types --clean",
     "build:manifest": "tsx ./scripts/createPackageManifest.mts",
     "test:package": "publint ./build && attw --pack ./build",
     "prebuild": "rimraf --glob build build-tests \"*.tsbuildinfo\"",
@@ -113,6 +114,14 @@
     }
   },
   "sideEffects": false,
+  "files": [
+    "cjs",
+    "esm",
+    "types",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "publishConfig": {
     "access": "public",
     "directory": "build"

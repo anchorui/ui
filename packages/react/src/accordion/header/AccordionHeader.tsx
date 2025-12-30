@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import type { AccordionItem } from '../item/AccordionItem';
 import { useAccordionItemContext } from '../item/AccordionItemContext';
@@ -34,7 +34,7 @@ const AccordionHeader = React.forwardRef(function AccordionHeader(
 });
 
 export namespace AccordionHeader {
-  export interface Props extends BaseUIComponentProps<'h3', AccordionItem.State> {}
+  export interface Props extends AnchorUIComponentProps<'h3', AccordionItem.State> {}
 }
 
 export { AccordionHeader };

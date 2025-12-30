@@ -5,8 +5,8 @@ import { useAlertDialogRootContext } from '../root/AlertDialogRootContext';
 import { mergeReactProps } from '../../utils/mergeReactProps';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
-import { useBaseUiId } from '../../utils/useBaseUiId';
-import type { BaseUIComponentProps } from '../../utils/types';
+import { useAnchorId } from '../../utils/useAnchorId';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 const state = {};
 
@@ -23,7 +23,7 @@ const AlertDialogTitle = React.forwardRef(function AlertDialogTitle(
   const { render, className, id: idProp, ...other } = props;
   const { setTitleElementId } = useAlertDialogRootContext();
 
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   useEnhancedEffect(() => {
     setTitleElementId(id);
@@ -53,7 +53,7 @@ const AlertDialogTitle = React.forwardRef(function AlertDialogTitle(
 });
 
 namespace AlertDialogTitle {
-  export interface Props extends BaseUIComponentProps<'h2', State> {}
+  export interface Props extends AnchorUIComponentProps<'h2', State> {}
 
   export interface State {}
 }

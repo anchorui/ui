@@ -3,13 +3,13 @@ import { expect } from 'chai';
 import { randomStringValue } from '@mui/internal-test-utils';
 import type {
   ConformantComponentProps,
-  BaseUiConformanceTestsOptions,
+  AnchorUIConformanceTestsOptions,
 } from '../describeConformance';
 import { throwMissingPropError } from './utils';
 
 export function testRenderProp(
   element: React.ReactElement<ConformantComponentProps>,
-  getOptions: () => BaseUiConformanceTestsOptions,
+  getOptions: () => AnchorUIConformanceTestsOptions,
 ) {
   const { render, testRenderPropWith: Element = 'div' } = getOptions();
 
@@ -20,7 +20,7 @@ export function testRenderProp(
   const Wrapper = React.forwardRef<any, { children?: React.ReactNode }>(
     function Wrapper(props, forwardedRef) {
       return (
-        <div data-testid="base-ui-wrapper">
+        <div data-testid="anchor-ui-wrapper">
           {/* @ts-ignore */}
           <Element ref={forwardedRef} {...props} data-testid="wrapped" />
         </div>
@@ -37,7 +37,7 @@ export function testRenderProp(
         }),
       );
 
-      expect(queryByTestId('base-ui-wrapper')).not.to.equal(null);
+      expect(queryByTestId('anchor-ui-wrapper')).not.to.equal(null);
       expect(queryByTestId('wrapped')).not.to.equal(null);
       expect(queryByTestId('wrapped')).to.have.attribute('data-test-value', testValue);
     });
@@ -50,7 +50,7 @@ export function testRenderProp(
         }),
       );
 
-      expect(queryByTestId('base-ui-wrapper')).not.to.equal(null);
+      expect(queryByTestId('anchor-ui-wrapper')).not.to.equal(null);
       expect(queryByTestId('wrapped')).not.to.equal(null);
       expect(queryByTestId('wrapped')).to.have.attribute('data-test-value', testValue);
     });
@@ -62,7 +62,7 @@ export function testRenderProp(
         }),
       );
 
-      expect(document.querySelector('[data-testid="base-ui-wrapper"]')).not.to.equal(null);
+      expect(document.querySelector('[data-testid="anchor-ui-wrapper"]')).not.to.equal(null);
     });
 
     it('should pass the ref to the custom component', async () => {

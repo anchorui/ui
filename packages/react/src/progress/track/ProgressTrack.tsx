@@ -5,7 +5,7 @@ import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useProgressRootContext } from '../root/ProgressRootContext';
 import { progressStyleHookMapping } from '../root/styleHooks';
 import { ProgressRoot } from '../root/ProgressRoot';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * Contains the progress bar indicator.
@@ -36,7 +36,7 @@ const ProgressTrack = React.forwardRef(function ProgressTrack(
 namespace ProgressTrack {
   export interface State extends ProgressRoot.State {}
 
-  export interface Props extends BaseUIComponentProps<'span', State> {}
+  export interface Props extends AnchorUIComponentProps<'span', State> {}
 }
 
 ProgressTrack.propTypes /* remove-proptypes */ = {

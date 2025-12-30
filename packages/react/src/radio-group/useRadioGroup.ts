@@ -4,7 +4,7 @@ import { contains } from '@floating-ui/react/utils';
 import { mergeReactProps } from '../utils/mergeReactProps';
 import { useControlled } from '../utils/useControlled';
 import { useFieldRootContext } from '../field/root/FieldRootContext';
-import { useBaseUiId } from '../utils/useBaseUiId';
+import { useAnchorId } from '../utils/useAnchorId';
 import { useFieldControlValidation } from '../field/control/useFieldControlValidation';
 import { useField } from '../field/useField';
 
@@ -20,7 +20,7 @@ export function useRadioGroup(params: useRadioGroup.Parameters) {
     commitValidation,
   } = useFieldControlValidation();
 
-  const id = useBaseUiId();
+  const id = useAnchorId();
 
   const [checkedValue, setCheckedValue] = useControlled({
     controlled: externalValue,

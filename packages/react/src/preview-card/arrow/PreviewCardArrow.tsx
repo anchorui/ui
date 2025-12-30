@@ -5,7 +5,7 @@ import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { usePreviewCardPositionerContext } from '../positioner/PreviewCardPositionerContext';
 import { useForkRef } from '../../utils/useForkRef';
 import { usePreviewCardRootContext } from '../root/PreviewCardContext';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { Align, Side } from '../../utils/useAnchorPositioning';
 import { popupStateMapping } from '../../utils/popupStateMapping';
 import { mergeReactProps } from '../../utils/mergeReactProps';
@@ -70,7 +70,7 @@ namespace PreviewCardArrow {
     uncentered: boolean;
   }
 
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 }
 
 PreviewCardArrow.propTypes /* remove-proptypes */ = {

@@ -1,6 +1,6 @@
 # Docs
 
-This is the documentation of Base UI.
+This is the documentation site for Anchor UI.
 
 To start the docs site in development mode, from the project root, run:
 
@@ -14,5 +14,9 @@ Package managers other than pnpm (like npm or Yarn) are not supported and will n
 
 ## How can I add a new demo to the documentation?
 
-[You can follow this guide](https://github.com/mui/base-ui/blob/HEAD/CONTRIBUTING.md)
-on how to get started contributing to Base UI.
+[Follow this guide](https://github.com/anchorui/ui/blob/master/CONTRIBUTING.md)
+to learn how to contribute demos to Anchor UI.
+
+## Acknowledgements
+
+Anchor UI's documentation tooling is built using architectural patterns from Base UI's documentation system. We appreciate their open-source work and continue to evolve the experience with our own design system.

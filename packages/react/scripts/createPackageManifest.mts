@@ -22,13 +22,11 @@ export async function createPackageManifest() {
     private: false,
     main: './cjs/index.js',
     module: './esm/index.js',
-    // The following `types` and `typesVersions` fields ensure compatibility with TypeScript's `node` moduleResolution strategy.
-    // https://github.com/andrewbranch/example-subpath-exports-ts-compat/tree/main/examples/node_modules/types-versions-wildcards
-    types: 'index',
+    types: './types/index.d.ts',
     typesVersions: {
       '*': {
-        index: ['./cjs/index.d.ts'],
-        '*': ['./cjs/*/index.d.ts'],
+        index: ['./types/index.d.ts'],
+        '*': ['./types/*/index.d.ts'],
       },
     },
     exports: retargetExports(exports),
@@ -48,11 +46,11 @@ function retargetExports(originalExports: Record<string, string>) {
     const originalPath = originalExports[subpath];
     transformed[subpath] = {
       require: {
-        types: originalPath.replace('/src/', '/cjs/').replace(/\.tsx?$/, '.d.ts'),
+        types: originalPath.replace('/src/', '/types/').replace(/\.tsx?$/, '.d.ts'),
         default: originalPath.replace('/src/', '/cjs/').replace(/\.tsx?$/, '.js'),
       },
       import: {
-        types: originalPath.replace('/src/', '/esm/').replace(/\.tsx?$/, '.d.ts'),
+        types: originalPath.replace('/src/', '/types/').replace(/\.tsx?$/, '.d.ts'),
         default: originalPath.replace('/src/', '/esm/').replace(/\.tsx?$/, '.js'),
       },
     };

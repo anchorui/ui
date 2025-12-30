@@ -2,7 +2,7 @@
   "name": "eslint-plugin-material-ui",
   "version": "6.3.0",
   "private": true,
-  "description": "Custom eslint rules for Base UI.",
+  "description": "Custom eslint rules for Anchor UI.",
   "main": "src/index.js",
   "devDependencies": {
     "@types/eslint": "^8.56.12",

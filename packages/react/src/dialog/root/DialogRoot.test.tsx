@@ -9,7 +9,7 @@ import { Select } from '@anchor-ui/react/select';
 
 describe('<Dialog.Root />', () => {
   beforeEach(() => {
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = true;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = true;
   });
 
   const { render } = createRenderer();
@@ -116,7 +116,7 @@ describe('<Dialog.Root />', () => {
         skip();
       }
 
-      globalThis.BASE_UI_ANIMATIONS_DISABLED = false;
+      globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = false;
 
       let animationFinished = false;
       const notifyAnimationFinished = () => {
@@ -408,7 +408,7 @@ describe('<Dialog.Root />', () => {
       skip();
     }
 
-    globalThis.BASE_UI_ANIMATIONS_DISABLED = false;
+    globalThis.ANCHOR_UI_ANIMATIONS_DISABLED = false;
 
     const notifyTransitionEnd = spy();
 

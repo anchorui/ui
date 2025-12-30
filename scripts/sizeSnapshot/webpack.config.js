@@ -7,8 +7,8 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const workspaceRoot = path.join(__dirname, '..', '..');
 
 async function getWebpackEntries() {
-  const baseUiPackagePath = path.join(workspaceRoot, 'packages/react/build');
-  const baseUiComponents = (await glob(path.join(baseUiPackagePath, '([A-Z])*/index.js'))).map(
+  const anchorUIPackagePath = path.join(workspaceRoot, 'packages/react/build');
+  const anchorUIComponents = (await glob(path.join(anchorUIPackagePath, '([A-Z])*/index.js'))).map(
     (componentPath) => {
       const componentName = path.basename(path.dirname(componentPath));
 
@@ -20,10 +20,10 @@ async function getWebpackEntries() {
   );
 
   return [
-    ...baseUiComponents,
+    ...anchorUIComponents,
     {
       id: '@anchor-ui/react',
-      path: path.join(path.relative(workspaceRoot, baseUiPackagePath), 'index.js'),
+      path: path.join(path.relative(workspaceRoot, anchorUIPackagePath), 'index.js'),
     },
   ];
 }

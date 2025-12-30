@@ -3,7 +3,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useOnMount } from '../../utils/useOnMount';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { TabsOrientation, TabsRoot } from '../root/TabsRoot';
 import { useTabsRootContext } from '../root/TabsRootContext';
 import { tabsStyleHookMapping } from '../root/styleHooks';
@@ -98,7 +98,7 @@ namespace TabsIndicator {
     orientation: TabsOrientation;
   }
 
-  export interface Props extends BaseUIComponentProps<'span', TabsIndicator.State> {
+  export interface Props extends AnchorUIComponentProps<'span', TabsIndicator.State> {
     /**
      * Whether to render itself before React hydrates.
      * This minimizes the time that the indicator isn’t visible after server-side rendering.

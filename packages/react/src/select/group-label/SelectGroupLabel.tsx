@@ -1,10 +1,10 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { mergeReactProps } from '../../utils/mergeReactProps';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useSelectGroupContext } from '../group/SelectGroupContext';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
 
@@ -24,7 +24,7 @@ const SelectGroupLabel = React.forwardRef(function SelectGroupLabel(
 
   const { setLabelId } = useSelectGroupContext();
 
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   useEnhancedEffect(() => {
     setLabelId(id);
@@ -53,7 +53,7 @@ const SelectGroupLabel = React.forwardRef(function SelectGroupLabel(
 namespace SelectGroupLabel {
   export interface State {}
 
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 }
 
 SelectGroupLabel.propTypes /* remove-proptypes */ = {

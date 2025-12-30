@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useRadioRootContext } from '../root/RadioRootContext';
 import { customStyleHookMapping } from '../utils/customStyleHookMapping';
@@ -67,7 +67,7 @@ const RadioIndicator = React.forwardRef(function RadioIndicator(
 });
 
 namespace RadioIndicator {
-  export interface Props extends BaseUIComponentProps<'span', State> {
+  export interface Props extends AnchorUIComponentProps<'span', State> {
     /**
      * Whether to keep the HTML element in the DOM when the radio button is inactive.
      * @default true

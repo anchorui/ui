@@ -15,7 +15,7 @@ const overrides: Record<string, string> = {
 const baseUrl = 'https://anchorui.com/react';
 const componentsDir = path.join(process.cwd(), 'packages/react/src/');
 
-export function getBaseUiComponentInfo(filename: string): ComponentInfo {
+export function getAnchorUIComponentInfo(filename: string): ComponentInfo {
   const { name } = extractPackageFile(filename);
 
   if (!name) {

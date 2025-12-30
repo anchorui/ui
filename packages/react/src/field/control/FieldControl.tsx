@@ -6,7 +6,7 @@ import { useFieldControl } from './useFieldControl';
 import { FieldRoot } from '../root/FieldRoot';
 import { useFieldRootContext } from '../root/FieldRootContext';
 import { STYLE_HOOK_MAPPING } from '../utils/constants';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * The form control to label and validate.
@@ -69,7 +69,7 @@ const FieldControl = React.forwardRef(function FieldControl(
 namespace FieldControl {
   export type State = FieldRoot.State;
 
-  export interface Props extends BaseUIComponentProps<'input', State> {
+  export interface Props extends AnchorUIComponentProps<'input', State> {
     /**
      * Callback fired when the `value` changes. Use when controlled.
      */

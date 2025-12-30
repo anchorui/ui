@@ -7,7 +7,7 @@ import { styleHookMapping } from '../styleHooks';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import type { FieldRoot } from '../../field/root/FieldRoot';
 import { useFieldRootContext } from '../../field/root/FieldRootContext';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { refType } from '../../utils/proptypes';
 
 /**
@@ -71,7 +71,7 @@ const SwitchRoot = React.forwardRef(function SwitchRoot(
 namespace SwitchRoot {
   export interface Props
     extends useSwitchRoot.Parameters,
-      Omit<BaseUIComponentProps<'button', SwitchRoot.State>, 'onChange'> {}
+      Omit<AnchorUIComponentProps<'button', SwitchRoot.State>, 'onChange'> {}
 
   export interface State extends FieldRoot.State {
     /**

@@ -6,7 +6,7 @@ import { useForkRef } from '../../utils/useForkRef';
 import { useTooltipRootContext } from '../root/TooltipRootContext';
 import { TooltipPositionerContext } from './TooltipPositionerContext';
 import { useTooltipPositioner } from './useTooltipPositioner';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { Side, Align } from '../../utils/useAnchorPositioning';
 import { popupStateMapping } from '../../utils/popupStateMapping';
 import { HTMLElementType, refType } from '../../utils/proptypes';
@@ -110,7 +110,7 @@ namespace TooltipPositioner {
   }
 
   export interface Props
-    extends BaseUIComponentProps<'div', State>,
+    extends AnchorUIComponentProps<'div', State>,
       useTooltipPositioner.SharedParameters {}
 }
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import type { BaseUIComponentProps } from './types';
+import type { AnchorUIComponentProps } from './types';
 import { useForkRef } from './useForkRef';
 import { isReactVersionAtLeast } from './reactVersion';
 
@@ -8,7 +8,7 @@ import { isReactVersionAtLeast } from './reactVersion';
  * @ignore - internal hook.
  */
 export function useRenderPropForkRef<ElementType extends React.ElementType, State>(
-  render: BaseUIComponentProps<ElementType, State>['render'],
+  render: AnchorUIComponentProps<ElementType, State>['render'],
   ...refs: Array<React.Ref<any>>
 ): React.RefCallback<any> | null {
   let childRef;

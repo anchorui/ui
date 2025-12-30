@@ -2,7 +2,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { CompositeList } from '../../composite/list/CompositeList';
 import { useDirection } from '../../direction-provider/DirectionContext';
 import { useTabsRoot } from './useTabsRoot';
@@ -106,7 +106,7 @@ namespace TabsRoot {
     tabActivationDirection: TabActivationDirection;
   };
 
-  export interface Props extends Omit<BaseUIComponentProps<'div', State>, 'defaultValue'> {
+  export interface Props extends Omit<AnchorUIComponentProps<'div', State>, 'defaultValue'> {
     /**
      * The value of the currently selected `Tab`. Use when the component is controlled.
      * When the value is `null`, no Tab will be selected.

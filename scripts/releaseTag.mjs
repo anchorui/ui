@@ -20,7 +20,7 @@ function execDry(command, options) {
 }
 
 /**
- * Find the remote pointing to mui/base-ui.
+ * Find the remote pointing to anchorui/ui.
  *
  * Conventionally this should be named `upstream` but some collaborators might've used a different naming scheme.
  */
@@ -35,9 +35,9 @@ async function findRemote() {
     })
     .find((remote) => {
       // matching:
-      // - https://github.com/mui/base-ui
-      // - git@github.com:mui/base-ui.git
-      return /mui\/base-ui(\.git)?$/.test(remote.url) && remote.method === '(push)';
+      // - https://github.com/anchorui/ui
+      // - git@github.com:anchorui/ui.git
+      return /anchorui\/ui(\.git)?$/.test(remote.url) && remote.method === '(push)';
     });
 }
 
@@ -59,8 +59,8 @@ async function main(argv) {
   const upstreamRepo = await findRemote();
   if (upstreamRepo === undefined) {
     throw new TypeError(
-      'Unable to find the upstream remote. It should be a remote pointing to "mui/base-ui". ' +
-        'Did you forget to add it via `git remote add upstream git@github.com:mui/base-ui.git`? ' +
+      'Unable to find the upstream remote. It should be a remote pointing to "anchorui/ui". ' +
+        'Did you forget to add it via `git remote add upstream git@github.com:anchorui/ui.git`? ' +
         'If you think this is a bug please include `git remote -v` in your report.',
     );
   }
@@ -76,7 +76,7 @@ async function main(argv) {
 yargs(process.argv.slice(2))
   .command({
     command: '$0',
-    description: 'Tags the current release and pushes these changes to mui/base-ui.',
+    description: 'Tags the current release and pushes these changes to anchorui/ui.',
     builder: (command) => {
       return command.option('dryRun', {
         default: false,

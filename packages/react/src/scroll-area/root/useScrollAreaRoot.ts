@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useEventCallback } from '../../utils/useEventCallback';
 import { mergeReactProps } from '../../utils/mergeReactProps';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { SCROLL_TIMEOUT } from '../constants';
 import { getOffset } from '../utils/getOffset';
 import { ScrollAreaRootCssVars } from './ScrollAreaRootCssVars';
@@ -19,7 +19,7 @@ export function useScrollAreaRoot() {
   const [thumbSize, setThumbSize] = React.useState<Size>({ width: 0, height: 0 });
   const [touchModality, setTouchModality] = React.useState(false);
 
-  const rootId = useBaseUiId();
+  const rootId = useAnchorId();
 
   const viewportRef = React.useRef<HTMLDivElement | null>(null);
   const scrollbarYRef = React.useRef<HTMLDivElement | null>(null);

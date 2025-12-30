@@ -3,7 +3,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useMenuRadioItemContext } from '../radio-item/MenuRadioItemContext';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { itemMapping } from '../utils/styleHookMapping';
 import { mergeReactProps } from '../../utils/mergeReactProps';
 import { TransitionStatus, useTransitionStatus } from '../../utils/useTransitionStatus';
@@ -75,7 +75,7 @@ const MenuRadioItemIndicator = React.forwardRef(function MenuRadioItemIndicator(
 });
 
 namespace MenuRadioItemIndicator {
-  export interface Props extends BaseUIComponentProps<'span', State> {
+  export interface Props extends AnchorUIComponentProps<'span', State> {
     /**
      * Whether to keep the HTML element in the DOM when the radio item is inactive.
      * @default false

@@ -183,7 +183,7 @@
     /* Prevent Chrome/Safari page navigation gestures when scrolling horizontally */
     overscroll-behavior-x: contain;
 
-    /* Max height for code blocks, if we ever want to recover this (https://github.com/mui/base-ui/pull/1187) */
+    /* Max height for code blocks, if we ever want to recover this (https://github.com/anchorui/ui/pull/1187) */
     /* max-height: clamp(8.75lh + 0.5rem, 80vh, 23.75lh + 0.5rem); */
 
     &[data-closed] {

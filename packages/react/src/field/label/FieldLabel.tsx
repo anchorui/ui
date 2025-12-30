@@ -6,9 +6,9 @@ import { FieldRoot } from '../root/FieldRoot';
 import { useFieldRootContext } from '../root/FieldRootContext';
 import { useFieldLabel } from './useFieldLabel';
 import { STYLE_HOOK_MAPPING } from '../utils/constants';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 /**
  * An accessible label that is automatically associated with the field control.
@@ -24,7 +24,7 @@ const FieldLabel = React.forwardRef(function FieldLabel(
 
   const { setLabelId, state } = useFieldRootContext(false);
 
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   useEnhancedEffect(() => {
     setLabelId(id);
@@ -51,7 +51,7 @@ const FieldLabel = React.forwardRef(function FieldLabel(
 namespace FieldLabel {
   export type State = FieldRoot.State;
 
-  export interface Props extends BaseUIComponentProps<'div', State> {}
+  export interface Props extends AnchorUIComponentProps<'div', State> {}
 }
 
 FieldLabel.propTypes /* remove-proptypes */ = {

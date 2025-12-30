@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { usePopoverRootContext } from '../root/PopoverRootContext';
 import { usePopoverDescription } from './usePopoverDescription';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 
 const state = {};
 
@@ -42,7 +42,7 @@ const PopoverDescription = React.forwardRef(function PopoverDescription(
 namespace PopoverDescription {
   export interface State {}
 
-  export interface Props extends BaseUIComponentProps<'p', State> {}
+  export interface Props extends AnchorUIComponentProps<'p', State> {}
 }
 
 PopoverDescription.propTypes /* remove-proptypes */ = {

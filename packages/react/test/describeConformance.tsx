@@ -18,7 +18,7 @@ export type ConformantComponentProps = {
   style?: React.CSSProperties;
 };
 
-export interface BaseUiConformanceTestsOptions
+export interface AnchorUIConformanceTestsOptions
   extends Omit<Partial<ConformanceOptions>, 'render' | 'mount' | 'skip' | 'classes'> {
   render: (
     element: React.ReactElement<
@@ -40,7 +40,7 @@ const fullSuite = {
 
 function describeConformanceFn(
   minimalElement: React.ReactElement<ConformantComponentProps>,
-  getOptions: () => BaseUiConformanceTestsOptions,
+  getOptions: () => AnchorUIConformanceTestsOptions,
 ) {
   const { after: runAfterHook = () => {}, only = Object.keys(fullSuite), skip = [] } = getOptions();
 
@@ -57,6 +57,6 @@ function describeConformanceFn(
   });
 }
 
-const describeConformance = createDescribe('Base UI component API', describeConformanceFn);
+const describeConformance = createDescribe('Anchor UI component API', describeConformanceFn);
 
 export { describeConformance };

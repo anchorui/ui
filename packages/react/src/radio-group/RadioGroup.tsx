@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import type { BaseUIComponentProps } from '../utils/types';
+import type { AnchorUIComponentProps } from '../utils/types';
 import { CompositeRoot } from '../composite/root/CompositeRoot';
 import { useComponentRenderer } from '../utils/useComponentRenderer';
 import { useEventCallback } from '../utils/useEventCallback';
@@ -105,7 +105,7 @@ namespace RadioGroup {
   }
 
   export interface Props
-    extends Omit<BaseUIComponentProps<'div', State>, 'value' | 'defaultValue'> {
+    extends Omit<AnchorUIComponentProps<'div', State>, 'value' | 'defaultValue'> {
     /**
      * Whether the component should ignore user interaction.
      * @default false

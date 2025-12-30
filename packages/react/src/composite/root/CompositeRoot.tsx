@@ -6,7 +6,7 @@ import { useCompositeRoot } from './useCompositeRoot';
 import { CompositeRootContext } from './CompositeRootContext';
 import { refType } from '../../utils/proptypes';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import type { TextDirection } from '../../direction-provider/DirectionContext';
 import type { Dimensions } from '../composite';
 
@@ -72,7 +72,7 @@ function CompositeRoot<Metadata extends {}>(props: CompositeRoot.Props<Metadata>
 namespace CompositeRoot {
   export interface State {}
 
-  export interface Props<Metadata> extends BaseUIComponentProps<'div', State> {
+  export interface Props<Metadata> extends AnchorUIComponentProps<'div', State> {
     orientation?: 'horizontal' | 'vertical' | 'both';
     cols?: number;
     loop?: boolean;

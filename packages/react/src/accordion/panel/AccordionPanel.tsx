@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
 import { warn } from '../../utils/warn';
@@ -95,7 +95,7 @@ const AccordionPanel = React.forwardRef(function AccordionPanel(
 
 export namespace AccordionPanel {
   export interface Props
-    extends BaseUIComponentProps<'div', AccordionItem.State>,
+    extends AnchorUIComponentProps<'div', AccordionItem.State>,
       Pick<AccordionRoot.Props, 'hiddenUntilFound' | 'keepMounted'> {}
 }
 

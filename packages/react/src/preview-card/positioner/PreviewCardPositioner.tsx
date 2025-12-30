@@ -7,7 +7,7 @@ import { usePreviewCardPositioner } from './usePreviewCardPositioner';
 import { PreviewCardPositionerContext } from './PreviewCardPositionerContext';
 import { useForkRef } from '../../utils/useForkRef';
 import type { Side, Align } from '../../utils/useAnchorPositioning';
-import type { BaseUIComponentProps } from '../../utils/types';
+import type { AnchorUIComponentProps } from '../../utils/types';
 import { popupStateMapping } from '../../utils/popupStateMapping';
 import { HTMLElementType, refType } from '../../utils/proptypes';
 import { usePreviewCardPortalContext } from '../portal/PreviewCardPortalContext';
@@ -119,7 +119,7 @@ namespace PreviewCardPositioner {
 
   export interface Props
     extends usePreviewCardPositioner.SharedParameters,
-      BaseUIComponentProps<'div', State> {}
+      AnchorUIComponentProps<'div', State> {}
 }
 
 PreviewCardPositioner.propTypes /* remove-proptypes */ = {

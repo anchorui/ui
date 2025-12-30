@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { BaseUIComponentProps } from '../../utils/types';
+import { AnchorUIComponentProps } from '../../utils/types';
 import { useComponentRenderer } from '../../utils/useComponentRenderer';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
 import { warn } from '../../utils/warn';
@@ -90,7 +90,7 @@ const CollapsiblePanel = React.forwardRef(function CollapsiblePanel(
 export { CollapsiblePanel };
 
 namespace CollapsiblePanel {
-  export interface Props extends BaseUIComponentProps<'div', CollapsibleRoot.State> {
+  export interface Props extends AnchorUIComponentProps<'div', CollapsibleRoot.State> {
     /**
      * Allows the browser’s built-in page search to find and expand the panel contents.
      *

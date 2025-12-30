@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { mergeReactProps } from '../../utils/mergeReactProps';
 import { GenericHTMLProps } from '../../utils/types';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useForkRef } from '../../utils/useForkRef';
 import { useCompositeListItem } from '../../composite/list/useCompositeListItem';
 import type { TabsRootContext } from '../root/TabsRootContext';
@@ -21,7 +21,7 @@ function useTabsPanel(parameters: useTabsPanel.Parameters): useTabsPanel.ReturnV
     value: valueParam,
   } = parameters;
 
-  const id = useBaseUiId();
+  const id = useAnchorId();
 
   const metadata = React.useMemo(
     () => ({

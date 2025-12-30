@@ -10,7 +10,7 @@ import {
 } from '@floating-ui/react';
 import { useFieldControlValidation } from '../../field/control/useFieldControlValidation';
 import { useFieldRootContext } from '../../field/root/FieldRootContext';
-import { useBaseUiId } from '../../utils/useBaseUiId';
+import { useAnchorId } from '../../utils/useAnchorId';
 import { useControlled } from '../../utils/useControlled';
 import { type TransitionStatus, useTransitionStatus } from '../../utils';
 import { useEnhancedEffect } from '../../utils/useEnhancedEffect';
@@ -41,7 +41,7 @@ export function useSelectRoot<T>(params: useSelectRoot.Parameters<T>): useSelect
   const { setDirty, validityData, validationMode, setControlId } = useFieldRootContext();
   const fieldControlValidation = useFieldControlValidation();
 
-  const id = useBaseUiId(idProp);
+  const id = useAnchorId(idProp);
 
   useEnhancedEffect(() => {
     setControlId(id);

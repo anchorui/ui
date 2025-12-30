@@ -8,7 +8,7 @@ import {
   act,
 } from '@mui/internal-test-utils';
 
-type BaseUITestRenderer = Omit<Renderer, 'render'> & {
+type AnchorUITestRenderer = Omit<Renderer, 'render'> & {
   render: (
     element: React.ReactElement<DataAttributes>,
     options?: RenderOptions,
@@ -19,7 +19,7 @@ interface DataAttributes {
   [key: `data-${string}`]: string;
 }
 
-export function createRenderer(globalOptions?: CreateRendererOptions): BaseUITestRenderer {
+export function createRenderer(globalOptions?: CreateRendererOptions): AnchorUITestRenderer {
   const createRendererResult = sharedCreateRenderer(globalOptions);
   const { render: originalRender } = createRendererResult;
 
