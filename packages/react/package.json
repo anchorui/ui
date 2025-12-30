@@ -1,6 +1,6 @@
 {
   "name": "@anchor-ui/react",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "private": false,
   "author": "Anchor UI",
   "description": "A fully customizable, unstyled React component library designed to give you complete control over your app's UI, accessibility, and CSS.",

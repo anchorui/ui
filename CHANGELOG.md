@@ -2,7 +2,8 @@
 
 All notable changes to Anchor UI will be documented in this file.
 
-## [Unreleased]
+## [1.0.0-alpha.3]
+**February 26, 2025**
 
 ### Changed
 - **Complete codebase rebranding to Anchor UI**: All internal types, hooks, utilities, and build scripts have been updated to use Anchor UI naming conventions, establishing Anchor UI as an independent library.
@@ -13,6 +14,8 @@ All notable changes to Anchor UI will be documented in this file.
   - Updated test infrastructure: `BaseUiConformanceTestsOptions` → `AnchorUIConformanceTestsOptions`, `BaseUITestRenderer` → `AnchorUITestRenderer`
   - Refactored build scripts: `getBaseUiComponentInfo` → `getAnchorUIComponentInfo`
   - Removed deprecated exports and cleaned up all legacy references
+- Updated documentation links to point to live site (anchorui.com)
+- Updated package description and keywords to emphasize independence
 
 ### Technical Notes
 - This rebranding establishes Anchor UI as an independent library with its own codebase, types, and APIs.
