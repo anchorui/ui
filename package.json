@@ -15,6 +15,7 @@
     "release:publish:dry-run": "pnpm publish --recursive --tag latest --registry=\"http://localhost:4873/\"",
     "release:tag": "node scripts/releaseTag.mjs",
     "docs:api": "tsx --tsconfig ./scripts/buildApiDocs/tsconfig.json ./scripts/buildApiDocs/index.ts",
+    "docs:generate-releases": "node scripts/generateReleasesPage.mjs",
     "docs:build": "pnpm --filter docs build",
     "docs:deploy": "pnpm --filter docs run deploy",
     "docs:dev": "pnpm --filter docs dev",

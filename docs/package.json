@@ -5,6 +5,7 @@
   "author": "Anchor UI",
   "license": "MIT",
   "scripts": {
+    "prebuild": "node ../../scripts/generateReleasesPage.mjs",
     "build": "rimraf ./export && cross-env NODE_ENV=production NODE_OPTIONS=--max_old_space_size=8192 next build",
     "build:clean": "rimraf .next && pnpm build",
     "dev": "next dev --port 3005",
