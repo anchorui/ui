@@ -8,10 +8,27 @@ interface GoogleTagManagerProps {
 export function GoogleTagManager(props: React.PropsWithChildren<GoogleTagManagerProps>) {
   const { id } = props;
   return (
-    /**
-     * A better alternative to <script async>, to delay its execution
-     * https://developer.chrome.com/blog/script-component/
-     */
-    <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${id}`} />
+    <>
+      {/* Load gtag.js */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${id}`}
+      />
+      {/* Initialize gtag */}
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${id}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+    </>
   );
 }

@@ -12,8 +12,8 @@ Download the example [or clone the repo](https://github.com/anchorui/ui):
 <!-- #default-branch-switch -->
 
 ```bash
-curl https://codeload.github.com/anchorui/ui/tar.gz/master | tar -xz --strip=2 base-ui-master/examples/base-ui-cra-ts
-cd anchor-ui-cra-ts
+curl https://codeload.github.com/anchorui/ui/tar.gz/master | tar -xz --strip=2 anchor-ui-master/.codesandbox/template
+cd template
 ```
 
 Install it and run:
@@ -27,6 +27,6 @@ or:
 
 <!-- #default-branch-switch -->
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/base-ui-cra-ts)
+[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/anchorui/ui/tree/master/.codesandbox/template)
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/mui/material-ui/tree/master/examples/base-ui-cra-ts)
+[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/anchorui/ui/tree/master/.codesandbox/template)

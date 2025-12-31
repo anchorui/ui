@@ -19,6 +19,7 @@ export function GoogleAnalytics() {
     <React.Fragment>
       <GoogleTagManager id={GOOGLE_ANALYTICS_ID_V4} />
       <BaseGoogleAnalytics
+        measurementId={GOOGLE_ANALYTICS_ID_V4}
         productId="anchor-ui"
         productCategoryId="core"
         currentRoute={currentRoute}

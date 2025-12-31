@@ -3,7 +3,7 @@
 All notable changes to Anchor UI will be documented in this file.
 
 ## [1.0.0-alpha.3]
-**February 26, 2025**
+**December 29, 2025**
 
 ### Changed
 - **Complete codebase rebranding to Anchor UI**: All internal types, hooks, utilities, and build scripts have been updated to use Anchor UI naming conventions, establishing Anchor UI as an independent library.
@@ -23,7 +23,7 @@ All notable changes to Anchor UI will be documented in this file.
 - All 80+ test suites pass successfully after rebranding.
 
 ## [1.0.0-alpha.2]
-**February 25, 2025**
+**February 25, 2024**
 ### Added
 - Initial release of Anchor UI.
 - Fully customizable and headless React components.

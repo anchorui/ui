@@ -8,7 +8,7 @@
 
 ## Composing custom React components
 
-Use the `render` prop to compose a Base UI part with your own React components.
+Use the `render` prop to compose an Anchor UI part with your own React components.
 
 For example, most triggers render a `<button>` by default.
 The code snippet below shows how to use a custom button instead.
@@ -24,7 +24,7 @@ The custom component must forward the `ref`, and spread all the received props o
 
 ## Composing multiple components
 
-In situations where you need to compose multiple Base UI components with custom React components, `render` props can be nested as deeply as necessary.
+In situations where you need to compose multiple Anchor UI components with custom React components, `render` props can be nested as deeply as necessary.
 Working with Tooltip is a common example.
 
 ```tsx title="index.tsx"
@@ -76,7 +76,7 @@ export default () => (
 );
 ```
 
-Each Base UI component renders the most appropriate element by default, and in most cases, rendering a different element is recommended only on a case-by-case basis.
+Each Anchor UI component renders the most appropriate element by default, and in most cases, rendering a different element is recommended only on a case-by-case basis.
 
 ## Render function
 

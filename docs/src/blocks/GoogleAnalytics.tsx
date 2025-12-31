@@ -12,6 +12,7 @@ let boundDataGaListener = false;
  */
 const GoogleAnalytics = React.memo(function GoogleAnalytics(props: GoogleAnalytics.Props) {
   const {
+    measurementId,
     productId,
     productCategoryId,
     codeLanguage,
@@ -21,23 +22,28 @@ const GoogleAnalytics = React.memo(function GoogleAnalytics(props: GoogleAnalyti
   } = props;
 
   useEnhancedEffect(() => {
+    // Ensure dataLayer exists (should already be initialized by GoogleTagManager)
     // @ts-expect-error
     window.dataLayer = window.dataLayer || [];
 
-    function gtag(...args: unknown[]) {
-      // @ts-expect-error
-      window.dataLayer.push(...args);
+    // Ensure gtag function exists (should already be initialized by GoogleTagManager)
+    if (typeof window.gtag === 'undefined') {
+      function gtag(...args: unknown[]) {
+        // @ts-expect-error
+        window.dataLayer.push(...args);
+      }
+      window.gtag = gtag;
+      gtag('js', new Date());
     }
 
-    window.gtag = gtag;
-
-    gtag('js', new Date());
-
-    // eslint-disable-next-line no-template-curly-in-string
-    gtag('config', '${id}', {
-      send_page_view: false,
-    });
-  }, []);
+    // Configure GA4 with measurement ID and disable automatic page views
+    // (we'll send page views manually in useEffect)
+    if (measurementId && window.gtag) {
+      window.gtag('config', measurementId, {
+        send_page_view: false,
+      });
+    }
+  }, [measurementId]);
 
   React.useEffect(() => {
     if (!boundDataGaListener) {
@@ -49,8 +55,12 @@ const GoogleAnalytics = React.memo(function GoogleAnalytics(props: GoogleAnalyti
   const timeout = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 
   React.useEffect(() => {
-    // Wait for the title to be updated.
+    // Wait for the title to be updated and ensure gtag is available.
     // React fires useEffect twice in dev mode
+    if (typeof window.gtag === 'undefined') {
+      return;
+    }
+
     clearTimeout(timeout.current ?? undefined);
     timeout.current = setTimeout(() => {
       // Remove hash as it's never sent to the server
@@ -64,25 +74,31 @@ const GoogleAnalytics = React.memo(function GoogleAnalytics(props: GoogleAnalyti
         productId,
         productCategoryId,
       });
-    });
+    }, 100);
   }, [currentRoute, productCategoryId, productId]);
 
   React.useEffect(() => {
-    window.gtag('set', 'user_properties', {
-      codeVariant: codeLanguage,
-    });
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('set', 'user_properties', {
+        codeVariant: codeLanguage,
+      });
+    }
   }, [codeLanguage]);
 
   React.useEffect(() => {
-    window.gtag('set', 'user_properties', {
-      codeStylingVariant,
-    });
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('set', 'user_properties', {
+        codeStylingVariant,
+      });
+    }
   }, [codeStylingVariant]);
 
   React.useEffect(() => {
-    window.gtag('set', 'user_properties', {
-      userLanguage,
-    });
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('set', 'user_properties', {
+        userLanguage,
+      });
+    }
   }, [userLanguage]);
 
   React.useEffect(() => {
@@ -91,10 +107,12 @@ const GoogleAnalytics = React.memo(function GoogleAnalytics(props: GoogleAnalyti
      * Adjusted to track 3 or more different ratios
      */
     function trackDevicePixelRatio() {
-      const devicePixelRatio = Math.round(window.devicePixelRatio * 10) / 10;
-      window.gtag('set', 'user_properties', {
-        devicePixelRatio,
-      });
+      if (typeof window.gtag !== 'undefined') {
+        const devicePixelRatio = Math.round(window.devicePixelRatio * 10) / 10;
+        window.gtag('set', 'user_properties', {
+          devicePixelRatio,
+        });
+      }
     }
 
     trackDevicePixelRatio();
@@ -113,9 +131,11 @@ const GoogleAnalytics = React.memo(function GoogleAnalytics(props: GoogleAnalyti
   const preferredColorScheme = prefersDarkMode ? 'dark' : 'light';
 
   React.useEffect(() => {
-    window.gtag('set', 'user_properties', {
-      colorSchemeOS: preferredColorScheme,
-    });
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('set', 'user_properties', {
+        colorSchemeOS: preferredColorScheme,
+      });
+    }
   }, [preferredColorScheme]);
 
   return null;
@@ -123,6 +143,7 @@ const GoogleAnalytics = React.memo(function GoogleAnalytics(props: GoogleAnalyti
 
 namespace GoogleAnalytics {
   export interface Props {
+    measurementId: string;
     productId: string;
     productCategoryId: string;
     codeStylingVariant: string;
@@ -156,10 +177,12 @@ function handleDocumentClick(event: MouseEvent) {
         return;
       }
 
-      window.gtag('event', category, {
-        eventAction: element.getAttribute('data-ga-event-action'),
-        eventLabel: element.getAttribute('data-ga-event-label'),
-      });
+      if (typeof window.gtag !== 'undefined') {
+        window.gtag('event', category, {
+          eventAction: element.getAttribute('data-ga-event-action'),
+          eventLabel: element.getAttribute('data-ga-event-label'),
+        });
+      }
       break;
     }
 
