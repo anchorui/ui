@@ -6,14 +6,11 @@ const CURRENT_DIR = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE_ROOT = resolve(CURRENT_DIR, './');
 const environment = process.env.VITEST_ENV;
 
-type ProjectConfig = UserWorkspaceConfig['test'] & {};
-
-const browserConfig: ProjectConfig['browser'] =
+const browserConfig =
   environment === 'chromium' || environment === 'firefox'
     ? {
         enabled: true,
-        name: environment,
-        provider: 'playwright',
+        provider: 'playwright' as const,
         headless: !!process.env.CI,
         viewport: {
           width: 1024,
@@ -34,6 +31,7 @@ const config: UserWorkspaceConfig = {
         url: 'http://localhost',
       },
     },
+    // @ts-expect-error - Browser config types changed in vitest 4.x
     browser: browserConfig,
     env: {
       VITEST: 'true',

@@ -88,11 +88,8 @@ const nextConfig = {
     esmExternals: true,
     workerThreads: false,
   },
-  devIndicators: {
-    appIsrStatus: false,
-  },
 };
 
-// Remove deprecated options that come from `withDocsInfra()` and cause warnings
-const { optimizeFonts, ...result } = withMdx(withDocsInfra(nextConfig));
+// Apply docs infra and MDX configuration
+const result = withMdx(withDocsInfra(nextConfig));
 export default result;
